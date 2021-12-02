@@ -1,8 +1,0 @@
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Release\automaticshutdown.csproj.GenerateResource.cache
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Release\automaticshutdown.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\source\repos\测试2\测试2\bin\Release\automaticshutdown.exe.config
-C:\Users\Administrator\source\repos\测试2\测试2\bin\Release\automaticshutdown.exe
-C:\Users\Administrator\source\repos\测试2\测试2\bin\Release\automaticshutdown.pdb
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Release\automaticshutdown.Properties.Resources.resources
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Release\automaticshutdown.exe
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Release\automaticshutdown.pdb

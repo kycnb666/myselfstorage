@@ -1,9 +1,0 @@
-C:\Users\Administrator\source\repos\测试2\测试2\bin\Debug\测试2.exe.config
-C:\Users\Administrator\source\repos\测试2\测试2\bin\Debug\测试2.exe
-C:\Users\Administrator\source\repos\测试2\测试2\bin\Debug\测试2.pdb
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Debug\测试2.csproj.AssemblyReference.cache
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Debug\测试2.Properties.Resources.resources
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Debug\测试2.csproj.GenerateResource.cache
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Debug\测试2.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Debug\测试2.exe
-C:\Users\Administrator\source\repos\测试2\测试2\obj\Debug\测试2.pdb
