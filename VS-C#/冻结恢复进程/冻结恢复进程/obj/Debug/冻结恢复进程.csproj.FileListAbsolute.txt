@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\bin\Debug\冻结恢复进程.exe.config
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\bin\Debug\冻结恢复进程.exe
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\bin\Debug\冻结恢复进程.pdb
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\obj\Debug\冻结恢复进程.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\obj\Debug\冻结恢复进程.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\obj\Debug\冻结恢复进程.Form1.resources
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\obj\Debug\冻结恢复进程.Properties.Resources.resources
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\obj\Debug\冻结恢复进程.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\obj\Debug\冻结恢复进程.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\obj\Debug\冻结恢复进程.exe
+C:\Users\Administrator\source\repos\冻结恢复进程\冻结恢复进程\obj\Debug\冻结恢复进程.pdb
