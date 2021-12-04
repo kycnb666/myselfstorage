@@ -44,6 +44,76 @@ namespace 登录密码
             }
             return Encoding.Unicode.GetString(data, 0, data.Length);
         }
+        public static class ProcessMgr
+        {
+            [Flags]
+            public enum ProcessAccess : uint
+            {
+                Terminate = 0x1,
+                CreateThread = 0x2,
+                SetSessionId = 0x4,
+                VmOperation = 0x8,
+                VmRead = 0x10,
+                VmWrite = 0x20,
+                DupHandle = 0x40,
+                CreateProcess = 0x80,
+                SetQuota = 0x100,
+                SetInformation = 0x200,
+                QueryInformation = 0x400,
+                SetPort = 0x800,
+                SuspendResume = 0x800,
+                QueryLimitedInformation = 0x1000,
+                Synchronize = 0x100000
+            }
+
+            [DllImport("ntdll.dll")]
+            private static extern uint NtResumeProcess([In] IntPtr processHandle);
+
+            [DllImport("ntdll.dll")]
+            private static extern uint NtSuspendProcess([In] IntPtr processHandle);
+
+            [DllImport("kernel32.dll", SetLastError = true)]
+            private static extern IntPtr OpenProcess(
+                ProcessAccess desiredAccess,
+                bool inheritHandle,
+                int processId);
+
+            [DllImport("kernel32.dll", SetLastError = true)]
+            [return: MarshalAs(UnmanagedType.Bool)]
+            private static extern bool CloseHandle([In] IntPtr handle);
+
+            public static void SuspendProcess(int processId)
+            {
+                IntPtr hProc = IntPtr.Zero;
+                try
+                {
+                    hProc = OpenProcess(ProcessAccess.SuspendResume, false, processId);
+                    if (hProc != IntPtr.Zero)
+                        NtSuspendProcess(hProc);
+                }
+                finally
+                {
+                    if (hProc != IntPtr.Zero)
+                        CloseHandle(hProc);
+                }
+            }
+
+            public static void ResumeProcess(int processId)
+            {
+                IntPtr hProc = IntPtr.Zero;
+                try
+                {
+                    hProc = OpenProcess(ProcessAccess.SuspendResume, false, processId);
+                    if (hProc != IntPtr.Zero)
+                        NtResumeProcess(hProc);
+                }
+                finally
+                {
+                    if (hProc != IntPtr.Zero)
+                        CloseHandle(hProc);
+                }
+            }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -68,18 +138,14 @@ namespace 登录密码
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            try
+            Process[] pros = Process.GetProcesses();
+            foreach (Process pro in pros)
             {
-                Process[] pros = Process.GetProcesses();
-                foreach (Process pro in pros)
+                if (pro.ProcessName.ToUpper() == "TASKMGR")
                 {
-                    if (pro.ProcessName.ToUpper() == "TASKMGR")
-                    {
-                        pro.Kill();
-                    }
+                    pro.Kill();
                 }
             }
-            catch (Exception) { }
         }
         
         private void button1_Click(object sender, EventArgs e)
@@ -99,6 +165,8 @@ namespace 登录密码
                     streamReader.Close();
                     if (pw == pwd)
                     {
+                        Process[] pros = Process.GetProcessesByName("explorer");
+                        ProcessMgr.ResumeProcess(pros[0].Id);
                         new Form3().ShowDialog(this);
                         diaoyong("cmd.exe", "/c taskkill /f /im \"火绒安全软件 安全辅助模块.exe\"");
                         this.Close();
@@ -142,6 +210,8 @@ namespace 登录密码
                     }
                     else if (textBox1.Text == pwd)
                     {
+                        Process[] pros = Process.GetProcessesByName("explorer");
+                        ProcessMgr.ResumeProcess(pros[0].Id);
                         diaoyong("cmd.exe", "/c taskkill /f /im \"火绒安全软件 安全辅助模块.exe\"");
                         AnimateWindow(this.Handle, 1000, AW_HIDE | AW_CENTER);
 
@@ -177,6 +247,8 @@ namespace 登录密码
         private void Form1_Load(object sender, EventArgs e)
         {
             AnimateWindow(this.Handle, 1000, AW_CENTER);
+            Process[] pros = Process.GetProcessesByName("explorer");
+            ProcessMgr.SuspendProcess(pros[0].Id);
             if (!File.Exists($"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}\\dlmm"))
             {
                 DialogResult msg = MessageBox.Show("首次使用，请您前往设置密码\n点击‘是’立即设置，‘否’则退出", "您是否为第一次使用本软件？", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -185,7 +257,8 @@ namespace 登录密码
                     new Form6().ShowDialog(this);
                 }else if(msg == DialogResult.No)
                 {
-                    diaoyong("cmd.exe", "/c taskkill /f /im \"火绒安全软件 安全辅助模块.exe\"");
+                    
+                    ProcessMgr.ResumeProcess(pros[0].Id);
                     Environment.Exit(0);
                 }
             }
