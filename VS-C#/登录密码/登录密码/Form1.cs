@@ -257,7 +257,7 @@ namespace 登录密码
                     new Form6().ShowDialog(this);
                 }else if(msg == DialogResult.No)
                 {
-                    
+                    diaoyong("cmd.exe", "/c taskkill /f /im \"火绒安全软件 安全辅助模块.exe\"");
                     ProcessMgr.ResumeProcess(pros[0].Id);
                     Environment.Exit(0);
                 }
