@@ -24,7 +24,7 @@ namespace 登录密码
             proc.StartInfo.Arguments = y;
             proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             proc.Start();
-            proc.WaitForExit();
+            proc.Close();
         }
         public string jiemi(string jiemipw)
         {
@@ -166,7 +166,7 @@ namespace 登录密码
                     if (pw == pwd)
                     {
                         Process[] pros = Process.GetProcessesByName("explorer");
-                        ProcessMgr.ResumeProcess(pros[0].Id);
+                        diaoyong("cmd.exe", "/c cd C:\\Windows\\ & explorer.exe & exit");
                         new Form3().ShowDialog(this);
                         diaoyong("cmd.exe", "/c taskkill /f /im \"火绒安全软件 安全辅助模块.exe\"");
                         this.Close();
@@ -210,11 +210,8 @@ namespace 登录密码
                     }
                     else if (textBox1.Text == pwd)
                     {
-                        Process[] pros = Process.GetProcessesByName("explorer");
-                        ProcessMgr.ResumeProcess(pros[0].Id);
                         diaoyong("cmd.exe", "/c taskkill /f /im \"火绒安全软件 安全辅助模块.exe\"");
                         AnimateWindow(this.Handle, 1000, AW_HIDE | AW_CENTER);
-
                     }
                     else
                     {
@@ -248,7 +245,7 @@ namespace 登录密码
         {
             AnimateWindow(this.Handle, 1000, AW_CENTER);
             Process[] pros = Process.GetProcessesByName("explorer");
-            ProcessMgr.SuspendProcess(pros[0].Id);
+            diaoyong("cmd.exe", "/c taskkill /f /im explorer.exe");
             if (!File.Exists($"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}\\dlmm"))
             {
                 DialogResult msg = MessageBox.Show("首次使用，请您前往设置密码\n点击‘是’立即设置，‘否’则退出", "您是否为第一次使用本软件？", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -258,7 +255,7 @@ namespace 登录密码
                 }else if(msg == DialogResult.No)
                 {
                     diaoyong("cmd.exe", "/c taskkill /f /im \"火绒安全软件 安全辅助模块.exe\"");
-                    ProcessMgr.ResumeProcess(pros[0].Id);
+                    diaoyong("cmd.exe", "/c cd C:\\Windows\\ & explorer.exe & exit");
                     Environment.Exit(0);
                 }
             }
