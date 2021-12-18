@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\bin\Debug\文本加密解密.exe.config
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\bin\Debug\文本加密解密.exe
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\bin\Debug\文本加密解密.pdb
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\obj\Debug\文本加密解密.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\obj\Debug\文本加密解密.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\obj\Debug\文本加密解密.Form1.resources
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\obj\Debug\文本加密解密.Properties.Resources.resources
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\obj\Debug\文本加密解密.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\obj\Debug\文本加密解密.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\obj\Debug\文本加密解密.exe
+C:\Users\Administrator\source\repos\文本加密解密\文本加密解密\obj\Debug\文本加密解密.pdb
