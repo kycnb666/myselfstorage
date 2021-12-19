@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\bin\Debug\联网更新文件.exe.config
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\bin\Debug\联网更新文件.exe
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\bin\Debug\联网更新文件.pdb
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\obj\Debug\联网更新文件.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\obj\Debug\联网更新文件.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\obj\Debug\联网更新文件.Form1.resources
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\obj\Debug\联网更新文件.Properties.Resources.resources
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\obj\Debug\联网更新文件.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\obj\Debug\联网更新文件.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\obj\Debug\联网更新文件.exe
+C:\Users\Administrator\source\repos\联网更新文件\联网更新文件\obj\Debug\联网更新文件.pdb
