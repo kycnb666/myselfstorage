@@ -23,6 +23,16 @@ namespace 联网更新文件
             InitializeComponent();
             Control.CheckForIllegalCrossThreadCalls = false;
         }
+        public static void diaoyong(string x, string y)
+        {
+            Process proc = new Process();
+            proc.StartInfo.FileName = x;
+            proc.StartInfo.Arguments = y;
+            proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            proc.Start();
+            proc.Close();
+        }
+
         void DownloadFileFromGitHub()
         {
             try
@@ -60,8 +70,8 @@ namespace 联网更新文件
             }
             catch (Exception)
             {
-                button1.Text = "检查更新";
-                button1.Enabled = true;
+                button5.Text = "检查更新";
+                button5.Enabled = true;
                 MessageBox.Show("检查失败！\n无法与服务器建立连接！\n解决办法：\n重试几次或者稍后再试！", "检查失败！", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -119,14 +129,19 @@ namespace 联网更新文件
         
 
         private void Form1_Load(object sender, EventArgs e)
-        { }
+        {}
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if(File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}\\linshi.exe"))
-            Process.Start("cmd.exe", $"/k rename \"{AppDomain.CurrentDomain.BaseDirectory}\\linshi.exe\" \"{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\"");
+            if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}\\linshi.exe"))
+            {
+                diaoyong("cmd.exe", $"/k timeout /t 1 & ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
+                diaoyong("cmd.exe", $"/k timeout /t 1 & ren \"{AppDomain.CurrentDomain.BaseDirectory}linshi.exe\" \"{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\"");
+                diaoyong("cmd.exe",$"/k timeout /t 1 & del \"{AppDomain.CurrentDomain.BaseDirectory}旧版文件请手动删除.exe\"");
+            }
+            Environment.Exit(0);
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             Thread download = new Thread(new ThreadStart(DownloadFileFromGitee));
@@ -136,33 +151,9 @@ namespace 联网更新文件
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
-            HttpDownloadFile("https://github.com/kycnb666/softwarerelease/raw/main/software%20release/%E6%96%87%E6%9C%AC%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86.exe", "");
-        }
+        { }
         
-        public static string HttpDownloadFile(string url, string path)
-        {
-            // 设置参数
-            HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
-            //发送请求并获取相应回应数据
-            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-            //直到request.GetResponse()程序才开始向目标网页发送Post请求
-            Stream responseStream = response.GetResponseStream();
-
-            //创建本地文件写入流
-            Stream stream = new FileStream(path, FileMode.Create);
-
-            byte[] bArr = new byte[1024];
-            int size = responseStream.Read(bArr, 0, (int)bArr.Length);
-            while (size > 0)
-            {
-                stream.Write(bArr, 0, size);
-                size = responseStream.Read(bArr, 0, (int)bArr.Length);
-            }
-            stream.Close();
-            responseStream.Close();
-            return path;
-        }
+        
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -183,9 +174,7 @@ namespace 联网更新文件
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Environment.Exit(0);
-        }
+        { }
 
         private void button5_Click(object sender, EventArgs e)
         {
