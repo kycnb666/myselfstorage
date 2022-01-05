@@ -59,5 +59,20 @@ namespace 窗体
                 ww = -label1.Width;
             label1.Location = new Point(ww, 50);
         }
+
+        private void label2_MouseDown(object sender, MouseEventArgs e)
+        {
+            label2.BorderStyle= BorderStyle.Fixed3D;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.WindowState= FormWindowState.Minimized;
+        }
+
+        private void label2_MouseLeave(object sender, EventArgs e)
+        {
+            label2.BorderStyle = BorderStyle.None;
+        }
     }
 }
