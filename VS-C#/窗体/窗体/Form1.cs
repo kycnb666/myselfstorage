@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Net;
+using System.IO;
+using System.Threading;
+using System.Diagnostics;
 
 namespace 窗体
 {
@@ -16,8 +20,22 @@ namespace 窗体
         public Form1()
         {
             InitializeComponent();
+            Control.CheckForIllegalCrossThreadCalls = false;
         }
+        void checkversion()
+        {
+            try
+            {
+                WebClient webClient = new WebClient();
+                webClient.Encoding = Encoding.UTF8;
+                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E6%B5%8B%E8%AF%95/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.txt");
+               
+                
 
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+        }
+        
         public int hh = 0;
         public int ww = 0;
         [DllImport("user32.dll")]
@@ -73,6 +91,44 @@ namespace 窗体
         private void label2_MouseLeave(object sender, EventArgs e)
         {
             label2.BorderStyle = BorderStyle.None;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                WebClient webClient = new WebClient();
+                webClient.Encoding = Encoding.UTF8;
+                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E6%B5%8B%E8%AF%95/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.txt");
+                
+                StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}\\version.txt");
+                string latestversion = streamReader.ReadToEnd();
+                streamReader.Close();
+
+                
+                FileInfo f = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}version.txt");
+                f.Delete();
+                string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+
+                if (thisversion != latestversion)
+                {
+                    pictureBox2.Visible = true;
+                    label1.Visible = true;
+                }
+                timer2.Enabled = false;
+            }
+            catch (Exception) { }
         }
     }
 }
