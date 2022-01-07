@@ -45,12 +45,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 68);
+            this.panel1.Size = new System.Drawing.Size(800, 55);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -73,7 +73,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::窗体.Properties.Resources.AudioToastIcon;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 37);
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 23);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -84,12 +84,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(31, 47);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label1.Location = new System.Drawing.Point(32, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 12);
+            this.label1.Size = new System.Drawing.Size(188, 17);
             this.label1.TabIndex = 3;
-            this.label1.Text = "666";
+            this.label1.Text = "发布新版本啦！点击此处进行更新";
             this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -117,7 +119,6 @@
             // 
             // timer2
             // 
-            this.timer2.Enabled = true;
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 

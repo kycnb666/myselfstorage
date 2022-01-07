@@ -19,21 +19,38 @@ namespace 窗体
     {
         public Form1()
         {
+            
             InitializeComponent();
             Control.CheckForIllegalCrossThreadCalls = false;
         }
         void checkversion()
         {
+            
             try
             {
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E6%B5%8B%E8%AF%95/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.txt");
-               
+                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E6%B5%8B%E8%AF%95/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.v");
                 
+                StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
+                string latestversion = streamReader.ReadToEnd();
+                streamReader.Close();
+
+
+                FileInfo f = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
+                f.Delete();
+                string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+
+                if (thisversion != latestversion)
+                {
+                    pictureBox2.Visible = true;
+                    label1.Visible = true;
+                }
+
 
             }
             catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            
         }
         
         public int hh = 0;
@@ -75,7 +92,7 @@ namespace 窗体
                 ww += 1;
             else
                 ww = -label1.Width;
-            label1.Location = new Point(ww, 50);
+            label1.Location = new Point(ww, 35);
         }
 
         private void label2_MouseDown(object sender, MouseEventArgs e)
@@ -100,24 +117,19 @@ namespace 窗体
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
-
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
             try
             {
+
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E6%B5%8B%E8%AF%95/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.txt");
-                
-                StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}\\version.txt");
+                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E6%B5%8B%E8%AF%95/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.v");
+
+                StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
                 string latestversion = streamReader.ReadToEnd();
                 streamReader.Close();
 
-                
-                FileInfo f = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}version.txt");
+
+                FileInfo f = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
                 f.Delete();
                 string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
@@ -126,9 +138,37 @@ namespace 窗体
                     pictureBox2.Visible = true;
                     label1.Visible = true;
                 }
-                timer2.Enabled = false;
+            }catch (Exception) { }
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            
+           
+            if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}version.v"))
+            {
+                try
+                {
+
+                    StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
+                    string latestversion = streamReader.ReadToEnd();
+                    streamReader.Close();
+
+
+                    FileInfo f = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
+                    f.Delete();
+                    string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+
+                    if (thisversion != latestversion)
+                    {
+                        pictureBox2.Visible = true;
+                        label1.Visible = true;
+                    }
+                    timer2.Enabled = false;
+                }
+                catch (Exception) { }
             }
-            catch (Exception) { }
         }
     }
 }
