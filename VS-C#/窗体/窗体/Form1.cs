@@ -92,7 +92,7 @@ namespace 窗体
                 ww += 1;
             else
                 ww = -label1.Width;
-            label1.Location = new Point(ww, 35);
+            label1.Location = new Point(ww, 36);
         }
 
         private void label2_MouseDown(object sender, MouseEventArgs e)
@@ -112,7 +112,7 @@ namespace 窗体
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+            new Form2().ShowDialog(this);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace 窗体
 
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E6%B5%8B%E8%AF%95/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.v");
+                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E7%AA%97%E4%BD%93/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.v");
 
                 StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
                 string latestversion = streamReader.ReadToEnd();
@@ -139,7 +139,7 @@ namespace 窗体
                     label1.Visible = true;
                 }
             }catch (Exception) { }
-
+            
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -169,6 +169,11 @@ namespace 窗体
                 }
                 catch (Exception) { }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(Cursor.Position);
         }
     }
 }
