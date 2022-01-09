@@ -13,6 +13,7 @@ using System.IO;
 using System.Threading;
 using System.Diagnostics;
 
+
 namespace 窗体
 {
     public partial class Form1 : Form
@@ -189,6 +190,11 @@ namespace 窗体
         private void button1_Click(object sender, EventArgs e)
         {
             contextMenuStrip1.Show(Cursor.Position);
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new Form3().ShowDialog(this);
         }
     }
 }

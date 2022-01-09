@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Threading;
+using System.Media;
 
 namespace 窗体
 {
@@ -79,6 +80,8 @@ namespace 窗体
         {
             pictureBox5.Visible=true;
             timer3.Enabled=true;
+            SoundPlayer sp=new SoundPlayer(窗体.Properties.Resources.completedbgm);
+            sp.Play();
             timer2.Enabled=false;
         }
         public int w = 291;

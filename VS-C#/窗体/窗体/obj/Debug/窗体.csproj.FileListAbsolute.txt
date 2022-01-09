@@ -10,3 +10,4 @@ C:\Users\Administrator\source\repos\窗体\窗体\obj\Debug\窗体.csproj.CoreCo
 C:\Users\Administrator\source\repos\窗体\窗体\obj\Debug\窗体.exe
 C:\Users\Administrator\source\repos\窗体\窗体\obj\Debug\窗体.pdb
 C:\Users\Administrator\source\repos\窗体\窗体\obj\Debug\窗体.Form2.resources
+C:\Users\Administrator\source\repos\窗体\窗体\obj\Debug\窗体.Form3.resources

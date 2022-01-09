@@ -115,6 +115,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::窗体.Properties.Resources.download;
             this.pictureBox2.Location = new System.Drawing.Point(74, 71);
             this.pictureBox2.Name = "pictureBox2";
