@@ -23,6 +23,15 @@ namespace 窗体
             InitializeComponent();
             Control.CheckForIllegalCrossThreadCalls = false;
         }
+        public static void diaoyong(string x, string y)
+        {
+            Process proc = new Process();
+            proc.StartInfo.FileName = x;
+            proc.StartInfo.Arguments = y;
+            proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            proc.Start();
+            proc.Close();
+        }
         void checkversion()
         {
             
@@ -66,9 +75,15 @@ namespace 窗体
             ReleaseCapture();
             SendMessage(this.Handle, 0x0112, 0xF012, 0);
         }
-
+        
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe"))
+            {
+                diaoyong("cmd.exe", $"/c ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
+                diaoyong("cmd.exe", $"/c timeout /t 1 /nobreak & ren \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\" \"{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\"");
+                diaoyong("cmd.exe", $"/c timeout /t 2 /nobreak & del \"{AppDomain.CurrentDomain.BaseDirectory}旧版文件请手动删除.exe\"");
+            }
             Environment.Exit(0);
         }
 
