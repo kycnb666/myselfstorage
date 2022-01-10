@@ -38,7 +38,8 @@ namespace 窗体
         {
             
             progressBar1.Value = (int)e.ProgressPercentage;
-            label1.Text="下载更新中，请稍后。。。进度："+e.ProgressPercentage.ToString();
+            label1.Text = $"下载更新中，请稍后。。。    进度：{e.ProgressPercentage}\n已下载：{e.BytesReceived/1024}KB   总大小：{e.TotalBytesToReceive/1024}KB";
+            
         }
 
         private void Form2_Load(object sender, EventArgs e)

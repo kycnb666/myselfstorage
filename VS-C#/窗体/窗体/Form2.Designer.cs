@@ -53,11 +53,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1.Location = new System.Drawing.Point(40, 153);
+            this.label1.Location = new System.Drawing.Point(31, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 17);
+            this.label1.Size = new System.Drawing.Size(152, 34);
             this.label1.TabIndex = 3;
-            this.label1.Text = "下载更新中，请等待。。。";
+            this.label1.Text = "下载更新中，请等待。。。\r\n如果太久没反应则重新打开";
             this.label1.Visible = false;
             // 
             // progressBar1
@@ -71,7 +71,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 3500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
