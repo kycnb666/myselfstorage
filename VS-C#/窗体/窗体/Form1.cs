@@ -128,7 +128,7 @@ namespace 窗体
 
         private void label1_Click(object sender, EventArgs e)
         {
-            new Form2().ShowDialog(this);
+            new Form2().Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -194,7 +194,7 @@ namespace 窗体
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            new Form3().ShowDialog(this);
+            new Form3().Show();
         }
     }
 }
