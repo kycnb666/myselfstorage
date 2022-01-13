@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.Threading;
 using System.Media;
+using System.Runtime.InteropServices;
 
 namespace 窗体
 {
@@ -19,6 +20,11 @@ namespace 窗体
         {
             InitializeComponent();
         }
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
         void downloadFromGitee()
         {
             try
@@ -38,7 +44,7 @@ namespace 窗体
         {
             
             progressBar1.Value = (int)e.ProgressPercentage;
-            label1.Text = $"下载更新中，请稍后。。。    进度：{e.ProgressPercentage}\n已下载：{e.BytesReceived/1024}KB   总大小：{e.TotalBytesToReceive/1024}KB";
+            label1.Text = $"下载更新中，请稍后。。。    进度：{e.ProgressPercentage}%\n已下载：{e.BytesReceived/1024}KB   总大小：{e.TotalBytesToReceive/1024}KB";
             
         }
 
@@ -50,6 +56,7 @@ namespace 窗体
             pictureBox4.Parent = this.pictureBox3;
             pictureBox5.Parent = this.pictureBox4;
             label2.Parent = this.pictureBox5;
+            label3.Parent = this.pictureBox6;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -96,6 +103,23 @@ namespace 窗体
             else if (w != 0)
                 w -= 1;
             label2.Location = new Point(w, 162);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox6_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void label3_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
         }
     }
 }

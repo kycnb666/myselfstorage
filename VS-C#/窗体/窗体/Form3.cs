@@ -48,8 +48,7 @@ namespace 窗体
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Thread download = new Thread(new ThreadStart(checkversion));
-            download.Start();
+            
             try
             {
                 WebClient webClient = new WebClient();
