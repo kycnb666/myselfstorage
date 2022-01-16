@@ -20,12 +20,29 @@ namespace 窗体
         {
             InitializeComponent();
         }
+        [System.Runtime.InteropServices.DllImport("user32")]
+        private static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
+
+        //标志描述：
+        const int AW_SLIDE = 0x40000;//使用滑动类型。缺省则为滚动动画类型。当使用AW_CENTER标志时，这个标志就被忽略。
+        const int AW_ACTIVATE = 0x20000;//激活窗口。在使用了AW_HIDE标志后不要使用这个标志。
+        const int AW_BLEND = 0x80000;//使用淡出效果。只有当hWnd为顶层窗口的时候才可以使用此标志。
+        const int AW_HIDE = 0x10000;//隐藏窗口，缺省则显示窗口。(关闭窗口用)
+        const int AW_CENTER = 0x0010;//若使用了AW_HIDE标志，则使窗口向内重叠；若未使用AW_HIDE标志，则使窗口向外扩展。
+        const int AW_HOR_POSITIVE = 0x0001;//自左向右显示窗口。该标志可以在滚动动画和滑动动画中使用。当使用AW_CENTER标志时，该标志将被忽略。
+        const int AW_VER_POSITIVE = 0x0004;//自顶向下显示窗口。该标志可以在滚动动画和滑动动画中使用。当使用AW_CENTER标志时，该标志将被忽略。
+        const int AW_HOR_NEGATIVE = 0x0002;//自右向左显示窗口。该标志可以在滚动动画和滑动动画中使用。当使用AW_CENTER标志时，该标志将被忽略。
+        const int AW_VER_NEGATIVE = 0x0008;//自下向上显示窗口。该标志可以在滚动动画和滑动动画中使用。当使用AW_CENTER标志时，该标志将被忽略。
+        [System.Runtime.InteropServices.DllImport("user32.dll", EntryPoint = "GetForegroundWindow", CharSet = System.Runtime.InteropServices.CharSet.Auto, ExactSpelling = true)]
+        public static extern IntPtr GetF(); //获得本窗体的句柄
+        [System.Runtime.InteropServices.DllImport("user32.dll", EntryPoint = "SetForegroundWindow")]
+        public static extern bool SetF(IntPtr hWnd); //设置此窗体为活动窗体
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
         [DllImport("user32.dll")]
         public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
-        void downloadFromGitee()
+        void downloadFromFastgit()
         {
             try
             {
@@ -33,7 +50,7 @@ namespace 窗体
                 webClient.Encoding = Encoding.UTF8;
 
 
-                webClient.DownloadFileAsync(new Uri("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe"), $"{AppDomain.CurrentDomain.BaseDirectory}\\linshigxdwj.exe");
+                webClient.DownloadFileAsync(new Uri("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe"), $"{AppDomain.CurrentDomain.BaseDirectory}\\linshigxdwj.exe");
                 webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(WebClient_DownloadProgressChanged);
             }catch (Exception) { }
             
@@ -50,6 +67,7 @@ namespace 窗体
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            AnimateWindow(this.Handle, 100, AW_VER_POSITIVE);
             pictureBox2.Parent = this.pictureBox1;
             label1.Parent = this.pictureBox3;
             progressBar1.Parent = this.pictureBox3;
@@ -66,7 +84,7 @@ namespace 窗体
             pictureBox3.Visible = true;
             label1.Visible = true;
             progressBar1.Visible = true;
-            Thread download = new Thread(new ThreadStart(downloadFromGitee));
+            Thread download = new Thread(new ThreadStart(downloadFromFastgit));
             download.Start();
 
         }

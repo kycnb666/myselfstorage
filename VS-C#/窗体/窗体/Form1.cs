@@ -24,6 +24,24 @@ namespace 窗体
             InitializeComponent();
             Control.CheckForIllegalCrossThreadCalls = false;
         }
+        public static class ClearMemoryInfo
+        {
+            [DllImport("kernel32.dll")]
+            private static extern bool SetProcessWorkingSetSize(IntPtr process, int minSize, int maxSize);
+
+
+            /// <summary>
+            /// 强制清理内存
+            /// </summary>
+            public static void FlushMemory()
+            {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                if (Environment.OSVersion.Platform == PlatformID.Win32NT)
+                    SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle, -1, -1);
+                //System.Diagnostics.Process.GetCurrentProcess().MinWorkingSet = new System.IntPtr(5);
+            }
+        }
         [System.Runtime.InteropServices.DllImport("user32")]
         private static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
 
@@ -52,13 +70,14 @@ namespace 窗体
         }
         void checkversion()
         {
-            
+
             try
             {
+
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E6%B5%8B%E8%AF%95/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.v");
-                
+                webClient.DownloadFile("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.v");
+
                 StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
                 string latestversion = streamReader.ReadToEnd();
                 streamReader.Close();
@@ -70,16 +89,14 @@ namespace 窗体
 
                 if (thisversion != latestversion)
                 {
-                    pictureBox2.Visible = true;
-                    label1.Visible = true;
+                    timer3.Enabled = false;
                 }
-
-
             }
-            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
-            
+            catch (Exception) { }
+
+
         }
-        
+
         public int hh = 0;
         public int ww = 0;
         [DllImport("user32.dll")]
@@ -151,29 +168,8 @@ namespace 窗体
         private void Form1_Load(object sender, EventArgs e)
         {
             AnimateWindow(this.Handle, 50, AW_VER_POSITIVE);
-            try
-            {
-
-                WebClient webClient = new WebClient();
-                webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile("https://gitee.com/kycnb666/softwarerelease/raw/master/software%20release/%E7%AA%97%E4%BD%93/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.v");
-
-                StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
-                string latestversion = streamReader.ReadToEnd();
-                streamReader.Close();
-
-
-                FileInfo f = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
-                f.Delete();
-                string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-
-                if (thisversion != latestversion)
-                {
-                    pictureBox2.Visible = true;
-                    label1.Visible = true;
-                }
-            }catch (Exception) { }
-            
+            Thread download = new Thread(new ThreadStart(checkversion));
+            download.Start();
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -213,6 +209,20 @@ namespace 窗体
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             new Form3().Show();
+        }
+        
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            if (timer3.Enabled == false)
+            {
+                pictureBox2.Visible = true;
+                label1.Visible = true;
+            }
+        }
+
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            ClearMemoryInfo.FlushMemory();
         }
     }
 }

@@ -187,7 +187,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::窗体.Properties.Resources.colorchange;
-            this.pictureBox7.Location = new System.Drawing.Point(-1, 12);
+            this.pictureBox7.Location = new System.Drawing.Point(-1, 17);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(5, 204);
             this.pictureBox7.TabIndex = 10;
@@ -216,7 +216,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(10, 3);
+            this.label3.Location = new System.Drawing.Point(1, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 17);
             this.label3.TabIndex = 13;
