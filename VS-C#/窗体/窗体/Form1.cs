@@ -213,9 +213,7 @@ namespace 窗体
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            new Form3().Show();
-        }
+        { }
         
         private void timer4_Tick(object sender, EventArgs e)
         {
@@ -229,6 +227,16 @@ namespace 窗体
         private void timer5_Tick(object sender, EventArgs e)
         {
             ClearMemoryInfo.FlushMemory();
+        }
+
+        private void checkversionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+        }
+
+        private void seeupdatetimeandnoticeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form4().Show();
         }
     }
 }

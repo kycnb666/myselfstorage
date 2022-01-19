@@ -42,6 +42,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer5 = new System.Windows.Forms.Timer(this.components);
+            this.checkversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seeupdatetimeandnoticeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -78,13 +80,16 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(149, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
             // 
             // toolStripMenuItem2
             // 
+            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkversionToolStripMenuItem,
+            this.seeupdatetimeandnoticeToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(148, 22);
-            this.toolStripMenuItem2.Text = "手动检查更新";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Text = "更新选项";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // timer3
@@ -176,6 +181,20 @@
             this.timer5.Interval = 10000;
             this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
             // 
+            // checkversionToolStripMenuItem
+            // 
+            this.checkversionToolStripMenuItem.Name = "checkversionToolStripMenuItem";
+            this.checkversionToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.checkversionToolStripMenuItem.Text = "手动更新";
+            this.checkversionToolStripMenuItem.Click += new System.EventHandler(this.checkversionToolStripMenuItem_Click);
+            // 
+            // seeupdatetimeandnoticeToolStripMenuItem
+            // 
+            this.seeupdatetimeandnoticeToolStripMenuItem.Name = "seeupdatetimeandnoticeToolStripMenuItem";
+            this.seeupdatetimeandnoticeToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.seeupdatetimeandnoticeToolStripMenuItem.Text = "查看更新日期以及在线公告";
+            this.seeupdatetimeandnoticeToolStripMenuItem.Click += new System.EventHandler(this.seeupdatetimeandnoticeToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -213,6 +232,8 @@
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Timer timer5;
+        private System.Windows.Forms.ToolStripMenuItem checkversionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seeupdatetimeandnoticeToolStripMenuItem;
     }
 }
 

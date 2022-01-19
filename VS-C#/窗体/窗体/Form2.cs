@@ -11,6 +11,7 @@ using System.Net;
 using System.Threading;
 using System.Media;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace 窗体
 {
@@ -75,6 +76,9 @@ namespace 窗体
             pictureBox5.Parent = this.pictureBox4;
             label2.Parent = this.pictureBox5;
             label3.Parent = this.pictureBox6;
+            FileInfo t = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}");
+            string title = t.CreationTime.ToString("F");
+            label3.Text = $"更新窗口   上次更新：{title}";
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -86,7 +90,6 @@ namespace 窗体
             progressBar1.Visible = true;
             Thread download = new Thread(new ThreadStart(downloadFromFastgit));
             download.Start();
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
