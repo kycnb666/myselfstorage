@@ -73,17 +73,17 @@ namespace 窗体
 
             try
             {
-
+                
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/version.v", $"{AppDomain.CurrentDomain.BaseDirectory}\\version.v");
+                webClient.DownloadFile("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/version.v", $"{Path.GetTempPath()}version.v");
 
-                StreamReader streamReader = new StreamReader($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
+                StreamReader streamReader = new StreamReader($"{Path.GetTempPath()}version.v");
                 string latestversion = streamReader.ReadToEnd();
                 streamReader.Close();
 
 
-                FileInfo f = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}version.v");
+                FileInfo f = new FileInfo($"{Path.GetTempPath()}version.v");
                 f.Delete();
                 string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
