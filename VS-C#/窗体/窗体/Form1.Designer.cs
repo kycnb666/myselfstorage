@@ -33,7 +33,27 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.topwindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.下载节点选择ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.HongKongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.手动下载更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox5 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox6 = new System.Windows.Forms.ToolStripTextBox();
+            this.网址1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,8 +62,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer5 = new System.Windows.Forms.Timer(this.components);
-            this.checkversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seeupdatetimeandnoticeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -77,20 +96,187 @@
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem4,
+            this.topwindowToolStripMenuItem,
+            this.toolStripSeparator1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 98);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Text = "公告栏";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // topwindowToolStripMenuItem
+            // 
+            this.topwindowToolStripMenuItem.Name = "topwindowToolStripMenuItem";
+            this.topwindowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.topwindowToolStripMenuItem.Text = "窗口顶置";
+            this.topwindowToolStripMenuItem.Click += new System.EventHandler(this.topwindowToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.checkversionToolStripMenuItem,
-            this.seeupdatetimeandnoticeToolStripMenuItem});
+            this.toolStripMenuItem1,
+            this.下载节点选择ToolStripMenuItem,
+            this.手动下载更新ToolStripMenuItem,
+            this.resumeToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem2.Text = "更新选项";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // checkversionToolStripMenuItem
+            // 
+            this.checkversionToolStripMenuItem.Name = "checkversionToolStripMenuItem";
+            this.checkversionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkversionToolStripMenuItem.Text = "手动检查更新";
+            this.checkversionToolStripMenuItem.Click += new System.EventHandler(this.checkversionToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "弹出更新窗口";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // 下载节点选择ToolStripMenuItem
+            // 
+            this.下载节点选择ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox1,
+            this.toolStripTextBox2,
+            this.toolStripMenuItem3,
+            this.HongKongToolStripMenuItem,
+            this.LSToolStripMenuItem});
+            this.下载节点选择ToolStripMenuItem.Name = "下载节点选择ToolStripMenuItem";
+            this.下载节点选择ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.下载节点选择ToolStripMenuItem.Text = "网络节点选择";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBox1.Enabled = false;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(208, 16);
+            this.toolStripTextBox1.Text = "如果无法进行下载，或检测不到更新等";
+            // 
+            // toolStripTextBox2
+            // 
+            this.toolStripTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBox2.Enabled = false;
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.toolStripTextBox2.Name = "toolStripTextBox2";
+            this.toolStripTextBox2.Size = new System.Drawing.Size(205, 16);
+            this.toolStripTextBox2.Text = "原因，您可以选一个来更换";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(268, 22);
+            this.toolStripMenuItem3.Text = "1.节点一（日本东京）（默认）";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // HongKongToolStripMenuItem
+            // 
+            this.HongKongToolStripMenuItem.Name = "HongKongToolStripMenuItem";
+            this.HongKongToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.HongKongToolStripMenuItem.Text = "2.节点二（中国香港）";
+            this.HongKongToolStripMenuItem.Click += new System.EventHandler(this.HongKongToolStripMenuItem_Click);
+            // 
+            // LSToolStripMenuItem
+            // 
+            this.LSToolStripMenuItem.Name = "LSToolStripMenuItem";
+            this.LSToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.LSToolStripMenuItem.Text = "3.节点三（美国洛杉矶）";
+            this.LSToolStripMenuItem.Click += new System.EventHandler(this.LSToolStripMenuItem_Click);
+            // 
+            // 手动下载更新ToolStripMenuItem
+            // 
+            this.手动下载更新ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox5,
+            this.toolStripTextBox6,
+            this.网址1ToolStripMenuItem,
+            this.toolStripMenuItem6,
+            this.toolStripMenuItem7,
+            this.toolStripMenuItem8,
+            this.toolStripMenuItem9,
+            this.toolStripMenuItem10});
+            this.手动下载更新ToolStripMenuItem.Name = "手动下载更新ToolStripMenuItem";
+            this.手动下载更新ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.手动下载更新ToolStripMenuItem.Text = "手动下载更新";
+            // 
+            // toolStripTextBox5
+            // 
+            this.toolStripTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBox5.Enabled = false;
+            this.toolStripTextBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.toolStripTextBox5.Name = "toolStripTextBox5";
+            this.toolStripTextBox5.Size = new System.Drawing.Size(210, 16);
+            this.toolStripTextBox5.Text = "如果本程序自带的更新功能失效，请您";
+            // 
+            // toolStripTextBox6
+            // 
+            this.toolStripTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBox6.Enabled = false;
+            this.toolStripTextBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.toolStripTextBox6.Name = "toolStripTextBox6";
+            this.toolStripTextBox6.Size = new System.Drawing.Size(200, 16);
+            this.toolStripTextBox6.Text = "点击以下任意网址进入浏览器下载";
+            // 
+            // 网址1ToolStripMenuItem
+            // 
+            this.网址1ToolStripMenuItem.Name = "网址1ToolStripMenuItem";
+            this.网址1ToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.网址1ToolStripMenuItem.Text = "1.网址1（中国香港1）";
+            this.网址1ToolStripMenuItem.Click += new System.EventHandler(this.网址1ToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(270, 22);
+            this.toolStripMenuItem6.Text = "2.网址2（中国香港2）";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(270, 22);
+            this.toolStripMenuItem7.Text = "3.网址3（日本东京）";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(270, 22);
+            this.toolStripMenuItem8.Text = "4.网址4（美国洛杉矶1）";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(270, 22);
+            this.toolStripMenuItem9.Text = "5.网址5（美国洛杉矶2）";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(270, 22);
+            this.toolStripMenuItem10.Text = "6.网址6（美国微软数据中心）";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // timer3
             // 
@@ -138,7 +324,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(32, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 17);
@@ -181,19 +367,12 @@
             this.timer5.Interval = 10000;
             this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
             // 
-            // checkversionToolStripMenuItem
+            // resumeToolStripMenuItem
             // 
-            this.checkversionToolStripMenuItem.Name = "checkversionToolStripMenuItem";
-            this.checkversionToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.checkversionToolStripMenuItem.Text = "手动更新";
-            this.checkversionToolStripMenuItem.Click += new System.EventHandler(this.checkversionToolStripMenuItem_Click);
-            // 
-            // seeupdatetimeandnoticeToolStripMenuItem
-            // 
-            this.seeupdatetimeandnoticeToolStripMenuItem.Name = "seeupdatetimeandnoticeToolStripMenuItem";
-            this.seeupdatetimeandnoticeToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.seeupdatetimeandnoticeToolStripMenuItem.Text = "查看更新日期以及在线公告";
-            this.seeupdatetimeandnoticeToolStripMenuItem.Click += new System.EventHandler(this.seeupdatetimeandnoticeToolStripMenuItem_Click);
+            this.resumeToolStripMenuItem.Name = "resumeToolStripMenuItem";
+            this.resumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.resumeToolStripMenuItem.Text = "恢复默认配置";
+            this.resumeToolStripMenuItem.Click += new System.EventHandler(this.resumeToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -233,7 +412,26 @@
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.ToolStripMenuItem checkversionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem seeupdatetimeandnoticeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem topwindowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem 下载节点选择ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem HongKongToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripMenuItem LSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 手动下载更新ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox5;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox6;
+        private System.Windows.Forms.ToolStripMenuItem 网址1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
+        private System.Windows.Forms.ToolStripMenuItem resumeToolStripMenuItem;
     }
 }
 

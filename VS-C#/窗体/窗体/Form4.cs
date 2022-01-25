@@ -47,11 +47,12 @@ namespace 窗体
         {
             try
             {
+                StreamReader sr = new StreamReader($"{Path.GetTempPath()}nodeselection");
+                string node = sr.ReadToEnd();
+
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-
-
-                webClient.DownloadFile("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/notice", $"{Path.GetTempPath()}notice");
+                webClient.DownloadFile($"{node}notice", $"{Path.GetTempPath()}notice");
 
                 StreamReader streamReader = new StreamReader($"{Path.GetTempPath()}notice");
                 textBox1.Text  = streamReader.ReadToEnd();
@@ -65,11 +66,27 @@ namespace 窗体
         {
             AnimateWindow(this.Handle, 100, AW_VER_POSITIVE);
             label4.Parent = pictureBox1;
+            pictureBox5.Parent = pictureBox1;
+            try
+            {
+                if (File.Exists($"{Path.GetTempPath()}nodeselection"))
+                {
+                    StreamReader wn = new StreamReader($"{Path.GetTempPath()}nodeselection");
+                    string whichnode = wn.ReadToEnd();
+                    if (whichnode.Contains("raw.fastgit.org"))
+                        label5.Text = "Node:Tokyo";
+                    else if (whichnode.Contains("pd.zwc365.com"))
+                        label5.Text = "Node:HongKong";
+                    else if (whichnode.Contains("gh.xiu2.xyz"))
+                        label5.Text = "Node:Los Angeles";
+                }
+            }
+            catch (Exception) { }
             FileInfo t = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}");
             string title = t.CreationTime.ToString("F");
             string title2=t.LastAccessTime.ToString("F");
             label1.Text = $"上次更新的时间：{title}";
-            label2.Text = $"上次打开时间：{title2}";
+            label2.Text = $"          打开时间：{title2}";
             Thread download = new Thread(new ThreadStart(downloadFromFastgit));
             download.Start();
         }
@@ -77,9 +94,9 @@ namespace 窗体
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (textBox1.Text == "")
-                label3.Text = "公告（正在获取中。。。）";
+                textBox1.Text = "正在获取中。。。";
             else
-                label3.Text = "公告";
+            { }
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -97,6 +114,12 @@ namespace 窗体
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox5_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
         }
     }
 }

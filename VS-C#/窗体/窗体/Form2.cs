@@ -47,14 +47,14 @@ namespace 窗体
         {
             try
             {
+                StreamReader sr = new StreamReader($"{Path.GetTempPath()}nodeselection");
+                string node=sr.ReadToEnd();
+
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-
-
-                webClient.DownloadFileAsync(new Uri("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe"), $"{AppDomain.CurrentDomain.BaseDirectory}\\linshigxdwj.exe");
+                webClient.DownloadFileAsync(new Uri($"{node}%E7%AA%97%E4%BD%93.exe"), $"{AppDomain.CurrentDomain.BaseDirectory}\\linshigxdwj.exe");
                 webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(WebClient_DownloadProgressChanged);
             }catch (Exception) { }
-            
         }
        
 
@@ -69,6 +69,20 @@ namespace 窗体
         private void Form2_Load(object sender, EventArgs e)
         {
             AnimateWindow(this.Handle, 100, AW_VER_POSITIVE);
+            try
+            {
+                if (File.Exists($"{Path.GetTempPath()}nodeselection"))
+                {
+                    StreamReader wn = new StreamReader($"{Path.GetTempPath()}nodeselection");
+                    string whichnode = wn.ReadToEnd();
+                    if (whichnode.Contains("raw.fastgit.org"))
+                        label3.Text = "更新窗口（节点：日本东京）";
+                    else if (whichnode.Contains("pd.zwc365.com")) 
+                        label3.Text = "更新窗口（节点：中国香港）";
+                    else if (whichnode.Contains("gh.xiu2.xyz"))
+                        label3.Text = "更新窗口（节点：美国洛杉矶）";
+                }
+            }catch(Exception) { }
             pictureBox2.Parent = this.pictureBox1;
             label1.Parent = this.pictureBox3;
             progressBar1.Parent = this.pictureBox3;
@@ -76,9 +90,7 @@ namespace 窗体
             pictureBox5.Parent = this.pictureBox4;
             label2.Parent = this.pictureBox5;
             label3.Parent = this.pictureBox6;
-            FileInfo t = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}");
-            string title = t.CreationTime.ToString("F");
-            label3.Text = $"更新窗口   上次更新：{title}";
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

@@ -73,10 +73,12 @@ namespace 窗体
 
             try
             {
-                
+                StreamReader getnode = new StreamReader($"{Path.GetTempPath()}nodeselection");
+                string node=getnode.ReadToEnd();
+
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/version.v", $"{Path.GetTempPath()}version.v");
+                webClient.DownloadFile($"{node}version.v", $"{Path.GetTempPath()}version.v");
 
                 StreamReader streamReader = new StreamReader($"{Path.GetTempPath()}version.v");
                 string latestversion = streamReader.ReadToEnd();
@@ -117,7 +119,7 @@ namespace 窗体
             if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe"))
             {
                 FileInfo linshi = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe");
-                if(linshi.Length/1024 < 678) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
+                if(linshi.Length/1024 < 1156) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
                 else
                 {
                     diaoyong("cmd.exe", $"/c ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
@@ -174,6 +176,18 @@ namespace 窗体
         private void Form1_Load(object sender, EventArgs e)
         {
             AnimateWindow(this.Handle, 50, AW_VER_POSITIVE);
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}nodeselection"))
+                {
+                    FileStream fs = new FileStream($"{Path.GetTempPath()}nodeselection", FileMode.Create);
+                    StreamWriter streamWriter = new StreamWriter(fs);
+                    streamWriter.Write("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/");
+                    streamWriter.Flush();
+                    streamWriter.Close();
+                }
+            }
+            catch (Exception) { }
             Thread download = new Thread(new ThreadStart(checkversion));
             download.Start();
         }
@@ -236,7 +250,120 @@ namespace 窗体
 
         private void seeupdatetimeandnoticeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void topwindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (topwindowToolStripMenuItem.Text != "取消顶置")
+            {
+                topwindowToolStripMenuItem.Text = "取消顶置";
+                this.TopMost = true;
+            }
+            else
+            {
+                topwindowToolStripMenuItem.Text = "窗体顶置";
+                this.TopMost= false;
+            }
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
             new Form4().Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+        }
+
+        private void 网址1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://pd.zwc365.com/seturl/https://github.com/kycnb666/softwarerelease/blob/main/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe");
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://raw.githubusercontents.com/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe");
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe");
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://gh.xiu2.xyz/https://github.com/kycnb666/softwarerelease/blob/main/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe");
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.rc1844.workers.dev/kycnb666/softwarerelease/raw/main/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe");
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://raw.githubusercontent.com/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/%E7%AA%97%E4%BD%93.exe");
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FileStream fs = new FileStream($"{Path.GetTempPath()}nodeselection", FileMode.Create);
+                StreamWriter streamWriter = new StreamWriter(fs);
+                streamWriter.Write("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/");
+                streamWriter.Flush();
+                streamWriter.Close();
+            }catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n日本东京","替换成功，程序将使用此节点",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void HongKongToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FileStream fs = new FileStream($"{Path.GetTempPath()}nodeselection", FileMode.Create);
+                StreamWriter streamWriter = new StreamWriter(fs);
+                streamWriter.Write("https://pd.zwc365.com/seturl/https://github.com/kycnb666/softwarerelease/blob/main/software%20release/%E7%AA%97%E4%BD%93/");
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n中国香港", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void LSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FileStream fs = new FileStream($"{Path.GetTempPath()}nodeselection", FileMode.Create);
+                StreamWriter streamWriter = new StreamWriter(fs);
+                streamWriter.Write("https://gh.xiu2.xyz/https://github.com/kycnb666/softwarerelease/blob/main/software%20release/%E7%AA%97%E4%BD%93/");
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n美国洛杉矶", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void resumeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (File.Exists($"{Path.GetTempPath()}nodeselection"))
+                {
+                    FileStream fs = new FileStream($"{Path.GetTempPath()}nodeselection", FileMode.Create);
+                    StreamWriter streamWriter = new StreamWriter(fs);
+                    streamWriter.Write("https://raw.fastgit.org/kycnb666/softwarerelease/main/software%20release/%E7%AA%97%E4%BD%93/");
+                    streamWriter.Flush();
+                    streamWriter.Close();
+                    MessageBox.Show("已恢复默认配置", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else { }
+            }
+            catch (Exception) { }
         }
     }
 }
