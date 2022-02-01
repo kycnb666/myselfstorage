@@ -164,7 +164,7 @@ namespace 在线工具箱
             if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe"))
             {
                 FileInfo linshi = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe");
-                if(linshi.Length/1024 < 1431) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
+                if(linshi.Length/1024 < 1519) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
                 else
                 {
                     diaoyong("cmd.exe", $"/c ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
@@ -918,6 +918,51 @@ namespace 在线工具箱
         {
             pictureBox32.BorderStyle= BorderStyle.None;
             Process.Start("cmd.exe", "/k color 70 & mode con:cols=30 lines=5 & title=查询结果 & @echo off & cls & curl -L ip.tool.lu");
+        }
+
+        private void pictureBox33_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox33.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox33_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox33.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}Dism++x64.exe"))
+                {
+                    Form5 f = new Form5("Dism++x64", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Dism++x64.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}Dism++x64.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox34_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox34.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox34_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox34.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}Dism++x86.exe"))
+                {
+                    Form5 f = new Form5("Dism++x86", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Dism++x86.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}Dism++x86.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            new Form6().Show(this);
         }
     }
 }

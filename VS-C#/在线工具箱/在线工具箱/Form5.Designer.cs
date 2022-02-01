@@ -101,7 +101,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form5";
+            this.Text = "下载页";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form5_MouseDown);
             this.ResumeLayout(false);
