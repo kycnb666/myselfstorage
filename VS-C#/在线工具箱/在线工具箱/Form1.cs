@@ -125,14 +125,14 @@ namespace 在线工具箱
 
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile($"{node}onlinetoolboxversion", $"{Path.GetTempPath()}onlinetoolboxversion");
+                webClient.DownloadFile($"{node}onlinetoolboxversion.v", $"{Path.GetTempPath()}onlinetoolboxversion.v");
 
-                StreamReader streamReader = new StreamReader($"{Path.GetTempPath()}onlinetoolboxversion");
+                StreamReader streamReader = new StreamReader($"{Path.GetTempPath()}onlinetoolboxversion.v");
                 string latestversion = streamReader.ReadToEnd();
                 streamReader.Close();
 
 
-                FileInfo f = new FileInfo($"{Path.GetTempPath()}onlinetoolboxversion");
+                FileInfo f = new FileInfo($"{Path.GetTempPath()}onlinetoolboxversion.v");
                 f.Delete();
                 string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
@@ -164,7 +164,7 @@ namespace 在线工具箱
             if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe"))
             {
                 FileInfo linshi = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe");
-                if(linshi.Length/1024 < 1238) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
+                if(linshi.Length/1024 < 1431) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
                 else
                 {
                     diaoyong("cmd.exe", $"/c ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
@@ -221,6 +221,7 @@ namespace 在线工具箱
         private void Form1_Load(object sender, EventArgs e)
         {
             AnimateWindow(this.Handle, 50, AW_VER_POSITIVE);
+            label36.Text = "在线工具箱  版本V" + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             try
             {
                 if (!File.Exists($"{Path.GetTempPath()}zxgjxnodeselection"))
@@ -707,6 +708,216 @@ namespace 在线工具箱
                 else { Process.Start($"{Path.GetTempPath()}BatteryInfoView.exe"); }
             }
             catch (Exception) { }
+        }
+
+        private void pictureBox22_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox22.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox22_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox22.BorderStyle = BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}bandicam.exe"))
+                {
+                    Form5 f = new Form5("bandicam", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/bandicam.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}bandicam.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox23_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox23.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox23_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox23.BorderStyle = BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}ScreenToGif.exe"))
+                {
+                    Form5 f = new Form5("ScreenToGif", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/ScreenToGif.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}ScreenToGif.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox24_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox24.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox24_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox24.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}geek.exe"))
+                {
+                    Form5 f = new Form5("geek", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/geek.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}geek.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox25_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox25.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox25_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox25.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}DiskGenius.exe"))
+                {
+                    Form5 f = new Form5("DiskGenius", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/DiskGenius.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}DiskGenius.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox26_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox26.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox26_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox26.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}Everything.exe"))
+                {
+                    Form5 f = new Form5("Everything", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Everything.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}Everything.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox27_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox27.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox27_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox27.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}procexp.exe"))
+                {
+                    Form5 f = new Form5("procexp", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/procexp.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}procexp.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox28_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox28.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox28_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox28.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}SpaceSniffer.exe"))
+                {
+                    Form5 f = new Form5("SpaceSniffer", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/SpaceSniffer.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}SpaceSniffer.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox29_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox29.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox29_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox29.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}dxrepair.exe"))
+                {
+                    Form5 f = new Form5("dxrepair", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/dxrepair.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}dxrepair.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox30_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox30.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox30_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox30.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}win10activator.exe"))
+                {
+                    Form5 f = new Form5("win10activator", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/win10activator.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}win10activator.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox31_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox31.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox31_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox31.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}wub.exe"))
+                {
+                    Form5 f = new Form5("wub", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/wub.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}wub.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox32_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox32.BorderStyle = BorderStyle.Fixed3D;
+        }
+        private void pictureBox32_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox32.BorderStyle= BorderStyle.None;
+            Process.Start("cmd.exe", "/k color 70 & mode con:cols=30 lines=5 & title=查询结果 & @echo off & cls & curl -L ip.tool.lu");
         }
     }
 }

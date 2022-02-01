@@ -88,14 +88,14 @@ namespace 在线工具箱
 
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                webClient.DownloadFile($"{node}onlinetoolboxversion", $"{Path.GetTempPath()}onlinetoolboxversion");
+                webClient.DownloadFile($"{node}onlinetoolboxversion.v", $"{Path.GetTempPath()}onlinetoolboxversion.v");
 
-                StreamReader streamReader = new StreamReader($"{Path.GetTempPath()}onlinetoolboxversion");
+                StreamReader streamReader = new StreamReader($"{Path.GetTempPath()}onlinetoolboxversion.v");
                 string latestversion = streamReader.ReadToEnd();
                 streamReader.Close();
 
 
-                FileInfo f = new FileInfo($"{Path.GetTempPath()}onlinetoolboxversion");
+                FileInfo f = new FileInfo($"{Path.GetTempPath()}onlinetoolboxversion.v");
                 f.Delete();
                 string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
@@ -147,7 +147,10 @@ namespace 在线工具箱
             }
             else if(timer2.Enabled == false)
             {
+                timer3.Enabled = false;
                 MessageBox.Show("当前已经是最新版本了", "当前版本是最新的", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                timer2.Enabled = true;
+                timer3.Enabled = true;
             }
         }
 
