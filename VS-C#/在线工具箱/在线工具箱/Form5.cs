@@ -92,17 +92,20 @@ namespace 在线工具箱
                     this.Close();
                 }
             }
-            catch (Exception) { }
+            catch (Exception) {}
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader($"{Path.GetTempPath()}zxgjxnamesave");
-            string name = sr.ReadToEnd();
-            FileInfo file= new FileInfo($"{Path.GetTempPath()}{name}");
-            file.Delete();
-            diaoyong("cmd.exe", $"/c timeout /t 1 /nobreak & del %temp%\\{name}.exe");
-            this.Close();
+            try
+            {
+                StreamReader sr = new StreamReader($"{Path.GetTempPath()}zxgjxnamesave");
+                string name = sr.ReadToEnd();
+                FileInfo file = new FileInfo($"{Path.GetTempPath()}{name}");
+                file.Delete();
+                diaoyong("cmd.exe", $"/c timeout /t 1 /nobreak & del %temp%\\{name}.exe");
+                this.Close();
+            }catch (Exception) { }
         }
 
         private void Form5_MouseDown(object sender, MouseEventArgs e)

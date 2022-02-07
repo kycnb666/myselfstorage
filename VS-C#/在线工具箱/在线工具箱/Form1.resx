@@ -138,6 +138,12 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>632, 17</value>
   </metadata>
+  <data name="label3.Text" xml:space="preserve">
+    <value>                                   ↑ ↑ ↑ 点击上方标签开始使用吧 ↑ ↑ ↑
+                                     将鼠标移至图标上方可查看描述                          
+                        如果下载途中退出导致工具无法启动可打开  菜单--清除缓存 即可
+                        如果节点选择时出错，请退出程序，稍后再打开即可解决</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>55</value>
   </metadata>

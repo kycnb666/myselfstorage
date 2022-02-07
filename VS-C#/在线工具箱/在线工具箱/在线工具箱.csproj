@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>onlinetoolboxicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -76,6 +79,12 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -92,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -199,6 +211,55 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BatteryInfoView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandicam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screentogif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\procexp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacesniffer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskgenius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\everything.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dxrepair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win10activator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeupdate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onlinetoolboxicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="onlinetoolboxicon.ico" />
+    <None Include="Resources\memtest.png" />
+    <None Include="Resources\recuva.png" />
+    <None Include="Resources\ck.png" />
+    <None Include="Resources\rammap.png" />
+    <None Include="Resources\finaldata.png" />
+    <None Include="Resources\hwmonitor.png" />
+    <None Include="Resources\hwinfo.png" />
+    <None Include="Resources\diskinfo.png" />
+    <None Include="Resources\onlinetoolboxicon1.png" />
+    <None Include="Resources\dism++.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

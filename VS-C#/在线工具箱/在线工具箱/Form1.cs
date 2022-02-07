@@ -164,7 +164,7 @@ namespace 在线工具箱
             if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe"))
             {
                 FileInfo linshi = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe");
-                if(linshi.Length/1024 < 1519) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
+                if(linshi.Length/1024 < 1580) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
                 else
                 {
                     diaoyong("cmd.exe", $"/c ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
@@ -422,6 +422,7 @@ namespace 在线工具箱
             label4.BackColor = Color.FromArgb(192,255,255);
             label6.BackColor = Color.White;
             label5.BackColor = Color.White;
+            label45.BackColor = Color.White;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -430,6 +431,7 @@ namespace 在线工具箱
             label5.BackColor = Color.FromArgb(192,192,255);
             label6.BackColor = Color.White;
             label4.BackColor = Color.White;
+            label45.BackColor = Color.White;
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -438,6 +440,7 @@ namespace 在线工具箱
             label6.BackColor = Color.FromArgb(255,192,255);
             label4.BackColor = Color.White;
             label5.BackColor = Color.White;
+            label45.BackColor = Color.White;
         }
 
         private void pictureBox9_MouseDown(object sender, MouseEventArgs e)
@@ -963,6 +966,261 @@ namespace 在线工具箱
         private void toolStripMenuItem11_Click(object sender, EventArgs e)
         {
             new Form6().Show(this);
+        }
+
+        private void pictureBox35_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox35.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox35_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox35.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}DiskInfo.exe"))
+                {
+                    Form5 f = new Form5("DiskInfo", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/DiskInfo.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}DiskInfo.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox36_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox36.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox36_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox36.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}HWiNFO64.exe"))
+                {
+                    Form5 f = new Form5("HWiNFO64", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWiNFO64.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}HWiNFO64.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox37_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox37.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox37_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox37.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}HWiNFO32.exe"))
+                {
+                    Form5 f = new Form5("HWiNFO32", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWiNFO32.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}HWiNFO32.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox38_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox38.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox38_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox38.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}HWMonitor_x64.exe"))
+                {
+                    Form5 f = new Form5("HWMonitor_x64", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWMonitor_x64.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}HWMonitor_x64.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox39_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox39.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox39_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox39.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}HWMonitor_x32.exe"))
+                {
+                    Form5 f = new Form5("HWMonitor_x32", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWMonitor_x32.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}HWMonitor_x32.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox40_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox40.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox40_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox40.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}FINALDATA.exe"))
+                {
+                    Form5 f = new Form5("FINALDATA", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/FINALDATA.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}FINALDATA.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void label45_Click(object sender, EventArgs e)
+        {
+            panel7.Focus();
+            label45.BackColor = Color.FromArgb(255, 192, 192);
+            label4.BackColor = Color.White;
+            label5.BackColor = Color.White;
+            label6.BackColor = Color.White;
+        }
+
+        private void pictureBox41_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox41.BorderStyle = BorderStyle.Fixed3D; 
+        }
+
+        private void pictureBox41_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox41.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}RAMMap.exe"))
+                {
+                    Form5 f = new Form5("RAMMap", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/RAMMap.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}RAMMap.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox43_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox43.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox43_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox43.BorderStyle = BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}recuva.exe"))
+                {
+                    Form5 f = new Form5("recuva", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/recuva.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}recuva.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox44_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox44.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox44_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox44.BorderStyle = BorderStyle.None;
+            Process.Start("https://tool.lu/");
+        }
+
+        private void pictureBox45_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox45.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox45_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox45.BorderStyle = BorderStyle.None;
+            Process.Start("https://tools.miku.ac/");
+        }
+
+        private void pictureBox46_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox46.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox46_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox46.BorderStyle= BorderStyle.None;
+            Process.Start("http://tool.ci/");
+        }
+
+        private void pictureBox47_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox47.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox47_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox47.BorderStyle= BorderStyle.None;
+            Process.Start("https://www.toolfk.com/");
+        }
+
+        private void pictureBox48_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox48.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox48_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox48.BorderStyle= BorderStyle.None;
+            Process.Start("http://tool.mkblog.cn/");
+        }
+
+        private void pictureBox49_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox49.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox49_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox49.BorderStyle= BorderStyle.None;
+            Process.Start("https://shadiao.app/#");
+        }
+
+        private void pictureBox50_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox50.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox50_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox50.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}memtest.exe"))
+                {
+                    Form5 f = new Form5("memtest", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/memtest.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}memtest.exe"); }
+            }
+            catch (Exception) { }
         }
     }
 }
