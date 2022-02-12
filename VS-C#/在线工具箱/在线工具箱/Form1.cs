@@ -1222,5 +1222,205 @@ namespace 在线工具箱
             }
             catch (Exception) { }
         }
+
+        private void pictureBox51_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox51.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox51_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox51.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}ChipGenius.exe"))
+                {
+                    Form5 f = new Form5("ChipGenius", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/ChipGenius.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}ChipGenius.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox52_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox52.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox52_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox52.BorderStyle= BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}WindowsISODownloader.exe"))
+                {
+                    Form5 f = new Form5("WindowsISODownloader", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/WindowsISODownloader.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}WindowsISODownloader.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox54_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox54.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox54_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox54.BorderStyle = BorderStyle.None;
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}Pointofix.exe"))
+                {
+                    Form5 f = new Form5("Pointofix", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Pointofix.exe");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}Pointofix.exe"); }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox53_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox53.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox53_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox53.BorderStyle= BorderStyle.None;
+            Process.Start("https://msdn.itellyou.cn/");
+        }
+
+        private void pictureBox55_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox55.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox55_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox55.BorderStyle= BorderStyle.None;
+            Process.Start("https://www.upe.net/");
+        }
+
+        private void pictureBox56_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox56.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox56_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox56.BorderStyle= BorderStyle.None;
+            Process.Start("https://www.wepe.com.cn/");
+        }
+
+        private void pictureBox57_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox57.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox57_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox57.BorderStyle= BorderStyle.None;
+            Process.Start("https://www.ventoy.net/cn/index.html");
+        }
+
+        private void pictureBox58_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox58.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox58_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox58.BorderStyle= BorderStyle.None;
+            Process.Start("https://rufus.ie/zh/");
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.huorong.cn/person5.html");
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://potplayer.tv/?lang=zh_CN");
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://search.iwiki.uk/intl/zh-CN/chrome/");
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.microsoftedgeinsider.com/zh-cn/");
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://pan.baidu.com/s/10-nweuFfkGZGA4ahbrQzsA");
+        }
+
+        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwi.lanzouo.com/ib9Xuxbmbli");
+        }
+
+        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://sparanoid.com/lab/7z/ ");
+        }
+
+        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.advancedsystemcare.cn/");
+        }
+
+        private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://pan.baidu.com/s/13tW9aJAWhw83x2wB3jYk8g");
+        }
+
+        private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://pan.baidu.com/s/1DHy8KREPP7aagdv99Iw9Gg#list/path=%2F");
+        }
+
+        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://free.lanzoux.com/b0cpu1guf");
+        }
+
+        private void linkLabel12_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://www.xinshuru.com/index.html?p=win");
+        }
+
+        private void linkLabel13_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://www.pcfreetime.com/formatfactory/CN/index.html");
+        }
+
+        private void linkLabel14_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwi.lanzoui.com/i6twcv9puje");
+        }
+
+        private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/lyswhut/lx-music-desktop/releases");
+        }
+
+        private void linkLabel15_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwe.lanzoup.com/isWetzja2bc");
+        }
+
+        private void linkLabel17_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwe.lanzoup.com/imfxRz4unxa");
+        }
     }
 }
