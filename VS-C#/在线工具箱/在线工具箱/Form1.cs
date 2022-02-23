@@ -164,7 +164,7 @@ namespace 在线工具箱
             if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe"))
             {
                 FileInfo linshi = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe");
-                if(linshi.Length/1024 < 1580) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
+                if(linshi.Length/1024 < 1670) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
                 else
                 {
                     diaoyong("cmd.exe", $"/c ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
@@ -442,7 +442,19 @@ namespace 在线工具箱
             label5.BackColor = Color.White;
             label45.BackColor = Color.White;
         }
-
+        void startdownload(string softname,string downloadlink,string shortname)
+        {
+            try
+            {
+                if (!File.Exists($"{Path.GetTempPath()}{softname}"))
+                {
+                    Form5 f = new Form5($"{shortname}", $"{downloadlink}");
+                    f.ShowDialog(this);
+                }
+                else { Process.Start($"{Path.GetTempPath()}{softname}"); }
+            }
+            catch (Exception) { }
+        }
         private void pictureBox9_MouseDown(object sender, MouseEventArgs e)
         {
             pictureBox9.BorderStyle = BorderStyle.Fixed3D;
@@ -451,15 +463,7 @@ namespace 在线工具箱
         private void pictureBox9_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox9.BorderStyle = BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}AIDA64.exe"))
-                {
-                    Form5 f = new Form5("AIDA64", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/AIDA64.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}AIDA64.exe"); }
-            }catch (Exception) { }
+            startdownload("AIDA64.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/AIDA64.exe", "AIDA64");
         }
 
         private void pictureBox9_MouseMove(object sender, MouseEventArgs e)
@@ -481,16 +485,7 @@ namespace 在线工具箱
         private void pictureBox10_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox10.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}cpuz_x64.exe"))
-                {
-                    Form5 f = new Form5("cpuz_x64", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/cpuz_x64.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}cpuz_x64.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("cpuz_x64.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/cpuz_x64.exe", "cpuz_x64");
         }
 
         private void pictureBox11_MouseDown(object sender, MouseEventArgs e)
@@ -501,16 +496,7 @@ namespace 在线工具箱
         private void pictureBox11_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox11.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}cpuz_x32.exe"))
-                {
-                    Form5 f = new Form5("cpuz_x32", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/cpuz_x32.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}cpuz_x32.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("cpuz_x32.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/cpuz_x32.exe", "cpuz_x32");
         }
 
         private void pictureBox12_MouseDown(object sender, MouseEventArgs e)
@@ -521,16 +507,7 @@ namespace 在线工具箱
         private void pictureBox12_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox12.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}GPU-Z.2.44.0.exe"))
-                {
-                    Form5 f = new Form5("GPU-Z.2.44.0", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/GPU-Z.2.44.0.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}GPU-Z.2.44.0.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("GPU-Z.2.44.0.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/GPU-Z.2.44.0.exe", "GPU-Z.2.44.0");
         }
 
         private void pictureBox13_MouseDown(object sender, MouseEventArgs e)
@@ -541,16 +518,7 @@ namespace 在线工具箱
         private void pictureBox13_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox13.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}SSD-Z.exe"))
-                {
-                    Form5 f = new Form5("SSD-Z", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/SSD-Z.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}SSD-Z.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("SSD-Z.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/SSD-Z.exe", "SSD-Z");
         }
 
         private void pictureBox14_MouseDown(object sender, MouseEventArgs e)
@@ -561,16 +529,7 @@ namespace 在线工具箱
         private void pictureBox14_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox14.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}FurMark.exe"))
-                {
-                    Form5 f = new Form5("FurMark", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/FurMark.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}FurMark.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("FurMark.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/FurMark.exe", "FurMark");
         }
 
         private void pictureBox15_MouseDown(object sender, MouseEventArgs e)
@@ -581,16 +540,7 @@ namespace 在线工具箱
         private void pictureBox15_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox15.BorderStyle = BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}ASSSDBenchmark.exe"))
-                {
-                    Form5 f = new Form5("ASSSDBenchmark", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/ASSSDBenchmark.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}ASSSDBenchmark.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("ASSSDBenchmark.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/ASSSDBenchmark.exe", "ASSSDBenchmark");
         }
 
         private void pictureBox16_MouseDown(object sender, MouseEventArgs e)
@@ -601,16 +551,7 @@ namespace 在线工具箱
         private void pictureBox16_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox16.BorderStyle = BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}Sunlight内存整理.exe"))
-                {
-                    Form5 f = new Form5("Sunlight内存整理", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/Sunlight%E5%86%85%E5%AD%98%E6%95%B4%E7%90%86.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}Sunlight内存整理.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("Sunlight内存整理.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/Sunlight%E5%86%85%E5%AD%98%E6%95%B4%E7%90%86.exe", "Sunlight内存整理");
         }
 
         private void pictureBox17_MouseDown(object sender, MouseEventArgs e)
@@ -621,16 +562,7 @@ namespace 在线工具箱
         private void pictureBox17_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox17.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}xiangqi.exe"))
-                {
-                    Form5 f = new Form5("xiangqi", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/xiangqi.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}xiangqi.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("xiangqi.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/xiangqi.exe", "xiangqi");
         }
 
         private void pictureBox18_MouseDown(object sender, MouseEventArgs e)
@@ -641,16 +573,7 @@ namespace 在线工具箱
         private void pictureBox18_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox18.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}Defraggler.exe"))
-                {
-                    Form5 f = new Form5("Defraggler", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/Defraggler.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}Defraggler.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("Defraggler.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/Defraggler.exe", "Defraggler");
         }
 
         private void pictureBox19_MouseDown(object sender, MouseEventArgs e)
@@ -661,16 +584,7 @@ namespace 在线工具箱
         private void pictureBox19_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox19.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}DisplayX.exe"))
-                {
-                    Form5 f = new Form5("DisplayX", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/DisplayX.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}DisplayX.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("DisplayX.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/DisplayX.exe", "DisplayX");
         }
 
         private void pictureBox20_MouseDown(object sender, MouseEventArgs e)
@@ -681,16 +595,7 @@ namespace 在线工具箱
         private void pictureBox20_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox20.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}KeyboardTestUtility.exe"))
-                {
-                    Form5 f = new Form5("KeyboardTestUtility", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/KeyboardTestUtility.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}KeyboardTestUtility.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("KeyboardTestUtility.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/KeyboardTestUtility.exe", "KeyboardTestUtility");
         }
 
         private void pictureBox21_MouseDown(object sender, MouseEventArgs e)
@@ -701,16 +606,7 @@ namespace 在线工具箱
         private void pictureBox21_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox21.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}BatteryInfoView.exe"))
-                {
-                    Form5 f = new Form5("BatteryInfoView", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/BatteryInfoView.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}BatteryInfoView.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("BatteryInfoView.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/BatteryInfoView.exe", "BatteryInfoView");
         }
 
         private void pictureBox22_MouseDown(object sender, MouseEventArgs e)
@@ -721,16 +617,7 @@ namespace 在线工具箱
         private void pictureBox22_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox22.BorderStyle = BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}bandicam.exe"))
-                {
-                    Form5 f = new Form5("bandicam", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/bandicam.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}bandicam.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("bandicam.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/bandicam.exe", "bandicam");
         }
 
         private void pictureBox23_MouseDown(object sender, MouseEventArgs e)
@@ -741,16 +628,7 @@ namespace 在线工具箱
         private void pictureBox23_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox23.BorderStyle = BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}ScreenToGif.exe"))
-                {
-                    Form5 f = new Form5("ScreenToGif", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/ScreenToGif.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}ScreenToGif.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("ScreenToGif.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/ScreenToGif.exe", "ScreenToGif");
         }
 
         private void pictureBox24_MouseDown(object sender, MouseEventArgs e)
@@ -761,16 +639,7 @@ namespace 在线工具箱
         private void pictureBox24_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox24.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}geek.exe"))
-                {
-                    Form5 f = new Form5("geek", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/geek.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}geek.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("geek.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/geek.exe", "geek");
         }
 
         private void pictureBox25_MouseDown(object sender, MouseEventArgs e)
@@ -781,16 +650,7 @@ namespace 在线工具箱
         private void pictureBox25_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox25.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}DiskGenius.exe"))
-                {
-                    Form5 f = new Form5("DiskGenius", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/DiskGenius.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}DiskGenius.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("DiskGenius.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/DiskGenius.exe", "DiskGenius");
         }
 
         private void pictureBox26_MouseDown(object sender, MouseEventArgs e)
@@ -801,16 +661,7 @@ namespace 在线工具箱
         private void pictureBox26_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox26.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}Everything.exe"))
-                {
-                    Form5 f = new Form5("Everything", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Everything.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}Everything.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("Everything.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Everything.exe", "Everything");
         }
 
         private void pictureBox27_MouseDown(object sender, MouseEventArgs e)
@@ -821,16 +672,7 @@ namespace 在线工具箱
         private void pictureBox27_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox27.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}procexp.exe"))
-                {
-                    Form5 f = new Form5("procexp", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/procexp.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}procexp.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("procexp.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/procexp.exe", "procexp");
         }
 
         private void pictureBox28_MouseDown(object sender, MouseEventArgs e)
@@ -841,16 +683,7 @@ namespace 在线工具箱
         private void pictureBox28_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox28.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}SpaceSniffer.exe"))
-                {
-                    Form5 f = new Form5("SpaceSniffer", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/SpaceSniffer.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}SpaceSniffer.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("SpaceSniffer.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/SpaceSniffer.exe", "SpaceSniffer");
         }
 
         private void pictureBox29_MouseDown(object sender, MouseEventArgs e)
@@ -861,16 +694,7 @@ namespace 在线工具箱
         private void pictureBox29_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox29.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}dxrepair.exe"))
-                {
-                    Form5 f = new Form5("dxrepair", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/dxrepair.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}dxrepair.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("dxrepair.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/dxrepair.exe", "dxrepair");
         }
 
         private void pictureBox30_MouseDown(object sender, MouseEventArgs e)
@@ -881,16 +705,7 @@ namespace 在线工具箱
         private void pictureBox30_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox30.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}win10activator.exe"))
-                {
-                    Form5 f = new Form5("win10activator", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/win10activator.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}win10activator.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("win10activator.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/win10activator.exe", "win10activator");
         }
 
         private void pictureBox31_MouseDown(object sender, MouseEventArgs e)
@@ -901,16 +716,7 @@ namespace 在线工具箱
         private void pictureBox31_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox31.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}wub.exe"))
-                {
-                    Form5 f = new Form5("wub", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/wub.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}wub.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("wub.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/wub.exe", "wub");
         }
 
         private void pictureBox32_MouseDown(object sender, MouseEventArgs e)
@@ -931,16 +737,7 @@ namespace 在线工具箱
         private void pictureBox33_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox33.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}Dism++x64.exe"))
-                {
-                    Form5 f = new Form5("Dism++x64", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Dism++x64.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}Dism++x64.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("Dism++x64.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Dism++x64.exe", "Dism++x64");
         }
 
         private void pictureBox34_MouseDown(object sender, MouseEventArgs e)
@@ -951,16 +748,7 @@ namespace 在线工具箱
         private void pictureBox34_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox34.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}Dism++x86.exe"))
-                {
-                    Form5 f = new Form5("Dism++x86", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Dism++x86.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}Dism++x86.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("Dism++x86.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Dism++x86.exe", "Dism++x86");
         }
 
         private void toolStripMenuItem11_Click(object sender, EventArgs e)
@@ -976,16 +764,7 @@ namespace 在线工具箱
         private void pictureBox35_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox35.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}DiskInfo.exe"))
-                {
-                    Form5 f = new Form5("DiskInfo", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/DiskInfo.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}DiskInfo.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("DiskInfo.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/DiskInfo.exe", "DiskInfo");
         }
 
         private void pictureBox36_MouseDown(object sender, MouseEventArgs e)
@@ -996,16 +775,7 @@ namespace 在线工具箱
         private void pictureBox36_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox36.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}HWiNFO64.exe"))
-                {
-                    Form5 f = new Form5("HWiNFO64", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWiNFO64.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}HWiNFO64.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("HWiNFO64.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWiNFO64.exe", "HWiNFO64");
         }
 
         private void pictureBox37_MouseDown(object sender, MouseEventArgs e)
@@ -1016,16 +786,7 @@ namespace 在线工具箱
         private void pictureBox37_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox37.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}HWiNFO32.exe"))
-                {
-                    Form5 f = new Form5("HWiNFO32", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWiNFO32.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}HWiNFO32.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("HWiNFO32.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWiNFO32.exe", "HWiNFO32");
         }
 
         private void pictureBox38_MouseDown(object sender, MouseEventArgs e)
@@ -1036,16 +797,7 @@ namespace 在线工具箱
         private void pictureBox38_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox38.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}HWMonitor_x64.exe"))
-                {
-                    Form5 f = new Form5("HWMonitor_x64", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWMonitor_x64.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}HWMonitor_x64.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("HWMonitor_x64.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWMonitor_x64.exe", "HWMonitor_x64");
         }
 
         private void pictureBox39_MouseDown(object sender, MouseEventArgs e)
@@ -1056,16 +808,7 @@ namespace 在线工具箱
         private void pictureBox39_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox39.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}HWMonitor_x32.exe"))
-                {
-                    Form5 f = new Form5("HWMonitor_x32", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWMonitor_x32.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}HWMonitor_x32.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("HWMonitor_x32.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/HWMonitor_x32.exe", "HWMonitor_x32");
         }
 
         private void pictureBox40_MouseDown(object sender, MouseEventArgs e)
@@ -1076,16 +819,7 @@ namespace 在线工具箱
         private void pictureBox40_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox40.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}FINALDATA.exe"))
-                {
-                    Form5 f = new Form5("FINALDATA", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/FINALDATA.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}FINALDATA.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("FINALDATA.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/FINALDATA.exe", "FINALDATA");
         }
 
         private void label45_Click(object sender, EventArgs e)
@@ -1105,16 +839,7 @@ namespace 在线工具箱
         private void pictureBox41_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox41.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}RAMMap.exe"))
-                {
-                    Form5 f = new Form5("RAMMap", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/RAMMap.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}RAMMap.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("RAMMap.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/RAMMap.exe", "RAMMap");
         }
 
         private void pictureBox43_MouseDown(object sender, MouseEventArgs e)
@@ -1125,16 +850,7 @@ namespace 在线工具箱
         private void pictureBox43_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox43.BorderStyle = BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}recuva.exe"))
-                {
-                    Form5 f = new Form5("recuva", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/recuva.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}recuva.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("recuva.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/recuva.exe", "recuva");
         }
 
         private void pictureBox44_MouseDown(object sender, MouseEventArgs e)
@@ -1211,16 +927,7 @@ namespace 在线工具箱
         private void pictureBox50_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox50.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}memtest.exe"))
-                {
-                    Form5 f = new Form5("memtest", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/memtest.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}memtest.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("memtest.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/memtest.exe", "memtest");
         }
 
         private void pictureBox51_MouseDown(object sender, MouseEventArgs e)
@@ -1231,16 +938,7 @@ namespace 在线工具箱
         private void pictureBox51_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox51.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}ChipGenius.exe"))
-                {
-                    Form5 f = new Form5("ChipGenius", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/ChipGenius.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}ChipGenius.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("ChipGenius.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/ChipGenius.exe", "ChipGenius");
         }
 
         private void pictureBox52_MouseDown(object sender, MouseEventArgs e)
@@ -1251,16 +949,7 @@ namespace 在线工具箱
         private void pictureBox52_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox52.BorderStyle= BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}WindowsISODownloader.exe"))
-                {
-                    Form5 f = new Form5("WindowsISODownloader", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/WindowsISODownloader.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}WindowsISODownloader.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("WindowsISODownloader.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/WindowsISODownloader.exe", "WindowsISODownloader");
         }
 
         private void pictureBox54_MouseDown(object sender, MouseEventArgs e)
@@ -1271,16 +960,7 @@ namespace 在线工具箱
         private void pictureBox54_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox54.BorderStyle = BorderStyle.None;
-            try
-            {
-                if (!File.Exists($"{Path.GetTempPath()}Pointofix.exe"))
-                {
-                    Form5 f = new Form5("Pointofix", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Pointofix.exe");
-                    f.ShowDialog(this);
-                }
-                else { Process.Start($"{Path.GetTempPath()}Pointofix.exe"); }
-            }
-            catch (Exception) { }
+            startdownload("Pointofix.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Pointofix.exe", "Pointofix");
         }
 
         private void pictureBox53_MouseDown(object sender, MouseEventArgs e)
@@ -1421,6 +1101,50 @@ namespace 在线工具箱
         private void linkLabel17_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://wwe.lanzoup.com/imfxRz4unxa");
+        }
+
+        private void label36_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void 运行检查工具ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form7().Show(this);
+        }
+
+        private void pictureBox59_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox59.BorderStyle=BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox59_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox59.BorderStyle = BorderStyle.None;
+            startdownload("chj.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/chj.exe", "chj");
+        }
+
+        private void pictureBox60_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox60.BorderStyle=BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox60_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox60.BorderStyle = BorderStyle.None;
+            startdownload("hfdjjc.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/hfdjjc.exe", "hfdjjc");
+        }
+
+        private void pictureBox61_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox61.BorderStyle=BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox61_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox61.BorderStyle = BorderStyle.None;
+            startdownload("wbjmjm.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/wbjmjm.exe", "wbjmjm");
         }
     }
 }

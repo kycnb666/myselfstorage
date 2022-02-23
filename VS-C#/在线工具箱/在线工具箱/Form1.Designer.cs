@@ -56,6 +56,19 @@
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.resumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.我无法下载ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.运行检查工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.所有节点都无法使用ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.此情况出现几率较小如有请等待12天再试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.工具下载中卡住了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重启程序再试即可ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.工具无法启动ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.尝试点击清除缓存即可ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.可能电脑不支持此工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
@@ -63,122 +76,85 @@
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.linkLabel17 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel16 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel15 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel14 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel13 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.pictureBox49 = new System.Windows.Forms.PictureBox();
             this.label53 = new System.Windows.Forms.Label();
-            this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.pictureBox46 = new System.Windows.Forms.PictureBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label65 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label66 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.pictureBox58 = new System.Windows.Forms.PictureBox();
             this.label63 = new System.Windows.Forms.Label();
-            this.pictureBox57 = new System.Windows.Forms.PictureBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.label61 = new System.Windows.Forms.Label();
-            this.pictureBox55 = new System.Windows.Forms.PictureBox();
             this.label59 = new System.Windows.Forms.Label();
-            this.pictureBox53 = new System.Windows.Forms.PictureBox();
             this.label58 = new System.Windows.Forms.Label();
-            this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label57 = new System.Windows.Forms.Label();
-            this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.label56 = new System.Windows.Forms.Label();
-            this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label60 = new System.Windows.Forms.Label();
-            this.pictureBox54 = new System.Windows.Forms.PictureBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -186,6 +162,63 @@
             this.label8 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label45 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.pictureBox48 = new System.Windows.Forms.PictureBox();
+            this.pictureBox47 = new System.Windows.Forms.PictureBox();
+            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.pictureBox45 = new System.Windows.Forms.PictureBox();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.pictureBox58 = new System.Windows.Forms.PictureBox();
+            this.pictureBox57 = new System.Windows.Forms.PictureBox();
+            this.pictureBox56 = new System.Windows.Forms.PictureBox();
+            this.pictureBox55 = new System.Windows.Forms.PictureBox();
+            this.pictureBox53 = new System.Windows.Forms.PictureBox();
+            this.pictureBox52 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox51 = new System.Windows.Forms.PictureBox();
+            this.pictureBox50 = new System.Windows.Forms.PictureBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox60 = new System.Windows.Forms.PictureBox();
+            this.pictureBox59 = new System.Windows.Forms.PictureBox();
+            this.pictureBox54 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -196,25 +229,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel13 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel14 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel15 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel16 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel17 = new System.Windows.Forms.LinkLabel();
+            this.label70 = new System.Windows.Forms.Label();
+            this.pictureBox61 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
@@ -222,8 +245,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
@@ -231,7 +252,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
@@ -254,7 +274,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
@@ -278,6 +299,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -300,37 +322,38 @@
             this.toolStripMenuItem5,
             this.toolStripSeparator1,
             this.toolStripMenuItem2,
+            this.toolStripMenuItem12,
             this.toolStripSeparator2,
             this.toolStripMenuItem11});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 126);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(137, 148);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(124, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(136, 22);
             this.toolStripMenuItem4.Text = "公告栏";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // topwindowToolStripMenuItem
             // 
             this.topwindowToolStripMenuItem.Name = "topwindowToolStripMenuItem";
-            this.topwindowToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.topwindowToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.topwindowToolStripMenuItem.Text = "窗口顶置";
             this.topwindowToolStripMenuItem.Click += new System.EventHandler(this.topwindowToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(124, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(136, 22);
             this.toolStripMenuItem5.Text = "清除缓存";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(133, 6);
             // 
             // toolStripMenuItem2
             // 
@@ -341,7 +364,7 @@
             this.手动下载更新ToolStripMenuItem,
             this.resumeToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(136, 22);
             this.toolStripMenuItem2.Text = "更新选项";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -492,15 +515,108 @@
             this.resumeToolStripMenuItem.Text = "恢复默认配置";
             this.resumeToolStripMenuItem.Click += new System.EventHandler(this.resumeToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.我无法下载ToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.所有节点都无法使用ToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.工具下载中卡住了ToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.工具无法启动ToolStripMenuItem});
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(136, 22);
+            this.toolStripMenuItem12.Text = "遇到问题？";
+            // 
+            // 我无法下载ToolStripMenuItem
+            // 
+            this.我无法下载ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.运行检查工具ToolStripMenuItem});
+            this.我无法下载ToolStripMenuItem.Name = "我无法下载ToolStripMenuItem";
+            this.我无法下载ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.我无法下载ToolStripMenuItem.Text = "我无法下载";
+            // 
+            // 运行检查工具ToolStripMenuItem
+            // 
+            this.运行检查工具ToolStripMenuItem.Name = "运行检查工具ToolStripMenuItem";
+            this.运行检查工具ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.运行检查工具ToolStripMenuItem.Text = "点我运行检查工具";
+            this.运行检查工具ToolStripMenuItem.Click += new System.EventHandler(this.运行检查工具ToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(181, 6);
+            // 
+            // 所有节点都无法使用ToolStripMenuItem
+            // 
+            this.所有节点都无法使用ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.此情况出现几率较小如有请等待12天再试ToolStripMenuItem});
+            this.所有节点都无法使用ToolStripMenuItem.Name = "所有节点都无法使用ToolStripMenuItem";
+            this.所有节点都无法使用ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.所有节点都无法使用ToolStripMenuItem.Text = "所有节点都无法使用";
+            // 
+            // 此情况出现几率较小如有请等待12天再试ToolStripMenuItem
+            // 
+            this.此情况出现几率较小如有请等待12天再试ToolStripMenuItem.Name = "此情况出现几率较小如有请等待12天再试ToolStripMenuItem";
+            this.此情况出现几率较小如有请等待12天再试ToolStripMenuItem.Size = new System.Drawing.Size(323, 22);
+            this.此情况出现几率较小如有请等待12天再试ToolStripMenuItem.Text = "此情况出现几率较小，如有，请等待1-2天再试";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(181, 6);
+            // 
+            // 工具下载中卡住了ToolStripMenuItem
+            // 
+            this.工具下载中卡住了ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.重启程序再试即可ToolStripMenuItem});
+            this.工具下载中卡住了ToolStripMenuItem.Name = "工具下载中卡住了ToolStripMenuItem";
+            this.工具下载中卡住了ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.工具下载中卡住了ToolStripMenuItem.Text = "工具下载中卡住了";
+            // 
+            // 重启程序再试即可ToolStripMenuItem
+            // 
+            this.重启程序再试即可ToolStripMenuItem.Name = "重启程序再试即可ToolStripMenuItem";
+            this.重启程序再试即可ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.重启程序再试即可ToolStripMenuItem.Text = "重启程序再试即可";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(181, 6);
+            // 
+            // 工具无法启动ToolStripMenuItem
+            // 
+            this.工具无法启动ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.尝试点击清除缓存即可ToolStripMenuItem,
+            this.可能电脑不支持此工具ToolStripMenuItem});
+            this.工具无法启动ToolStripMenuItem.Name = "工具无法启动ToolStripMenuItem";
+            this.工具无法启动ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.工具无法启动ToolStripMenuItem.Text = "工具无法启动";
+            // 
+            // 尝试点击清除缓存即可ToolStripMenuItem
+            // 
+            this.尝试点击清除缓存即可ToolStripMenuItem.Name = "尝试点击清除缓存即可ToolStripMenuItem";
+            this.尝试点击清除缓存即可ToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.尝试点击清除缓存即可ToolStripMenuItem.Text = "1.尝试点击清除缓存即可";
+            // 
+            // 可能电脑不支持此工具ToolStripMenuItem
+            // 
+            this.可能电脑不支持此工具ToolStripMenuItem.Name = "可能电脑不支持此工具ToolStripMenuItem";
+            this.可能电脑不支持此工具ToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.可能电脑不支持此工具ToolStripMenuItem.Text = "2.可能电脑不支持此工具";
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(133, 6);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(124, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(136, 22);
             this.toolStripMenuItem11.Text = "关于";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
@@ -526,9 +642,9 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel5);
             this.panel2.Location = new System.Drawing.Point(9, 81);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(879, 453);
@@ -575,6 +691,256 @@
             this.panel7.Size = new System.Drawing.Size(862, 474);
             this.panel7.TabIndex = 4;
             // 
+            // linkLabel17
+            // 
+            this.linkLabel17.AutoSize = true;
+            this.linkLabel17.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel17.LinkColor = System.Drawing.Color.Green;
+            this.linkLabel17.Location = new System.Drawing.Point(124, 306);
+            this.linkLabel17.Name = "linkLabel17";
+            this.linkLabel17.Size = new System.Drawing.Size(107, 20);
+            this.linkLabel17.TabIndex = 88;
+            this.linkLabel17.TabStop = true;
+            this.linkLabel17.Text = "人声伴奏分离器";
+            this.toolTip1.SetToolTip(this.linkLabel17, "能分离歌声和伴奏的工具\r\n使用方法：\r\n将想要分离的音乐文件拖到此工具图标上方，\r\n即可开始自动分离");
+            this.linkLabel17.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel17_LinkClicked);
+            // 
+            // linkLabel16
+            // 
+            this.linkLabel16.AutoSize = true;
+            this.linkLabel16.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel16.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabel16.Location = new System.Drawing.Point(15, 306);
+            this.linkLabel16.Name = "linkLabel16";
+            this.linkLabel16.Size = new System.Drawing.Size(93, 20);
+            this.linkLabel16.TabIndex = 87;
+            this.linkLabel16.TabStop = true;
+            this.linkLabel16.Text = "洛雪音乐助手";
+            this.toolTip1.SetToolTip(this.linkLabel16, "破解音乐软件，界面美观，功能强大，\r\n支持付费音乐，vip音乐在线听以及下载\r\n(此软件默认关闭下载功能，初次使用要前往设置开启下载功能)\r\n(软件发布网页在国外" +
+        "，访问下载会稍慢许多)");
+            this.linkLabel16.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel16_LinkClicked);
+            // 
+            // linkLabel15
+            // 
+            this.linkLabel15.AutoSize = true;
+            this.linkLabel15.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel15.LinkColor = System.Drawing.Color.Tomato;
+            this.linkLabel15.Location = new System.Drawing.Point(658, 271);
+            this.linkLabel15.Name = "linkLabel15";
+            this.linkLabel15.Size = new System.Drawing.Size(129, 20);
+            this.linkLabel15.TabIndex = 86;
+            this.linkLabel15.TabStop = true;
+            this.linkLabel15.Text = "QQ微信消息防撤回";
+            this.toolTip1.SetToolTip(this.linkLabel15, "安装此工具后，电脑QQ，微信上别人撤回的消息你依然能看到\r\n(仅限电脑，手机上不能看到撤回的消息)");
+            this.linkLabel15.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel15_LinkClicked);
+            // 
+            // linkLabel14
+            // 
+            this.linkLabel14.AutoSize = true;
+            this.linkLabel14.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel14.LinkColor = System.Drawing.Color.Purple;
+            this.linkLabel14.Location = new System.Drawing.Point(531, 271);
+            this.linkLabel14.Name = "linkLabel14";
+            this.linkLabel14.Size = new System.Drawing.Size(94, 20);
+            this.linkLabel14.TabIndex = 85;
+            this.linkLabel14.TabStop = true;
+            this.linkLabel14.Text = "OCR文字识别";
+            this.toolTip1.SetToolTip(this.linkLabel14, "屏幕里的字复制不了怎么办？此工具能识别屏幕里出现的字符，并能复制下来");
+            this.linkLabel14.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel14_LinkClicked);
+            // 
+            // linkLabel13
+            // 
+            this.linkLabel13.AutoSize = true;
+            this.linkLabel13.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel13.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.linkLabel13.Location = new System.Drawing.Point(439, 271);
+            this.linkLabel13.Name = "linkLabel13";
+            this.linkLabel13.Size = new System.Drawing.Size(65, 20);
+            this.linkLabel13.TabIndex = 84;
+            this.linkLabel13.TabStop = true;
+            this.linkLabel13.Text = "格式工厂";
+            this.toolTip1.SetToolTip(this.linkLabel13, "知名的文件格式转换工具，转换功能十分强大");
+            this.linkLabel13.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel13_LinkClicked);
+            // 
+            // linkLabel12
+            // 
+            this.linkLabel12.AutoSize = true;
+            this.linkLabel12.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel12.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabel12.Location = new System.Drawing.Point(325, 271);
+            this.linkLabel12.Name = "linkLabel12";
+            this.linkLabel12.Size = new System.Drawing.Size(79, 20);
+            this.linkLabel12.TabIndex = 83;
+            this.linkLabel12.TabStop = true;
+            this.linkLabel12.Text = "手心输入法";
+            this.toolTip1.SetToolTip(this.linkLabel12, "没有广告，界面简洁，速度快的输入法");
+            this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked);
+            // 
+            // linkLabel11
+            // 
+            this.linkLabel11.AutoSize = true;
+            this.linkLabel11.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel11.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.linkLabel11.Location = new System.Drawing.Point(217, 271);
+            this.linkLabel11.Name = "linkLabel11";
+            this.linkLabel11.Size = new System.Drawing.Size(93, 20);
+            this.linkLabel11.TabIndex = 82;
+            this.linkLabel11.TabStop = true;
+            this.linkLabel11.Text = "流氓软件清理";
+            this.toolTip1.SetToolTip(this.linkLabel11, "软件名SoftCnKiller，是一款强大的流氓软件斩草除根工具");
+            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked);
+            // 
+            // linkLabel10
+            // 
+            this.linkLabel10.AutoSize = true;
+            this.linkLabel10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel10.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.linkLabel10.Location = new System.Drawing.Point(113, 271);
+            this.linkLabel10.Name = "linkLabel10";
+            this.linkLabel10.Size = new System.Drawing.Size(85, 20);
+            this.linkLabel10.TabIndex = 81;
+            this.linkLabel10.TabStop = true;
+            this.linkLabel10.Text = "Office 2019";
+            this.toolTip1.SetToolTip(this.linkLabel10, "带激活工具\r\n提取码：q4wt");
+            this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel9.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel9.Location = new System.Drawing.Point(15, 271);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(81, 20);
+            this.linkLabel9.TabIndex = 80;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "WPS Pro版";
+            this.toolTip1.SetToolTip(this.linkLabel9, "此版本的WPS没有广告，比普通版简洁高效\r\n提取码：4z8r");
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel8.LinkColor = System.Drawing.Color.Maroon;
+            this.linkLabel8.Location = new System.Drawing.Point(685, 233);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(157, 20);
+            this.linkLabel8.TabIndex = 79;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "Advanced SystemCare";
+            this.toolTip1.SetToolTip(this.linkLabel8, "系统优化管理软件，功能强大不流氓\r\n全方位吊打某60");
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel7.LinkColor = System.Drawing.Color.Purple;
+            this.linkLabel7.Location = new System.Drawing.Point(625, 233);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(45, 20);
+            this.linkLabel7.TabIndex = 78;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "7-Zip";
+            this.toolTip1.SetToolTip(this.linkLabel7, "小巧的压缩软件，以其拥有极高压缩比而著称");
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
+            // 
+            // linkLabel6
+            // 
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel6.LinkColor = System.Drawing.Color.Green;
+            this.linkLabel6.Location = new System.Drawing.Point(541, 233);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(64, 20);
+            this.linkLabel6.TabIndex = 77;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "WinRAR";
+            this.toolTip1.SetToolTip(this.linkLabel6, "老牌压缩软件，官方版有广告，此处导向破解无广告版");
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel5.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel5.Location = new System.Drawing.Point(439, 233);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(80, 20);
+            this.linkLabel5.TabIndex = 76;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "IDM下载器";
+            this.toolTip1.SetToolTip(this.linkLabel5, "最强网络下载器\r\n官方版需收费使用，所以此链接导向破解永久版下载\r\n提取码：run4");
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel4.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel4.Location = new System.Drawing.Point(333, 233);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(85, 20);
+            this.linkLabel4.TabIndex = 75;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Edge浏览器";
+            this.toolTip1.SetToolTip(this.linkLabel4, "由微软打造的浏览器");
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel3.LinkColor = System.Drawing.Color.Teal;
+            this.linkLabel3.Location = new System.Drawing.Point(215, 233);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(104, 20);
+            this.linkLabel3.TabIndex = 74;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Chrome浏览器";
+            this.toolTip1.SetToolTip(this.linkLabel3, "由谷歌打造的浏览器");
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.Color.Transparent;
+            this.label67.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label67.Location = new System.Drawing.Point(8, 194);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(126, 29);
+            this.label67.TabIndex = 73;
+            this.label67.Text = "软件推荐区：";
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.linkLabel2.Location = new System.Drawing.Point(124, 233);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(73, 20);
+            this.linkLabel2.TabIndex = 72;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "PotPlayer";
+            this.toolTip1.SetToolTip(this.linkLabel2, "公认的最强的播放器");
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.linkLabel1.Location = new System.Drawing.Point(15, 233);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(93, 20);
+            this.linkLabel1.TabIndex = 71;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "火绒安全软件";
+            this.toolTip1.SetToolTip(this.linkLabel1, "国内公认的最好用的安全软件，简洁无广告，杀毒能力强\r\n比某60强");
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // label55
             // 
             this.label55.BackColor = System.Drawing.Color.Transparent;
@@ -597,19 +963,6 @@
             this.label54.Text = "沙雕APP";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox49
-            // 
-            this.pictureBox49.Image = global::在线工具箱.Properties.Resources.sd;
-            this.pictureBox49.Location = new System.Drawing.Point(556, 110);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox49.TabIndex = 67;
-            this.pictureBox49.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox49, "第三方网页版工具箱");
-            this.pictureBox49.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox49_MouseDown);
-            this.pictureBox49.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox49_MouseUp);
-            // 
             // label53
             // 
             this.label53.BackColor = System.Drawing.Color.Transparent;
@@ -620,19 +973,6 @@
             this.label53.TabIndex = 66;
             this.label53.Text = "孟坤工具箱";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox48
-            // 
-            this.pictureBox48.Image = global::在线工具箱.Properties.Resources.mkblog;
-            this.pictureBox48.Location = new System.Drawing.Point(443, 110);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox48.TabIndex = 65;
-            this.pictureBox48.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox48, "第三方网页版工具箱");
-            this.pictureBox48.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox48_MouseDown);
-            this.pictureBox48.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox48_MouseUp);
             // 
             // label52
             // 
@@ -645,19 +985,6 @@
             this.label52.Text = "TOOLFK";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox47
-            // 
-            this.pictureBox47.Image = global::在线工具箱.Properties.Resources.toolfk;
-            this.pictureBox47.Location = new System.Drawing.Point(337, 110);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox47.TabIndex = 63;
-            this.pictureBox47.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox47, "第三方网页版工具箱");
-            this.pictureBox47.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_MouseDown);
-            this.pictureBox47.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_MouseUp);
-            // 
             // label51
             // 
             this.label51.BackColor = System.Drawing.Color.Transparent;
@@ -668,19 +995,6 @@
             this.label51.TabIndex = 62;
             this.label51.Text = "tool工具箱";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox46
-            // 
-            this.pictureBox46.Image = global::在线工具箱.Properties.Resources.tools;
-            this.pictureBox46.Location = new System.Drawing.Point(230, 110);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox46.TabIndex = 61;
-            this.pictureBox46.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox46, "第三方网页版工具箱");
-            this.pictureBox46.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox46_MouseDown);
-            this.pictureBox46.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox46_MouseUp);
             // 
             // label50
             // 
@@ -693,19 +1007,6 @@
             this.label50.Text = "MikuTools";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox45
-            // 
-            this.pictureBox45.Image = global::在线工具箱.Properties.Resources.mikutools;
-            this.pictureBox45.Location = new System.Drawing.Point(128, 110);
-            this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox45.TabIndex = 59;
-            this.pictureBox45.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox45, "第三方网页版工具箱");
-            this.pictureBox45.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_MouseDown);
-            this.pictureBox45.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_MouseUp);
-            // 
             // label49
             // 
             this.label49.BackColor = System.Drawing.Color.Transparent;
@@ -717,19 +1018,6 @@
             this.label49.Text = "在线工具";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox44
-            // 
-            this.pictureBox44.Image = global::在线工具箱.Properties.Resources.zaixiangongju;
-            this.pictureBox44.Location = new System.Drawing.Point(26, 110);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox44.TabIndex = 57;
-            this.pictureBox44.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox44, "第三方网页版工具箱");
-            this.pictureBox44.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox44_MouseDown);
-            this.pictureBox44.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox44_MouseUp);
-            // 
             // label47
             // 
             this.label47.BackColor = System.Drawing.Color.Transparent;
@@ -740,16 +1028,6 @@
             this.label47.TabIndex = 12;
             this.label47.Text = "资源区";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox42
-            // 
-            this.pictureBox42.Image = global::在线工具箱.Properties.Resources.ck;
-            this.pictureBox42.Location = new System.Drawing.Point(3, 6);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(59, 51);
-            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox42.TabIndex = 1;
-            this.pictureBox42.TabStop = false;
             // 
             // panel3
             // 
@@ -778,7 +1056,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(7, 3);
+            this.label3.Location = new System.Drawing.Point(14, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(835, 53);
             this.label3.TabIndex = 8;
@@ -810,34 +1088,6 @@
             this.panel6.Size = new System.Drawing.Size(862, 492);
             this.panel6.TabIndex = 3;
             // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.linkLabel2.Location = new System.Drawing.Point(124, 233);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(73, 20);
-            this.linkLabel2.TabIndex = 72;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "PotPlayer";
-            this.toolTip1.SetToolTip(this.linkLabel2, "公认的最强的播放器");
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.linkLabel1.Location = new System.Drawing.Point(15, 233);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(93, 20);
-            this.linkLabel1.TabIndex = 71;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "火绒安全软件";
-            this.toolTip1.SetToolTip(this.linkLabel1, "国内公认的最好用的安全软件，简洁无广告，杀毒能力强\r\n比某60强");
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // label66
             // 
             this.label66.BackColor = System.Drawing.Color.Transparent;
@@ -860,19 +1110,6 @@
             this.label64.Text = "Rufus";
             this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox58
-            // 
-            this.pictureBox58.Image = global::在线工具箱.Properties.Resources.rufus;
-            this.pictureBox58.Location = new System.Drawing.Point(556, 101);
-            this.pictureBox58.Name = "pictureBox58";
-            this.pictureBox58.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox58.TabIndex = 67;
-            this.pictureBox58.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox58, "轻松创建USB启动盘");
-            this.pictureBox58.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox58_MouseDown);
-            this.pictureBox58.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox58_MouseUp);
-            // 
             // label63
             // 
             this.label63.BackColor = System.Drawing.Color.Transparent;
@@ -883,19 +1120,6 @@
             this.label63.TabIndex = 66;
             this.label63.Text = "Ventoy";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox57
-            // 
-            this.pictureBox57.Image = global::在线工具箱.Properties.Resources.ventoy;
-            this.pictureBox57.Location = new System.Drawing.Point(443, 101);
-            this.pictureBox57.Name = "pictureBox57";
-            this.pictureBox57.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox57.TabIndex = 65;
-            this.pictureBox57.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox57, "新一代多系统启动U盘解决方案");
-            this.pictureBox57.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox57_MouseDown);
-            this.pictureBox57.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox57_MouseUp);
             // 
             // label62
             // 
@@ -908,19 +1132,6 @@
             this.label62.Text = "微PE";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox56
-            // 
-            this.pictureBox56.Image = global::在线工具箱.Properties.Resources.weipe;
-            this.pictureBox56.Location = new System.Drawing.Point(337, 101);
-            this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox56.TabIndex = 63;
-            this.pictureBox56.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox56, "知名PE工具，用户口碑好");
-            this.pictureBox56.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox56_MouseDown);
-            this.pictureBox56.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox56_MouseUp);
-            // 
             // label61
             // 
             this.label61.BackColor = System.Drawing.Color.Transparent;
@@ -931,19 +1142,6 @@
             this.label61.TabIndex = 62;
             this.label61.Text = "优启通PE";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox55
-            // 
-            this.pictureBox55.Image = global::在线工具箱.Properties.Resources.youqitong;
-            this.pictureBox55.Location = new System.Drawing.Point(230, 101);
-            this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox55.TabIndex = 61;
-            this.pictureBox55.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox55, "知名PE工具，用户口碑好");
-            this.pictureBox55.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox55_MouseDown);
-            this.pictureBox55.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox55_MouseUp);
             // 
             // label59
             // 
@@ -956,19 +1154,6 @@
             this.label59.Text = "MSDN";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox53
-            // 
-            this.pictureBox53.Image = global::在线工具箱.Properties.Resources.msdn;
-            this.pictureBox53.Location = new System.Drawing.Point(128, 101);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox53.TabIndex = 59;
-            this.pictureBox53.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox53, "收录了很多Windows的正版镜像的网站，缺点是它需要使用迅雷下载");
-            this.pictureBox53.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox53_MouseDown);
-            this.pictureBox53.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox53_MouseUp);
-            // 
             // label58
             // 
             this.label58.BackColor = System.Drawing.Color.Transparent;
@@ -980,19 +1165,6 @@
             this.label58.Text = "Windows\r\n镜像下载器";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox52
-            // 
-            this.pictureBox52.Image = global::在线工具箱.Properties.Resources.isoxiazai;
-            this.pictureBox52.Location = new System.Drawing.Point(26, 101);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox52.TabIndex = 57;
-            this.pictureBox52.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox52, "通过它你可以直接下载Windows的正版镜像");
-            this.pictureBox52.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox52_MouseDown);
-            this.pictureBox52.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox52_MouseUp);
-            // 
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.Transparent;
@@ -1003,16 +1175,6 @@
             this.label11.TabIndex = 11;
             this.label11.Text = "装机区";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::在线工具箱.Properties.Resources.zhuangjiqu;
-            this.pictureBox8.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(59, 51);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
             // 
             // panel4
             // 
@@ -1077,19 +1239,6 @@
             this.label57.Text = "ChipGenius";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox51
-            // 
-            this.pictureBox51.Image = global::在线工具箱.Properties.Resources.chipgenius;
-            this.pictureBox51.Location = new System.Drawing.Point(681, 277);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox51.TabIndex = 51;
-            this.pictureBox51.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox51, "专业的U盘识别检测工具，能查到U盘的颗粒等信息\r\n单击即可打开");
-            this.pictureBox51.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox51_MouseDown);
-            this.pictureBox51.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox51_MouseUp);
-            // 
             // label56
             // 
             this.label56.BackColor = System.Drawing.Color.Transparent;
@@ -1100,19 +1249,6 @@
             this.label56.TabIndex = 50;
             this.label56.Text = "内存测试";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox50
-            // 
-            this.pictureBox50.Image = global::在线工具箱.Properties.Resources.memtest;
-            this.pictureBox50.Location = new System.Drawing.Point(556, 277);
-            this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox50.TabIndex = 49;
-            this.pictureBox50.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox50, "能通过暴力填充内存来测试你的内存是否稳定可靠\r\n单击即可打开");
-            this.pictureBox50.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox50_MouseDown);
-            this.pictureBox50.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox50_MouseUp);
             // 
             // label46
             // 
@@ -1125,19 +1261,6 @@
             this.label46.Text = "RAMMap";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox41
-            // 
-            this.pictureBox41.Image = global::在线工具箱.Properties.Resources.rammap;
-            this.pictureBox41.Location = new System.Drawing.Point(443, 277);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox41.TabIndex = 47;
-            this.pictureBox41.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox41, "十分专业的内存清理工具\r\n使用方法：\r\n打开工具点击上方的Empty选项把里面的选项都点一遍即可\r\n单击即可打开");
-            this.pictureBox41.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox41_MouseDown);
-            this.pictureBox41.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox41_MouseUp);
-            // 
             // label43
             // 
             this.label43.BackColor = System.Drawing.Color.Transparent;
@@ -1148,19 +1271,6 @@
             this.label43.TabIndex = 46;
             this.label43.Text = "HWMonitor(32位)";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox39
-            // 
-            this.pictureBox39.Image = global::在线工具箱.Properties.Resources.hwmonitor;
-            this.pictureBox39.Location = new System.Drawing.Point(337, 277);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox39.TabIndex = 45;
-            this.pictureBox39.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox39, "能监控电脑各个部位的温度情况\r\n单击即可打开");
-            this.pictureBox39.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox39_MouseDown);
-            this.pictureBox39.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox39_MouseUp);
             // 
             // label42
             // 
@@ -1173,19 +1283,6 @@
             this.label42.Text = "HWMonitor(64位)";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox38
-            // 
-            this.pictureBox38.Image = global::在线工具箱.Properties.Resources.hwmonitor;
-            this.pictureBox38.Location = new System.Drawing.Point(230, 277);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox38.TabIndex = 43;
-            this.pictureBox38.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox38, "能监控电脑各个部位的温度情况\r\n单击即可打开");
-            this.pictureBox38.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox38_MouseDown);
-            this.pictureBox38.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox38_MouseUp);
-            // 
             // label41
             // 
             this.label41.BackColor = System.Drawing.Color.Transparent;
@@ -1196,19 +1293,6 @@
             this.label41.TabIndex = 42;
             this.label41.Text = "HWiNFO(32位)";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox37
-            // 
-            this.pictureBox37.Image = global::在线工具箱.Properties.Resources.hwinfo;
-            this.pictureBox37.Location = new System.Drawing.Point(128, 277);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox37.TabIndex = 41;
-            this.pictureBox37.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox37, "可查看详细电脑信息的工具\r\n单击即可打开");
-            this.pictureBox37.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox37_MouseDown);
-            this.pictureBox37.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox37_MouseUp);
             // 
             // label40
             // 
@@ -1221,19 +1305,6 @@
             this.label40.Text = "HWiNFO(64位)";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox36
-            // 
-            this.pictureBox36.Image = global::在线工具箱.Properties.Resources.hwinfo;
-            this.pictureBox36.Location = new System.Drawing.Point(26, 277);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox36.TabIndex = 39;
-            this.pictureBox36.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox36, "可查看详细电脑信息的工具\r\n单击即可打开");
-            this.pictureBox36.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseDown);
-            this.pictureBox36.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseUp);
-            // 
             // label39
             // 
             this.label39.BackColor = System.Drawing.Color.Transparent;
@@ -1244,19 +1315,6 @@
             this.label39.TabIndex = 38;
             this.label39.Text = "Diskinfo";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.Image = global::在线工具箱.Properties.Resources.diskinfo;
-            this.pictureBox35.Location = new System.Drawing.Point(681, 177);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox35.TabIndex = 37;
-            this.pictureBox35.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox35, "能查看磁盘的很多详细信息的工具\r\n单击即可打开");
-            this.pictureBox35.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox35_MouseDown);
-            this.pictureBox35.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox35_MouseUp);
             // 
             // label24
             // 
@@ -1269,19 +1327,6 @@
             this.label24.Text = "电池信息查看";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = global::在线工具箱.Properties.Resources.BatteryInfoView;
-            this.pictureBox21.Location = new System.Drawing.Point(556, 177);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox21.TabIndex = 35;
-            this.pictureBox21.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox21, "笔记本用户专用，能查看电池很详细的信息\r\n单击即可打开");
-            this.pictureBox21.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox21_MouseDown);
-            this.pictureBox21.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox21_MouseUp);
-            // 
             // label23
             // 
             this.label23.BackColor = System.Drawing.Color.Transparent;
@@ -1292,19 +1337,6 @@
             this.label23.TabIndex = 34;
             this.label23.Text = "键盘按键检测";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::在线工具箱.Properties.Resources.KeyboardTestUtility;
-            this.pictureBox20.Location = new System.Drawing.Point(443, 177);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox20.TabIndex = 33;
-            this.pictureBox20.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox20, "用于检测键盘是否有问题\r\n单击即可打开");
-            this.pictureBox20.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox20_MouseDown);
-            this.pictureBox20.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox20_MouseUp);
             // 
             // label22
             // 
@@ -1317,19 +1349,6 @@
             this.label22.Text = "显示器检测";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::在线工具箱.Properties.Resources.DisplayX;
-            this.pictureBox19.Location = new System.Drawing.Point(337, 177);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox19.TabIndex = 31;
-            this.pictureBox19.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox19, "用于检测显示器是否有问题\r\n单击即可打开");
-            this.pictureBox19.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox19_MouseDown);
-            this.pictureBox19.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox19_MouseUp);
-            // 
             // label21
             // 
             this.label21.BackColor = System.Drawing.Color.Transparent;
@@ -1340,19 +1359,6 @@
             this.label21.TabIndex = 30;
             this.label21.Text = "磁盘碎片整理";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::在线工具箱.Properties.Resources.Defraggler;
-            this.pictureBox18.Location = new System.Drawing.Point(230, 177);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 29;
-            this.pictureBox18.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox18, "机械硬盘的用户可使用此工具，固态硬盘则无需使用\r\n单击即可打开");
-            this.pictureBox18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox18_MouseDown);
-            this.pictureBox18.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox18_MouseUp);
             // 
             // label20
             // 
@@ -1365,19 +1371,6 @@
             this.label20.Text = "象棋";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::在线工具箱.Properties.Resources.xiangqi;
-            this.pictureBox17.Location = new System.Drawing.Point(128, 177);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 27;
-            this.pictureBox17.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox17, "用于测试处理器的科学计算能力\r\n单击即可打开");
-            this.pictureBox17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox17_MouseDown);
-            this.pictureBox17.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox17_MouseUp);
-            // 
             // label19
             // 
             this.label19.BackColor = System.Drawing.Color.Transparent;
@@ -1388,19 +1381,6 @@
             this.label19.TabIndex = 26;
             this.label19.Text = "sunlight内存整理";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::在线工具箱.Properties.Resources.memorycleaner;
-            this.pictureBox16.Location = new System.Drawing.Point(26, 177);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 25;
-            this.pictureBox16.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox16, "一款不错的内存清理工具，适合小内存的用户\r\n单击即可打开");
-            this.pictureBox16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox16_MouseDown);
-            this.pictureBox16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox16_MouseUp);
             // 
             // label18
             // 
@@ -1413,19 +1393,6 @@
             this.label18.Text = "ASSSDBenchmark";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::在线工具箱.Properties.Resources.asssdbenchmark;
-            this.pictureBox15.Location = new System.Drawing.Point(681, 72);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 23;
-            this.pictureBox15.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox15, "硬盘速度测试工具\r\n单击即可打开");
-            this.pictureBox15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox15_MouseDown);
-            this.pictureBox15.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox15_MouseUp);
-            // 
             // label17
             // 
             this.label17.BackColor = System.Drawing.Color.Transparent;
@@ -1436,19 +1403,6 @@
             this.label17.TabIndex = 22;
             this.label17.Text = "FurMark";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::在线工具箱.Properties.Resources.furmark;
-            this.pictureBox14.Location = new System.Drawing.Point(556, 72);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 21;
-            this.pictureBox14.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox14, "烤鸡工具，用来测试显卡稳定性\r\n单击即可打开");
-            this.pictureBox14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox14_MouseDown);
-            this.pictureBox14.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox14_MouseUp);
             // 
             // label16
             // 
@@ -1461,19 +1415,6 @@
             this.label16.Text = "SSD-Z";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::在线工具箱.Properties.Resources.ssdz;
-            this.pictureBox13.Location = new System.Drawing.Point(443, 72);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 19;
-            this.pictureBox13.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox13, "专业的硬盘信息查看工具\r\n单击即可打开");
-            this.pictureBox13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox13_MouseDown);
-            this.pictureBox13.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox13_MouseUp);
-            // 
             // label15
             // 
             this.label15.BackColor = System.Drawing.Color.Transparent;
@@ -1484,19 +1425,6 @@
             this.label15.TabIndex = 18;
             this.label15.Text = "GPU-Z";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::在线工具箱.Properties.Resources.gpuz;
-            this.pictureBox12.Location = new System.Drawing.Point(337, 72);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 17;
-            this.pictureBox12.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox12, "专业的显卡信息查看工具\r\n单击即可打开");
-            this.pictureBox12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox12_MouseDown);
-            this.pictureBox12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox12_MouseUp);
             // 
             // label14
             // 
@@ -1509,19 +1437,6 @@
             this.label14.Text = "CPU-Z(32位)";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::在线工具箱.Properties.Resources.cpuz;
-            this.pictureBox11.Location = new System.Drawing.Point(230, 72);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 15;
-            this.pictureBox11.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox11, "专业的处理器信息查看工具\r\n单击即可打开");
-            this.pictureBox11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox11_MouseDown);
-            this.pictureBox11.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox11_MouseUp);
-            // 
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.Transparent;
@@ -1532,19 +1447,6 @@
             this.label13.TabIndex = 14;
             this.label13.Text = "CPU-Z(64位)";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::在线工具箱.Properties.Resources.cpuz;
-            this.pictureBox10.Location = new System.Drawing.Point(128, 72);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 13;
-            this.pictureBox10.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox10, "专业的处理器信息查看工具\r\n单击即可打开");
-            this.pictureBox10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox10_MouseDown);
-            this.pictureBox10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox10_MouseUp);
             // 
             // label12
             // 
@@ -1557,20 +1459,6 @@
             this.label12.Text = "AIDA64";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::在线工具箱.Properties.Resources.aida64;
-            this.pictureBox9.Location = new System.Drawing.Point(26, 72);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 11;
-            this.pictureBox9.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox9, "一款能全面查看电脑信息的工具\r\n单击即可打开");
-            this.pictureBox9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseDown);
-            this.pictureBox9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseMove);
-            this.pictureBox9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseUp);
-            // 
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.Transparent;
@@ -1582,19 +1470,15 @@
             this.label9.Text = "硬件工具";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::在线工具箱.Properties.Resources.yingjiangongju;
-            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(55, 51);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel5.Controls.Add(this.label70);
+            this.panel5.Controls.Add(this.pictureBox61);
+            this.panel5.Controls.Add(this.label69);
+            this.panel5.Controls.Add(this.pictureBox60);
+            this.panel5.Controls.Add(this.label68);
+            this.panel5.Controls.Add(this.pictureBox59);
             this.panel5.Controls.Add(this.label60);
             this.panel5.Controls.Add(this.pictureBox54);
             this.panel5.Controls.Add(this.label35);
@@ -1645,19 +1529,6 @@
             this.label60.Text = "屏幕画笔";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox54
-            // 
-            this.pictureBox54.Image = global::在线工具箱.Properties.Resources.Pointofix;
-            this.pictureBox54.Location = new System.Drawing.Point(128, 297);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox54.TabIndex = 63;
-            this.pictureBox54.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox54, "能在屏幕上直接书写的工具");
-            this.pictureBox54.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox54_MouseDown);
-            this.pictureBox54.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox54_MouseUp);
-            // 
             // label35
             // 
             this.label35.BackColor = System.Drawing.Color.Transparent;
@@ -1680,32 +1551,6 @@
             this.label48.Text = "recuva数据恢复";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Image = global::在线工具箱.Properties.Resources.ip;
-            this.pictureBox32.Location = new System.Drawing.Point(26, 297);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox32.TabIndex = 55;
-            this.pictureBox32.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox32, "单击可查看本机IP地址及归属地");
-            this.pictureBox32.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox32_MouseDown);
-            this.pictureBox32.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox32_MouseUp);
-            // 
-            // pictureBox43
-            // 
-            this.pictureBox43.Image = global::在线工具箱.Properties.Resources.recuva;
-            this.pictureBox43.Location = new System.Drawing.Point(681, 188);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox43.TabIndex = 61;
-            this.pictureBox43.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox43, "一款更加好用的数据恢复软件\r\n单击即可打开");
-            this.pictureBox43.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox43_MouseDown);
-            this.pictureBox43.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox43_MouseUp);
-            // 
             // label44
             // 
             this.label44.BackColor = System.Drawing.Color.Transparent;
@@ -1716,19 +1561,6 @@
             this.label44.TabIndex = 60;
             this.label44.Text = "数据恢复";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox40
-            // 
-            this.pictureBox40.Image = global::在线工具箱.Properties.Resources.finaldata;
-            this.pictureBox40.Location = new System.Drawing.Point(556, 188);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox40.TabIndex = 59;
-            this.pictureBox40.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox40, "一款较为专业的数据恢复软件\r\n单击即可打开");
-            this.pictureBox40.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox40_MouseDown);
-            this.pictureBox40.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox40_MouseUp);
             // 
             // label38
             // 
@@ -1741,19 +1573,6 @@
             this.label38.Text = "Dism++(32位)";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Image = global::在线工具箱.Properties.Resources.dism__;
-            this.pictureBox34.Location = new System.Drawing.Point(443, 188);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox34.TabIndex = 57;
-            this.pictureBox34.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox34, "十分硬核的系统调教工具，很难找的或找不到的系统设置它里面都有\r\n单击即可打开");
-            this.pictureBox34.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox34_MouseDown);
-            this.pictureBox34.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox34_MouseUp);
-            // 
             // label37
             // 
             this.label37.BackColor = System.Drawing.Color.Transparent;
@@ -1764,19 +1583,6 @@
             this.label37.TabIndex = 56;
             this.label37.Text = "Dism++(64位)";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.Image = global::在线工具箱.Properties.Resources.dism__;
-            this.pictureBox33.Location = new System.Drawing.Point(337, 188);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox33.TabIndex = 55;
-            this.pictureBox33.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox33, "十分硬核的系统调教工具，很难找的或找不到的系统设置它里面都有\r\n单击即可打开");
-            this.pictureBox33.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox33_MouseDown);
-            this.pictureBox33.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox33_MouseUp);
             // 
             // label34
             // 
@@ -1789,19 +1595,6 @@
             this.label34.Text = "关闭系统自动更新";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Image = global::在线工具箱.Properties.Resources.closeupdate;
-            this.pictureBox31.Location = new System.Drawing.Point(230, 188);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox31.TabIndex = 53;
-            this.pictureBox31.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox31, "能关掉系统自动更新\r\n单击即可打开");
-            this.pictureBox31.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox31_MouseDown);
-            this.pictureBox31.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox31_MouseUp);
-            // 
             // label33
             // 
             this.label33.BackColor = System.Drawing.Color.Transparent;
@@ -1812,19 +1605,6 @@
             this.label33.TabIndex = 52;
             this.label33.Text = "win10激活工具";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = global::在线工具箱.Properties.Resources.win10activator;
-            this.pictureBox30.Location = new System.Drawing.Point(128, 188);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox30.TabIndex = 51;
-            this.pictureBox30.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox30, "能激活win10的工具\r\n单击即可打开");
-            this.pictureBox30.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseDown);
-            this.pictureBox30.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseUp);
             // 
             // label32
             // 
@@ -1837,19 +1617,6 @@
             this.label32.Text = "DirectX修复";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::在线工具箱.Properties.Resources.dxrepair;
-            this.pictureBox29.Location = new System.Drawing.Point(26, 188);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox29.TabIndex = 49;
-            this.pictureBox29.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox29, "用于修复电脑DirectX文件问题\r\n单击即可打开");
-            this.pictureBox29.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseDown);
-            this.pictureBox29.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseUp);
-            // 
             // label31
             // 
             this.label31.BackColor = System.Drawing.Color.Transparent;
@@ -1860,19 +1627,6 @@
             this.label31.TabIndex = 48;
             this.label31.Text = "SpaceSniffer";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::在线工具箱.Properties.Resources.spacesniffer;
-            this.pictureBox28.Location = new System.Drawing.Point(681, 78);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox28.TabIndex = 47;
-            this.pictureBox28.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox28, "可帮你快速分析硬盘内各个文件的占用情况，并以最直观的\r\n方格大小显示出来\r\n单击即可打开");
-            this.pictureBox28.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseDown);
-            this.pictureBox28.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseUp);
             // 
             // label30
             // 
@@ -1885,19 +1639,6 @@
             this.label30.Text = "procexp";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = global::在线工具箱.Properties.Resources.procexp;
-            this.pictureBox27.Location = new System.Drawing.Point(556, 78);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox27.TabIndex = 45;
-            this.pictureBox27.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox27, "十分专业的任务管理器，获取的信息量不亚于系统自带的任务管理器\r\n单击即可打开");
-            this.pictureBox27.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox27_MouseDown);
-            this.pictureBox27.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox27_MouseUp);
-            // 
             // label29
             // 
             this.label29.BackColor = System.Drawing.Color.Transparent;
@@ -1909,19 +1650,6 @@
             this.label29.Text = "Everything";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Image = global::在线工具箱.Properties.Resources.everything;
-            this.pictureBox26.Location = new System.Drawing.Point(443, 78);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox26.TabIndex = 43;
-            this.pictureBox26.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox26, "可以快速帮你查找文件的工具，搜索速度比系统的搜索快\r\n单击即可打开");
-            this.pictureBox26.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseDown);
-            this.pictureBox26.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseUp);
-            // 
             // label28
             // 
             this.label28.BackColor = System.Drawing.Color.Transparent;
@@ -1932,19 +1660,6 @@
             this.label28.TabIndex = 42;
             this.label28.Text = "DiskGenius";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = global::在线工具箱.Properties.Resources.diskgenius;
-            this.pictureBox25.Location = new System.Drawing.Point(337, 78);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox25.TabIndex = 41;
-            this.pictureBox25.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox25, "十分专业的硬盘分区工具，也拥有很多系统没有的高级功能\r\n单击即可打开");
-            this.pictureBox25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox25_MouseDown);
-            this.pictureBox25.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox25_MouseUp);
             // 
             // label27
             // 
@@ -1968,32 +1683,6 @@
             this.label26.Text = "ScreenToGif";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = global::在线工具箱.Properties.Resources.geek;
-            this.pictureBox24.Location = new System.Drawing.Point(230, 78);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox24.TabIndex = 37;
-            this.pictureBox24.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox24, "一款强力卸载工具，当系统自带的卸载功能不好用时可使用它\r\n单击即可打开");
-            this.pictureBox24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseDown);
-            this.pictureBox24.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseUp);
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = global::在线工具箱.Properties.Resources.screentogif;
-            this.pictureBox23.Location = new System.Drawing.Point(128, 78);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox23.TabIndex = 39;
-            this.pictureBox23.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox23, "GIF动图制作利器\r\n单击即可打开");
-            this.pictureBox23.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox23_MouseDown);
-            this.pictureBox23.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox23_MouseUp);
-            // 
             // label25
             // 
             this.label25.BackColor = System.Drawing.Color.Transparent;
@@ -2005,19 +1694,6 @@
             this.label25.Text = "班迪录屏";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::在线工具箱.Properties.Resources.bandicam;
-            this.pictureBox22.Location = new System.Drawing.Point(26, 78);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox22.TabIndex = 37;
-            this.pictureBox22.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox22, "一款功能较多的录屏软件\r\n单击即可打开");
-            this.pictureBox22.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox22_MouseDown);
-            this.pictureBox22.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox22_MouseUp);
-            // 
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.Transparent;
@@ -2028,16 +1704,6 @@
             this.label10.TabIndex = 11;
             this.label10.Text = "系统与实用工具";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::在线工具箱.Properties.Resources.shiyonggongju;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(55, 56);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
             // 
             // label4
             // 
@@ -2116,6 +1782,732 @@
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.Color.Transparent;
+            this.label68.Font = new System.Drawing.Font("微软雅黑", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label68.Location = new System.Drawing.Point(218, 355);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(81, 35);
+            this.label68.TabIndex = 66;
+            this.label68.Text = "抽号机\r\n(可改标题)";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label69
+            // 
+            this.label69.BackColor = System.Drawing.Color.Transparent;
+            this.label69.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label69.Location = new System.Drawing.Point(325, 355);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(81, 26);
+            this.label69.TabIndex = 68;
+            this.label69.Text = "冻结恢复进程";
+            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox49
+            // 
+            this.pictureBox49.Image = global::在线工具箱.Properties.Resources.sd;
+            this.pictureBox49.Location = new System.Drawing.Point(556, 110);
+            this.pictureBox49.Name = "pictureBox49";
+            this.pictureBox49.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox49.TabIndex = 67;
+            this.pictureBox49.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox49, "第三方网页版工具箱");
+            this.pictureBox49.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox49_MouseDown);
+            this.pictureBox49.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox49_MouseUp);
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.Image = global::在线工具箱.Properties.Resources.mkblog;
+            this.pictureBox48.Location = new System.Drawing.Point(443, 110);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox48.TabIndex = 65;
+            this.pictureBox48.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox48, "第三方网页版工具箱");
+            this.pictureBox48.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox48_MouseDown);
+            this.pictureBox48.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox48_MouseUp);
+            // 
+            // pictureBox47
+            // 
+            this.pictureBox47.Image = global::在线工具箱.Properties.Resources.toolfk;
+            this.pictureBox47.Location = new System.Drawing.Point(337, 110);
+            this.pictureBox47.Name = "pictureBox47";
+            this.pictureBox47.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox47.TabIndex = 63;
+            this.pictureBox47.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox47, "第三方网页版工具箱");
+            this.pictureBox47.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_MouseDown);
+            this.pictureBox47.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_MouseUp);
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.Image = global::在线工具箱.Properties.Resources.tools;
+            this.pictureBox46.Location = new System.Drawing.Point(230, 110);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox46.TabIndex = 61;
+            this.pictureBox46.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox46, "第三方网页版工具箱");
+            this.pictureBox46.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox46_MouseDown);
+            this.pictureBox46.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox46_MouseUp);
+            // 
+            // pictureBox45
+            // 
+            this.pictureBox45.Image = global::在线工具箱.Properties.Resources.mikutools;
+            this.pictureBox45.Location = new System.Drawing.Point(128, 110);
+            this.pictureBox45.Name = "pictureBox45";
+            this.pictureBox45.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox45.TabIndex = 59;
+            this.pictureBox45.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox45, "第三方网页版工具箱");
+            this.pictureBox45.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_MouseDown);
+            this.pictureBox45.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_MouseUp);
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Image = global::在线工具箱.Properties.Resources.zaixiangongju;
+            this.pictureBox44.Location = new System.Drawing.Point(26, 110);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox44.TabIndex = 57;
+            this.pictureBox44.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox44, "第三方网页版工具箱");
+            this.pictureBox44.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox44_MouseDown);
+            this.pictureBox44.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox44_MouseUp);
+            // 
+            // pictureBox42
+            // 
+            this.pictureBox42.Image = global::在线工具箱.Properties.Resources.ck;
+            this.pictureBox42.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(59, 51);
+            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox42.TabIndex = 1;
+            this.pictureBox42.TabStop = false;
+            // 
+            // pictureBox58
+            // 
+            this.pictureBox58.Image = global::在线工具箱.Properties.Resources.rufus;
+            this.pictureBox58.Location = new System.Drawing.Point(556, 101);
+            this.pictureBox58.Name = "pictureBox58";
+            this.pictureBox58.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox58.TabIndex = 67;
+            this.pictureBox58.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox58, "轻松创建USB启动盘");
+            this.pictureBox58.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox58_MouseDown);
+            this.pictureBox58.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox58_MouseUp);
+            // 
+            // pictureBox57
+            // 
+            this.pictureBox57.Image = global::在线工具箱.Properties.Resources.ventoy;
+            this.pictureBox57.Location = new System.Drawing.Point(443, 101);
+            this.pictureBox57.Name = "pictureBox57";
+            this.pictureBox57.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox57.TabIndex = 65;
+            this.pictureBox57.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox57, "新一代多系统启动U盘解决方案");
+            this.pictureBox57.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox57_MouseDown);
+            this.pictureBox57.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox57_MouseUp);
+            // 
+            // pictureBox56
+            // 
+            this.pictureBox56.Image = global::在线工具箱.Properties.Resources.weipe;
+            this.pictureBox56.Location = new System.Drawing.Point(337, 101);
+            this.pictureBox56.Name = "pictureBox56";
+            this.pictureBox56.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox56.TabIndex = 63;
+            this.pictureBox56.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox56, "知名PE工具，用户口碑好");
+            this.pictureBox56.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox56_MouseDown);
+            this.pictureBox56.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox56_MouseUp);
+            // 
+            // pictureBox55
+            // 
+            this.pictureBox55.Image = global::在线工具箱.Properties.Resources.youqitong;
+            this.pictureBox55.Location = new System.Drawing.Point(230, 101);
+            this.pictureBox55.Name = "pictureBox55";
+            this.pictureBox55.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox55.TabIndex = 61;
+            this.pictureBox55.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox55, "知名PE工具，用户口碑好");
+            this.pictureBox55.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox55_MouseDown);
+            this.pictureBox55.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox55_MouseUp);
+            // 
+            // pictureBox53
+            // 
+            this.pictureBox53.Image = global::在线工具箱.Properties.Resources.msdn;
+            this.pictureBox53.Location = new System.Drawing.Point(128, 101);
+            this.pictureBox53.Name = "pictureBox53";
+            this.pictureBox53.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox53.TabIndex = 59;
+            this.pictureBox53.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox53, "收录了很多Windows的正版镜像的网站，缺点是它需要使用迅雷下载");
+            this.pictureBox53.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox53_MouseDown);
+            this.pictureBox53.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox53_MouseUp);
+            // 
+            // pictureBox52
+            // 
+            this.pictureBox52.Image = global::在线工具箱.Properties.Resources.isoxiazai;
+            this.pictureBox52.Location = new System.Drawing.Point(26, 101);
+            this.pictureBox52.Name = "pictureBox52";
+            this.pictureBox52.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox52.TabIndex = 57;
+            this.pictureBox52.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox52, "通过它你可以直接下载Windows的正版镜像");
+            this.pictureBox52.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox52_MouseDown);
+            this.pictureBox52.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox52_MouseUp);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::在线工具箱.Properties.Resources.zhuangjiqu;
+            this.pictureBox8.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(59, 51);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox51
+            // 
+            this.pictureBox51.Image = global::在线工具箱.Properties.Resources.chipgenius;
+            this.pictureBox51.Location = new System.Drawing.Point(681, 277);
+            this.pictureBox51.Name = "pictureBox51";
+            this.pictureBox51.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox51.TabIndex = 51;
+            this.pictureBox51.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox51, "专业的U盘识别检测工具，能查到U盘的颗粒等信息\r\n单击即可打开");
+            this.pictureBox51.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox51_MouseDown);
+            this.pictureBox51.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox51_MouseUp);
+            // 
+            // pictureBox50
+            // 
+            this.pictureBox50.Image = global::在线工具箱.Properties.Resources.memtest;
+            this.pictureBox50.Location = new System.Drawing.Point(556, 277);
+            this.pictureBox50.Name = "pictureBox50";
+            this.pictureBox50.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox50.TabIndex = 49;
+            this.pictureBox50.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox50, "能通过暴力填充内存来测试你的内存是否稳定可靠\r\n单击即可打开");
+            this.pictureBox50.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox50_MouseDown);
+            this.pictureBox50.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox50_MouseUp);
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.Image = global::在线工具箱.Properties.Resources.rammap;
+            this.pictureBox41.Location = new System.Drawing.Point(443, 277);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox41.TabIndex = 47;
+            this.pictureBox41.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox41, "十分专业的内存清理工具\r\n使用方法：\r\n打开工具点击上方的Empty选项把里面的选项都点一遍即可\r\n单击即可打开");
+            this.pictureBox41.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox41_MouseDown);
+            this.pictureBox41.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox41_MouseUp);
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.Image = global::在线工具箱.Properties.Resources.hwmonitor;
+            this.pictureBox39.Location = new System.Drawing.Point(337, 277);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox39.TabIndex = 45;
+            this.pictureBox39.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox39, "能监控电脑各个部位的温度情况\r\n单击即可打开");
+            this.pictureBox39.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox39_MouseDown);
+            this.pictureBox39.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox39_MouseUp);
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.Image = global::在线工具箱.Properties.Resources.hwmonitor;
+            this.pictureBox38.Location = new System.Drawing.Point(230, 277);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox38.TabIndex = 43;
+            this.pictureBox38.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox38, "能监控电脑各个部位的温度情况\r\n单击即可打开");
+            this.pictureBox38.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox38_MouseDown);
+            this.pictureBox38.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox38_MouseUp);
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.Image = global::在线工具箱.Properties.Resources.hwinfo;
+            this.pictureBox37.Location = new System.Drawing.Point(128, 277);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox37.TabIndex = 41;
+            this.pictureBox37.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox37, "可查看详细电脑信息的工具\r\n单击即可打开");
+            this.pictureBox37.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox37_MouseDown);
+            this.pictureBox37.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox37_MouseUp);
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.Image = global::在线工具箱.Properties.Resources.hwinfo;
+            this.pictureBox36.Location = new System.Drawing.Point(26, 277);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox36.TabIndex = 39;
+            this.pictureBox36.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox36, "可查看详细电脑信息的工具\r\n单击即可打开");
+            this.pictureBox36.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseDown);
+            this.pictureBox36.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseUp);
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.Image = global::在线工具箱.Properties.Resources.diskinfo;
+            this.pictureBox35.Location = new System.Drawing.Point(681, 177);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox35.TabIndex = 37;
+            this.pictureBox35.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox35, "能查看磁盘的很多详细信息的工具\r\n单击即可打开");
+            this.pictureBox35.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox35_MouseDown);
+            this.pictureBox35.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox35_MouseUp);
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::在线工具箱.Properties.Resources.BatteryInfoView;
+            this.pictureBox21.Location = new System.Drawing.Point(556, 177);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox21.TabIndex = 35;
+            this.pictureBox21.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox21, "笔记本用户专用，能查看电池很详细的信息\r\n单击即可打开");
+            this.pictureBox21.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox21_MouseDown);
+            this.pictureBox21.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox21_MouseUp);
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::在线工具箱.Properties.Resources.KeyboardTestUtility;
+            this.pictureBox20.Location = new System.Drawing.Point(443, 177);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox20.TabIndex = 33;
+            this.pictureBox20.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox20, "用于检测键盘是否有问题\r\n单击即可打开");
+            this.pictureBox20.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox20_MouseDown);
+            this.pictureBox20.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox20_MouseUp);
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::在线工具箱.Properties.Resources.DisplayX;
+            this.pictureBox19.Location = new System.Drawing.Point(337, 177);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox19.TabIndex = 31;
+            this.pictureBox19.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox19, "用于检测显示器是否有问题\r\n单击即可打开");
+            this.pictureBox19.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox19_MouseDown);
+            this.pictureBox19.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox19_MouseUp);
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::在线工具箱.Properties.Resources.Defraggler;
+            this.pictureBox18.Location = new System.Drawing.Point(230, 177);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 29;
+            this.pictureBox18.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox18, "机械硬盘的用户可使用此工具，固态硬盘则无需使用\r\n单击即可打开");
+            this.pictureBox18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox18_MouseDown);
+            this.pictureBox18.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox18_MouseUp);
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::在线工具箱.Properties.Resources.xiangqi;
+            this.pictureBox17.Location = new System.Drawing.Point(128, 177);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 27;
+            this.pictureBox17.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox17, "用于测试处理器的科学计算能力\r\n单击即可打开");
+            this.pictureBox17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox17_MouseDown);
+            this.pictureBox17.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox17_MouseUp);
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::在线工具箱.Properties.Resources.memorycleaner;
+            this.pictureBox16.Location = new System.Drawing.Point(26, 177);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 25;
+            this.pictureBox16.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox16, "一款不错的内存清理工具，适合小内存的用户\r\n单击即可打开");
+            this.pictureBox16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox16_MouseDown);
+            this.pictureBox16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox16_MouseUp);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::在线工具箱.Properties.Resources.asssdbenchmark;
+            this.pictureBox15.Location = new System.Drawing.Point(681, 72);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 23;
+            this.pictureBox15.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox15, "硬盘速度测试工具\r\n单击即可打开");
+            this.pictureBox15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox15_MouseDown);
+            this.pictureBox15.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox15_MouseUp);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::在线工具箱.Properties.Resources.furmark;
+            this.pictureBox14.Location = new System.Drawing.Point(556, 72);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 21;
+            this.pictureBox14.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox14, "烤鸡工具，用来测试显卡稳定性\r\n单击即可打开");
+            this.pictureBox14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox14_MouseDown);
+            this.pictureBox14.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox14_MouseUp);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::在线工具箱.Properties.Resources.ssdz;
+            this.pictureBox13.Location = new System.Drawing.Point(443, 72);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 19;
+            this.pictureBox13.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox13, "专业的硬盘信息查看工具\r\n单击即可打开");
+            this.pictureBox13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox13_MouseDown);
+            this.pictureBox13.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox13_MouseUp);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::在线工具箱.Properties.Resources.gpuz;
+            this.pictureBox12.Location = new System.Drawing.Point(337, 72);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 17;
+            this.pictureBox12.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox12, "专业的显卡信息查看工具\r\n单击即可打开");
+            this.pictureBox12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox12_MouseDown);
+            this.pictureBox12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox12_MouseUp);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::在线工具箱.Properties.Resources.cpuz;
+            this.pictureBox11.Location = new System.Drawing.Point(230, 72);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 15;
+            this.pictureBox11.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox11, "专业的处理器信息查看工具\r\n单击即可打开");
+            this.pictureBox11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox11_MouseDown);
+            this.pictureBox11.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox11_MouseUp);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::在线工具箱.Properties.Resources.cpuz;
+            this.pictureBox10.Location = new System.Drawing.Point(128, 72);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 13;
+            this.pictureBox10.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox10, "专业的处理器信息查看工具\r\n单击即可打开");
+            this.pictureBox10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox10_MouseDown);
+            this.pictureBox10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox10_MouseUp);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::在线工具箱.Properties.Resources.aida64;
+            this.pictureBox9.Location = new System.Drawing.Point(26, 72);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 11;
+            this.pictureBox9.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox9, "一款能全面查看电脑信息的工具\r\n单击即可打开");
+            this.pictureBox9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseDown);
+            this.pictureBox9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseMove);
+            this.pictureBox9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseUp);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::在线工具箱.Properties.Resources.yingjiangongju;
+            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(55, 51);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox60
+            // 
+            this.pictureBox60.Image = global::在线工具箱.Properties.Resources.process;
+            this.pictureBox60.Location = new System.Drawing.Point(337, 297);
+            this.pictureBox60.Name = "pictureBox60";
+            this.pictureBox60.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox60.TabIndex = 67;
+            this.pictureBox60.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox60, "可以让你指定的进程卡死无响应，点击恢复即可恢复正常");
+            this.pictureBox60.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox60_MouseDown);
+            this.pictureBox60.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox60_MouseUp);
+            // 
+            // pictureBox59
+            // 
+            this.pictureBox59.Image = global::在线工具箱.Properties.Resources.chj;
+            this.pictureBox59.Location = new System.Drawing.Point(230, 297);
+            this.pictureBox59.Name = "pictureBox59";
+            this.pictureBox59.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox59.TabIndex = 65;
+            this.pictureBox59.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox59, "随机抽号器");
+            this.pictureBox59.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox59_MouseDown);
+            this.pictureBox59.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox59_MouseUp);
+            // 
+            // pictureBox54
+            // 
+            this.pictureBox54.Image = global::在线工具箱.Properties.Resources.Pointofix;
+            this.pictureBox54.Location = new System.Drawing.Point(128, 295);
+            this.pictureBox54.Name = "pictureBox54";
+            this.pictureBox54.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox54.TabIndex = 63;
+            this.pictureBox54.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox54, "能在屏幕上直接书写的工具");
+            this.pictureBox54.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox54_MouseDown);
+            this.pictureBox54.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox54_MouseUp);
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = global::在线工具箱.Properties.Resources.ip;
+            this.pictureBox32.Location = new System.Drawing.Point(26, 297);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox32.TabIndex = 55;
+            this.pictureBox32.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox32, "单击可查看本机IP地址及归属地");
+            this.pictureBox32.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox32_MouseDown);
+            this.pictureBox32.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox32_MouseUp);
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Image = global::在线工具箱.Properties.Resources.recuva;
+            this.pictureBox43.Location = new System.Drawing.Point(681, 188);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox43.TabIndex = 61;
+            this.pictureBox43.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox43, "一款更加好用的数据恢复软件\r\n单击即可打开");
+            this.pictureBox43.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox43_MouseDown);
+            this.pictureBox43.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox43_MouseUp);
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.Image = global::在线工具箱.Properties.Resources.finaldata;
+            this.pictureBox40.Location = new System.Drawing.Point(556, 188);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox40.TabIndex = 59;
+            this.pictureBox40.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox40, "一款较为专业的数据恢复软件\r\n单击即可打开");
+            this.pictureBox40.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox40_MouseDown);
+            this.pictureBox40.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox40_MouseUp);
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Image = global::在线工具箱.Properties.Resources.dism__;
+            this.pictureBox34.Location = new System.Drawing.Point(443, 188);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox34.TabIndex = 57;
+            this.pictureBox34.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox34, "十分硬核的系统调教工具，很难找的或找不到的系统设置它里面都有\r\n单击即可打开");
+            this.pictureBox34.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox34_MouseDown);
+            this.pictureBox34.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox34_MouseUp);
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Image = global::在线工具箱.Properties.Resources.dism__;
+            this.pictureBox33.Location = new System.Drawing.Point(337, 188);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox33.TabIndex = 55;
+            this.pictureBox33.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox33, "十分硬核的系统调教工具，很难找的或找不到的系统设置它里面都有\r\n单击即可打开");
+            this.pictureBox33.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox33_MouseDown);
+            this.pictureBox33.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox33_MouseUp);
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = global::在线工具箱.Properties.Resources.closeupdate;
+            this.pictureBox31.Location = new System.Drawing.Point(230, 188);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox31.TabIndex = 53;
+            this.pictureBox31.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox31, "能关掉系统自动更新\r\n单击即可打开");
+            this.pictureBox31.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox31_MouseDown);
+            this.pictureBox31.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox31_MouseUp);
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::在线工具箱.Properties.Resources.win10activator;
+            this.pictureBox30.Location = new System.Drawing.Point(128, 188);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox30.TabIndex = 51;
+            this.pictureBox30.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox30, "能激活win10的工具\r\n单击即可打开");
+            this.pictureBox30.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseDown);
+            this.pictureBox30.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseUp);
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::在线工具箱.Properties.Resources.dxrepair;
+            this.pictureBox29.Location = new System.Drawing.Point(26, 188);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox29.TabIndex = 49;
+            this.pictureBox29.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox29, "用于修复电脑DirectX文件问题\r\n单击即可打开");
+            this.pictureBox29.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseDown);
+            this.pictureBox29.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseUp);
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::在线工具箱.Properties.Resources.spacesniffer;
+            this.pictureBox28.Location = new System.Drawing.Point(681, 78);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox28.TabIndex = 47;
+            this.pictureBox28.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox28, "可帮你快速分析硬盘内各个文件的占用情况，并以最直观的\r\n方格大小显示出来\r\n单击即可打开");
+            this.pictureBox28.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseDown);
+            this.pictureBox28.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseUp);
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::在线工具箱.Properties.Resources.procexp;
+            this.pictureBox27.Location = new System.Drawing.Point(556, 78);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox27.TabIndex = 45;
+            this.pictureBox27.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox27, "十分专业的任务管理器，获取的信息量不亚于系统自带的任务管理器\r\n单击即可打开");
+            this.pictureBox27.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox27_MouseDown);
+            this.pictureBox27.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox27_MouseUp);
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::在线工具箱.Properties.Resources.everything;
+            this.pictureBox26.Location = new System.Drawing.Point(443, 78);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox26.TabIndex = 43;
+            this.pictureBox26.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox26, "可以快速帮你查找文件的工具，搜索速度比系统的搜索快\r\n单击即可打开");
+            this.pictureBox26.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseDown);
+            this.pictureBox26.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseUp);
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::在线工具箱.Properties.Resources.diskgenius;
+            this.pictureBox25.Location = new System.Drawing.Point(337, 78);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox25.TabIndex = 41;
+            this.pictureBox25.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox25, "十分专业的硬盘分区工具，也拥有很多系统没有的高级功能\r\n单击即可打开");
+            this.pictureBox25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox25_MouseDown);
+            this.pictureBox25.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox25_MouseUp);
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::在线工具箱.Properties.Resources.geek;
+            this.pictureBox24.Location = new System.Drawing.Point(230, 78);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox24.TabIndex = 37;
+            this.pictureBox24.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox24, "一款强力卸载工具，当系统自带的卸载功能不好用时可使用它\r\n单击即可打开");
+            this.pictureBox24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseDown);
+            this.pictureBox24.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseUp);
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::在线工具箱.Properties.Resources.screentogif;
+            this.pictureBox23.Location = new System.Drawing.Point(128, 78);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox23.TabIndex = 39;
+            this.pictureBox23.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox23, "GIF动图制作利器\r\n单击即可打开");
+            this.pictureBox23.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox23_MouseDown);
+            this.pictureBox23.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox23_MouseUp);
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::在线工具箱.Properties.Resources.bandicam;
+            this.pictureBox22.Location = new System.Drawing.Point(26, 78);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox22.TabIndex = 37;
+            this.pictureBox22.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox22, "一款功能较多的录屏软件\r\n单击即可打开");
+            this.pictureBox22.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox22_MouseDown);
+            this.pictureBox22.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox22_MouseUp);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::在线工具箱.Properties.Resources.shiyonggongju;
+            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(55, 56);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::在线工具箱.Properties.Resources.bgp1;
@@ -2187,6 +2579,7 @@
             this.label36.Size = new System.Drawing.Size(79, 20);
             this.label36.TabIndex = 6;
             this.label36.Text = "在线工具箱";
+            this.label36.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label36_MouseDown);
             // 
             // label2
             // 
@@ -2247,227 +2640,29 @@
             this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
-            // label67
+            // label70
             // 
-            this.label67.BackColor = System.Drawing.Color.Transparent;
-            this.label67.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label67.Location = new System.Drawing.Point(8, 194);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(126, 29);
-            this.label67.TabIndex = 73;
-            this.label67.Text = "软件推荐区：";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label70.Location = new System.Drawing.Point(431, 355);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(81, 26);
+            this.label70.TabIndex = 70;
+            this.label70.Text = "文本加密解密";
+            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel3
+            // pictureBox61
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel3.LinkColor = System.Drawing.Color.Teal;
-            this.linkLabel3.Location = new System.Drawing.Point(215, 233);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(104, 20);
-            this.linkLabel3.TabIndex = 74;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Chrome浏览器";
-            this.toolTip1.SetToolTip(this.linkLabel3, "由谷歌打造的浏览器");
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel4.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel4.Location = new System.Drawing.Point(333, 233);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(85, 20);
-            this.linkLabel4.TabIndex = 75;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Edge浏览器";
-            this.toolTip1.SetToolTip(this.linkLabel4, "由微软打造的浏览器");
-            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel5.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel5.Location = new System.Drawing.Point(439, 233);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(80, 20);
-            this.linkLabel5.TabIndex = 76;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "IDM下载器";
-            this.toolTip1.SetToolTip(this.linkLabel5, "最强网络下载器\r\n官方版需收费使用，所以此链接导向破解永久版下载\r\n提取码：run4");
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
-            // 
-            // linkLabel6
-            // 
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel6.LinkColor = System.Drawing.Color.Green;
-            this.linkLabel6.Location = new System.Drawing.Point(541, 233);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(64, 20);
-            this.linkLabel6.TabIndex = 77;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "WinRAR";
-            this.toolTip1.SetToolTip(this.linkLabel6, "老牌压缩软件，官方版有广告，此处导向破解无广告版");
-            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
-            // 
-            // linkLabel7
-            // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel7.LinkColor = System.Drawing.Color.Purple;
-            this.linkLabel7.Location = new System.Drawing.Point(625, 233);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel7.TabIndex = 78;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "7-Zip";
-            this.toolTip1.SetToolTip(this.linkLabel7, "小巧的压缩软件，以其拥有极高压缩比而著称");
-            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
-            // 
-            // linkLabel8
-            // 
-            this.linkLabel8.AutoSize = true;
-            this.linkLabel8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel8.LinkColor = System.Drawing.Color.Maroon;
-            this.linkLabel8.Location = new System.Drawing.Point(685, 233);
-            this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(157, 20);
-            this.linkLabel8.TabIndex = 79;
-            this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "Advanced SystemCare";
-            this.toolTip1.SetToolTip(this.linkLabel8, "系统优化管理软件，功能强大不流氓\r\n全方位吊打某60");
-            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
-            // 
-            // linkLabel9
-            // 
-            this.linkLabel9.AutoSize = true;
-            this.linkLabel9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel9.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel9.Location = new System.Drawing.Point(15, 271);
-            this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(81, 20);
-            this.linkLabel9.TabIndex = 80;
-            this.linkLabel9.TabStop = true;
-            this.linkLabel9.Text = "WPS Pro版";
-            this.toolTip1.SetToolTip(this.linkLabel9, "此版本的WPS没有广告，比普通版简洁高效\r\n提取码：4z8r");
-            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
-            // 
-            // linkLabel10
-            // 
-            this.linkLabel10.AutoSize = true;
-            this.linkLabel10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel10.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.linkLabel10.Location = new System.Drawing.Point(113, 271);
-            this.linkLabel10.Name = "linkLabel10";
-            this.linkLabel10.Size = new System.Drawing.Size(85, 20);
-            this.linkLabel10.TabIndex = 81;
-            this.linkLabel10.TabStop = true;
-            this.linkLabel10.Text = "Office 2019";
-            this.toolTip1.SetToolTip(this.linkLabel10, "带激活工具\r\n提取码：q4wt");
-            this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
-            // 
-            // linkLabel11
-            // 
-            this.linkLabel11.AutoSize = true;
-            this.linkLabel11.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel11.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkLabel11.Location = new System.Drawing.Point(217, 271);
-            this.linkLabel11.Name = "linkLabel11";
-            this.linkLabel11.Size = new System.Drawing.Size(93, 20);
-            this.linkLabel11.TabIndex = 82;
-            this.linkLabel11.TabStop = true;
-            this.linkLabel11.Text = "流氓软件清理";
-            this.toolTip1.SetToolTip(this.linkLabel11, "软件名SoftCnKiller，是一款强大的流氓软件斩草除根工具");
-            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked);
-            // 
-            // linkLabel12
-            // 
-            this.linkLabel12.AutoSize = true;
-            this.linkLabel12.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel12.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkLabel12.Location = new System.Drawing.Point(325, 271);
-            this.linkLabel12.Name = "linkLabel12";
-            this.linkLabel12.Size = new System.Drawing.Size(79, 20);
-            this.linkLabel12.TabIndex = 83;
-            this.linkLabel12.TabStop = true;
-            this.linkLabel12.Text = "手心输入法";
-            this.toolTip1.SetToolTip(this.linkLabel12, "没有广告，界面简洁，速度快的输入法");
-            this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked);
-            // 
-            // linkLabel13
-            // 
-            this.linkLabel13.AutoSize = true;
-            this.linkLabel13.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel13.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkLabel13.Location = new System.Drawing.Point(439, 271);
-            this.linkLabel13.Name = "linkLabel13";
-            this.linkLabel13.Size = new System.Drawing.Size(65, 20);
-            this.linkLabel13.TabIndex = 84;
-            this.linkLabel13.TabStop = true;
-            this.linkLabel13.Text = "格式工厂";
-            this.toolTip1.SetToolTip(this.linkLabel13, "知名的文件格式转换工具，转换功能十分强大");
-            this.linkLabel13.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel13_LinkClicked);
-            // 
-            // linkLabel14
-            // 
-            this.linkLabel14.AutoSize = true;
-            this.linkLabel14.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel14.LinkColor = System.Drawing.Color.Purple;
-            this.linkLabel14.Location = new System.Drawing.Point(531, 271);
-            this.linkLabel14.Name = "linkLabel14";
-            this.linkLabel14.Size = new System.Drawing.Size(94, 20);
-            this.linkLabel14.TabIndex = 85;
-            this.linkLabel14.TabStop = true;
-            this.linkLabel14.Text = "OCR文字识别";
-            this.toolTip1.SetToolTip(this.linkLabel14, "屏幕里的字复制不了怎么办？此工具能识别屏幕里出现的字符，并能复制下来");
-            this.linkLabel14.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel14_LinkClicked);
-            // 
-            // linkLabel15
-            // 
-            this.linkLabel15.AutoSize = true;
-            this.linkLabel15.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel15.LinkColor = System.Drawing.Color.Tomato;
-            this.linkLabel15.Location = new System.Drawing.Point(658, 271);
-            this.linkLabel15.Name = "linkLabel15";
-            this.linkLabel15.Size = new System.Drawing.Size(129, 20);
-            this.linkLabel15.TabIndex = 86;
-            this.linkLabel15.TabStop = true;
-            this.linkLabel15.Text = "QQ微信消息防撤回";
-            this.toolTip1.SetToolTip(this.linkLabel15, "安装此工具后，电脑QQ，微信上别人撤回的消息你依然能看到\r\n(仅限电脑，手机上不能看到撤回的消息)");
-            this.linkLabel15.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel15_LinkClicked);
-            // 
-            // linkLabel16
-            // 
-            this.linkLabel16.AutoSize = true;
-            this.linkLabel16.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel16.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkLabel16.Location = new System.Drawing.Point(15, 306);
-            this.linkLabel16.Name = "linkLabel16";
-            this.linkLabel16.Size = new System.Drawing.Size(93, 20);
-            this.linkLabel16.TabIndex = 87;
-            this.linkLabel16.TabStop = true;
-            this.linkLabel16.Text = "洛雪音乐助手";
-            this.toolTip1.SetToolTip(this.linkLabel16, "破解音乐软件，界面美观，功能强大，\r\n支持付费音乐，vip音乐在线听以及下载\r\n(此软件默认关闭下载功能，初次使用要前往设置开启下载功能)\r\n(软件发布网页在国外" +
-        "，访问下载会稍慢许多)");
-            this.linkLabel16.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel16_LinkClicked);
-            // 
-            // linkLabel17
-            // 
-            this.linkLabel17.AutoSize = true;
-            this.linkLabel17.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel17.LinkColor = System.Drawing.Color.Green;
-            this.linkLabel17.Location = new System.Drawing.Point(124, 306);
-            this.linkLabel17.Name = "linkLabel17";
-            this.linkLabel17.Size = new System.Drawing.Size(107, 20);
-            this.linkLabel17.TabIndex = 88;
-            this.linkLabel17.TabStop = true;
-            this.linkLabel17.Text = "人声伴奏分离器";
-            this.toolTip1.SetToolTip(this.linkLabel17, "能分离歌声和伴奏的工具\r\n使用方法：\r\n将想要分离的音乐文件拖到此工具图标上方，\r\n即可开始自动分离");
-            this.linkLabel17.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel17_LinkClicked);
+            this.pictureBox61.Image = global::在线工具箱.Properties.Resources.process;
+            this.pictureBox61.Location = new System.Drawing.Point(443, 297);
+            this.pictureBox61.Name = "pictureBox61";
+            this.pictureBox61.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox61.TabIndex = 69;
+            this.pictureBox61.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox61, "此工具目前仅支持base64，二进制的加密解密");
+            this.pictureBox61.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox61_MouseDown);
+            this.pictureBox61.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox61_MouseUp);
             // 
             // Form1
             // 
@@ -2499,6 +2694,10 @@
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
@@ -2506,8 +2705,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
@@ -2515,7 +2712,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
@@ -2538,7 +2734,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
@@ -2563,6 +2760,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2750,6 +2948,25 @@
         private System.Windows.Forms.LinkLabel linkLabel11;
         private System.Windows.Forms.LinkLabel linkLabel10;
         private System.Windows.Forms.LinkLabel linkLabel17;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
+        private System.Windows.Forms.ToolStripMenuItem 我无法下载ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 运行检查工具ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem 所有节点都无法使用ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 此情况出现几率较小如有请等待12天再试ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem 工具下载中卡住了ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重启程序再试即可ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem 工具无法启动ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 尝试点击清除缓存即可ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 可能电脑不支持此工具ToolStripMenuItem;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.PictureBox pictureBox59;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.PictureBox pictureBox60;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.PictureBox pictureBox61;
     }
 }
 
