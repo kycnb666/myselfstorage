@@ -173,6 +173,16 @@ namespace 在线工具箱.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap chj {
+            get {
+                object obj = ResourceManager.GetObject("chj", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap ck {
             get {
                 object obj = ResourceManager.GetObject("ck", resourceCulture);
@@ -505,6 +515,16 @@ namespace 在线工具箱.Properties {
         internal static System.Drawing.Bitmap Pointofix {
             get {
                 object obj = ResourceManager.GetObject("Pointofix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap process {
+            get {
+                object obj = ResourceManager.GetObject("process", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
