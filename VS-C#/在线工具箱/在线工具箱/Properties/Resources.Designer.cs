@@ -652,6 +652,16 @@ namespace 在线工具箱.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap Victoria {
+            get {
+                object obj = ResourceManager.GetObject("Victoria", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap weipe {
             get {
                 object obj = ResourceManager.GetObject("weipe", resourceCulture);
