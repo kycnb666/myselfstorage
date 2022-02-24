@@ -105,6 +105,27 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label65 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label66 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
@@ -137,24 +158,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -162,8 +165,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label45 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
@@ -171,6 +173,26 @@
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.pictureBox61 = new System.Windows.Forms.PictureBox();
+            this.pictureBox60 = new System.Windows.Forms.PictureBox();
+            this.pictureBox59 = new System.Windows.Forms.PictureBox();
+            this.pictureBox54 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox58 = new System.Windows.Forms.PictureBox();
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
             this.pictureBox56 = new System.Windows.Forms.PictureBox();
@@ -178,6 +200,7 @@
             this.pictureBox53 = new System.Windows.Forms.PictureBox();
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox62 = new System.Windows.Forms.PictureBox();
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
@@ -200,25 +223,6 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox60 = new System.Windows.Forms.PictureBox();
-            this.pictureBox59 = new System.Windows.Forms.PictureBox();
-            this.pictureBox54 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -229,15 +233,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.pictureBox61 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
@@ -245,6 +247,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
@@ -252,6 +274,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
@@ -274,32 +297,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -398,7 +401,6 @@
             // 
             this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.toolStripTextBox1.Enabled = false;
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(208, 16);
             this.toolStripTextBox1.Text = "如果无法进行下载，或检测不到更新等";
@@ -407,7 +409,6 @@
             // 
             this.toolStripTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.toolStripTextBox2.Enabled = false;
-            this.toolStripTextBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
             this.toolStripTextBox2.Size = new System.Drawing.Size(205, 16);
             this.toolStripTextBox2.Text = "原因，您可以选一个来更换";
@@ -452,7 +453,6 @@
             // 
             this.toolStripTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.toolStripTextBox5.Enabled = false;
-            this.toolStripTextBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox5.Name = "toolStripTextBox5";
             this.toolStripTextBox5.Size = new System.Drawing.Size(210, 16);
             this.toolStripTextBox5.Text = "如果本程序自带的更新功能失效，请您";
@@ -461,7 +461,6 @@
             // 
             this.toolStripTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.toolStripTextBox6.Enabled = false;
-            this.toolStripTextBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox6.Name = "toolStripTextBox6";
             this.toolStripTextBox6.Size = new System.Drawing.Size(200, 16);
             this.toolStripTextBox6.Text = "点击以下任意网址进入浏览器下载";
@@ -642,12 +641,12 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(9, 81);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(879, 453);
+            this.panel2.Size = new System.Drawing.Size(879, 468);
             this.panel2.TabIndex = 7;
             // 
             // panel7
@@ -686,7 +685,7 @@
             this.panel7.Controls.Add(this.pictureBox44);
             this.panel7.Controls.Add(this.label47);
             this.panel7.Controls.Add(this.pictureBox42);
-            this.panel7.Location = new System.Drawing.Point(0, 1932);
+            this.panel7.Location = new System.Drawing.Point(0, 1950);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(862, 474);
             this.panel7.TabIndex = 4;
@@ -1036,7 +1035,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(0, 1);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(862, 450);
+            this.panel3.Size = new System.Drawing.Size(862, 468);
             this.panel3.TabIndex = 0;
             // 
             // label65
@@ -1065,6 +1064,274 @@
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel5.Controls.Add(this.label70);
+            this.panel5.Controls.Add(this.pictureBox61);
+            this.panel5.Controls.Add(this.label69);
+            this.panel5.Controls.Add(this.pictureBox60);
+            this.panel5.Controls.Add(this.label68);
+            this.panel5.Controls.Add(this.pictureBox59);
+            this.panel5.Controls.Add(this.label60);
+            this.panel5.Controls.Add(this.pictureBox54);
+            this.panel5.Controls.Add(this.label35);
+            this.panel5.Controls.Add(this.label48);
+            this.panel5.Controls.Add(this.pictureBox32);
+            this.panel5.Controls.Add(this.pictureBox43);
+            this.panel5.Controls.Add(this.label44);
+            this.panel5.Controls.Add(this.pictureBox40);
+            this.panel5.Controls.Add(this.label38);
+            this.panel5.Controls.Add(this.pictureBox34);
+            this.panel5.Controls.Add(this.label37);
+            this.panel5.Controls.Add(this.pictureBox33);
+            this.panel5.Controls.Add(this.label34);
+            this.panel5.Controls.Add(this.pictureBox31);
+            this.panel5.Controls.Add(this.label33);
+            this.panel5.Controls.Add(this.pictureBox30);
+            this.panel5.Controls.Add(this.label32);
+            this.panel5.Controls.Add(this.pictureBox29);
+            this.panel5.Controls.Add(this.label31);
+            this.panel5.Controls.Add(this.pictureBox28);
+            this.panel5.Controls.Add(this.label30);
+            this.panel5.Controls.Add(this.pictureBox27);
+            this.panel5.Controls.Add(this.label29);
+            this.panel5.Controls.Add(this.pictureBox26);
+            this.panel5.Controls.Add(this.label28);
+            this.panel5.Controls.Add(this.pictureBox25);
+            this.panel5.Controls.Add(this.label27);
+            this.panel5.Controls.Add(this.label26);
+            this.panel5.Controls.Add(this.pictureBox24);
+            this.panel5.Controls.Add(this.pictureBox23);
+            this.panel5.Controls.Add(this.label25);
+            this.panel5.Controls.Add(this.pictureBox22);
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.pictureBox7);
+            this.panel5.Location = new System.Drawing.Point(0, 960);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(862, 498);
+            this.panel5.TabIndex = 2;
+            // 
+            // label70
+            // 
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label70.Location = new System.Drawing.Point(431, 355);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(81, 26);
+            this.label70.TabIndex = 70;
+            this.label70.Text = "文本加密解密";
+            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label69
+            // 
+            this.label69.BackColor = System.Drawing.Color.Transparent;
+            this.label69.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label69.Location = new System.Drawing.Point(325, 355);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(81, 26);
+            this.label69.TabIndex = 68;
+            this.label69.Text = "冻结恢复进程";
+            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.Color.Transparent;
+            this.label68.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label68.Location = new System.Drawing.Point(218, 355);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(81, 35);
+            this.label68.TabIndex = 66;
+            this.label68.Text = "抽号机\r\n(可改标题)";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label60
+            // 
+            this.label60.BackColor = System.Drawing.Color.Transparent;
+            this.label60.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label60.Location = new System.Drawing.Point(116, 355);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(81, 26);
+            this.label60.TabIndex = 64;
+            this.label60.Text = "屏幕画笔";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label35.Location = new System.Drawing.Point(14, 355);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(81, 26);
+            this.label35.TabIndex = 56;
+            this.label35.Text = "本机IP地址";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label48
+            // 
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label48.Location = new System.Drawing.Point(659, 246);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(107, 26);
+            this.label48.TabIndex = 62;
+            this.label48.Text = "recuva数据恢复";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label44
+            // 
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label44.Location = new System.Drawing.Point(544, 246);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(81, 26);
+            this.label44.TabIndex = 60;
+            this.label44.Text = "数据恢复";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label38.Location = new System.Drawing.Point(424, 246);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(100, 26);
+            this.label38.TabIndex = 58;
+            this.label38.Text = "Dism++(32位)";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label37.Location = new System.Drawing.Point(318, 246);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(100, 26);
+            this.label37.TabIndex = 56;
+            this.label37.Text = "Dism++(64位)";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label34.Location = new System.Drawing.Point(203, 246);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(116, 26);
+            this.label34.TabIndex = 54;
+            this.label34.Text = "关闭系统自动更新";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label33.Location = new System.Drawing.Point(101, 246);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(116, 26);
+            this.label33.TabIndex = 52;
+            this.label33.Text = "win10激活工具";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label32.Location = new System.Drawing.Point(14, 246);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(81, 26);
+            this.label32.TabIndex = 50;
+            this.label32.Text = "DirectX修复";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label31.Location = new System.Drawing.Point(669, 136);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(81, 26);
+            this.label31.TabIndex = 48;
+            this.label31.Text = "SpaceSniffer";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label30.Location = new System.Drawing.Point(544, 136);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(81, 26);
+            this.label30.TabIndex = 46;
+            this.label30.Text = "procexp";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label29.Location = new System.Drawing.Point(431, 136);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(81, 26);
+            this.label29.TabIndex = 44;
+            this.label29.Text = "Everything";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label28.Location = new System.Drawing.Point(325, 136);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(81, 26);
+            this.label28.TabIndex = 42;
+            this.label28.Text = "DiskGenius";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label27.Location = new System.Drawing.Point(221, 136);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(78, 26);
+            this.label27.TabIndex = 38;
+            this.label27.Text = "geek卸载器";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.Location = new System.Drawing.Point(116, 136);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(81, 26);
+            this.label26.TabIndex = 40;
+            this.label26.Text = "ScreenToGif";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label25.Location = new System.Drawing.Point(14, 136);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(81, 26);
+            this.label25.TabIndex = 38;
+            this.label25.Text = "班迪录屏";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Location = new System.Drawing.Point(59, 3);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(159, 51);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "系统与实用工具";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -1083,7 +1350,7 @@
             this.panel6.Controls.Add(this.pictureBox52);
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.pictureBox8);
-            this.panel6.Location = new System.Drawing.Point(0, 1440);
+            this.panel6.Location = new System.Drawing.Point(0, 1458);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(862, 492);
             this.panel6.TabIndex = 3;
@@ -1179,6 +1446,8 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel4.Controls.Add(this.label71);
+            this.panel4.Controls.Add(this.pictureBox62);
             this.panel4.Controls.Add(this.label57);
             this.panel4.Controls.Add(this.pictureBox51);
             this.panel4.Controls.Add(this.label56);
@@ -1223,7 +1492,7 @@
             this.panel4.Controls.Add(this.pictureBox9);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.pictureBox6);
-            this.panel4.Location = new System.Drawing.Point(0, 451);
+            this.panel4.Location = new System.Drawing.Point(0, 469);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(862, 491);
             this.panel4.TabIndex = 1;
@@ -1470,241 +1739,6 @@
             this.label9.Text = "硬件工具";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panel5.Controls.Add(this.label70);
-            this.panel5.Controls.Add(this.pictureBox61);
-            this.panel5.Controls.Add(this.label69);
-            this.panel5.Controls.Add(this.pictureBox60);
-            this.panel5.Controls.Add(this.label68);
-            this.panel5.Controls.Add(this.pictureBox59);
-            this.panel5.Controls.Add(this.label60);
-            this.panel5.Controls.Add(this.pictureBox54);
-            this.panel5.Controls.Add(this.label35);
-            this.panel5.Controls.Add(this.label48);
-            this.panel5.Controls.Add(this.pictureBox32);
-            this.panel5.Controls.Add(this.pictureBox43);
-            this.panel5.Controls.Add(this.label44);
-            this.panel5.Controls.Add(this.pictureBox40);
-            this.panel5.Controls.Add(this.label38);
-            this.panel5.Controls.Add(this.pictureBox34);
-            this.panel5.Controls.Add(this.label37);
-            this.panel5.Controls.Add(this.pictureBox33);
-            this.panel5.Controls.Add(this.label34);
-            this.panel5.Controls.Add(this.pictureBox31);
-            this.panel5.Controls.Add(this.label33);
-            this.panel5.Controls.Add(this.pictureBox30);
-            this.panel5.Controls.Add(this.label32);
-            this.panel5.Controls.Add(this.pictureBox29);
-            this.panel5.Controls.Add(this.label31);
-            this.panel5.Controls.Add(this.pictureBox28);
-            this.panel5.Controls.Add(this.label30);
-            this.panel5.Controls.Add(this.pictureBox27);
-            this.panel5.Controls.Add(this.label29);
-            this.panel5.Controls.Add(this.pictureBox26);
-            this.panel5.Controls.Add(this.label28);
-            this.panel5.Controls.Add(this.pictureBox25);
-            this.panel5.Controls.Add(this.label27);
-            this.panel5.Controls.Add(this.label26);
-            this.panel5.Controls.Add(this.pictureBox24);
-            this.panel5.Controls.Add(this.pictureBox23);
-            this.panel5.Controls.Add(this.label25);
-            this.panel5.Controls.Add(this.pictureBox22);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Controls.Add(this.pictureBox7);
-            this.panel5.Location = new System.Drawing.Point(0, 942);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(862, 498);
-            this.panel5.TabIndex = 2;
-            // 
-            // label60
-            // 
-            this.label60.BackColor = System.Drawing.Color.Transparent;
-            this.label60.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label60.Location = new System.Drawing.Point(116, 355);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(81, 26);
-            this.label60.TabIndex = 64;
-            this.label60.Text = "屏幕画笔";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label35
-            // 
-            this.label35.BackColor = System.Drawing.Color.Transparent;
-            this.label35.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label35.Location = new System.Drawing.Point(14, 355);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(81, 26);
-            this.label35.TabIndex = 56;
-            this.label35.Text = "本机IP地址";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label48
-            // 
-            this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label48.Location = new System.Drawing.Point(659, 246);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(107, 26);
-            this.label48.TabIndex = 62;
-            this.label48.Text = "recuva数据恢复";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label44.Location = new System.Drawing.Point(544, 246);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(81, 26);
-            this.label44.TabIndex = 60;
-            this.label44.Text = "数据恢复";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label38
-            // 
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label38.Location = new System.Drawing.Point(424, 246);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(100, 26);
-            this.label38.TabIndex = 58;
-            this.label38.Text = "Dism++(32位)";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.BackColor = System.Drawing.Color.Transparent;
-            this.label37.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label37.Location = new System.Drawing.Point(318, 246);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(100, 26);
-            this.label37.TabIndex = 56;
-            this.label37.Text = "Dism++(64位)";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label34.Location = new System.Drawing.Point(203, 246);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(116, 26);
-            this.label34.TabIndex = 54;
-            this.label34.Text = "关闭系统自动更新";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label33.Location = new System.Drawing.Point(101, 246);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(116, 26);
-            this.label33.TabIndex = 52;
-            this.label33.Text = "win10激活工具";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.Color.Transparent;
-            this.label32.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label32.Location = new System.Drawing.Point(14, 246);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(81, 26);
-            this.label32.TabIndex = 50;
-            this.label32.Text = "DirectX修复";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label31
-            // 
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label31.Location = new System.Drawing.Point(669, 136);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(81, 26);
-            this.label31.TabIndex = 48;
-            this.label31.Text = "SpaceSniffer";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label30.Location = new System.Drawing.Point(544, 136);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(81, 26);
-            this.label30.TabIndex = 46;
-            this.label30.Text = "procexp";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label29.Location = new System.Drawing.Point(431, 136);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(81, 26);
-            this.label29.TabIndex = 44;
-            this.label29.Text = "Everything";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label28.Location = new System.Drawing.Point(325, 136);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(81, 26);
-            this.label28.TabIndex = 42;
-            this.label28.Text = "DiskGenius";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label27.Location = new System.Drawing.Point(221, 136);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(78, 26);
-            this.label27.TabIndex = 38;
-            this.label27.Text = "geek卸载器";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.Location = new System.Drawing.Point(116, 136);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(81, 26);
-            this.label26.TabIndex = 40;
-            this.label26.Text = "ScreenToGif";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label25.Location = new System.Drawing.Point(14, 136);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(81, 26);
-            this.label25.TabIndex = 38;
-            this.label25.Text = "班迪录屏";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(59, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(159, 51);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "系统与实用工具";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
@@ -1782,27 +1816,16 @@
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
-            // label68
+            // label71
             // 
-            this.label68.BackColor = System.Drawing.Color.Transparent;
-            this.label68.Font = new System.Drawing.Font("微软雅黑", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label68.Location = new System.Drawing.Point(218, 355);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(81, 35);
-            this.label68.TabIndex = 66;
-            this.label68.Text = "抽号机\r\n(可改标题)";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label69
-            // 
-            this.label69.BackColor = System.Drawing.Color.Transparent;
-            this.label69.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label69.Location = new System.Drawing.Point(325, 355);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(81, 26);
-            this.label69.TabIndex = 68;
-            this.label69.Text = "冻结恢复进程";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label71.BackColor = System.Drawing.Color.Transparent;
+            this.label71.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label71.Location = new System.Drawing.Point(14, 432);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(81, 35);
+            this.label71.TabIndex = 54;
+            this.label71.Text = "Victoria\r\n(坏道检测)";
+            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox49
             // 
@@ -1892,6 +1915,263 @@
             this.pictureBox42.TabIndex = 1;
             this.pictureBox42.TabStop = false;
             // 
+            // pictureBox61
+            // 
+            this.pictureBox61.Image = global::在线工具箱.Properties.Resources.process;
+            this.pictureBox61.Location = new System.Drawing.Point(443, 297);
+            this.pictureBox61.Name = "pictureBox61";
+            this.pictureBox61.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox61.TabIndex = 69;
+            this.pictureBox61.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox61, "此工具目前仅支持base64，二进制的加密解密");
+            this.pictureBox61.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox61_MouseDown);
+            this.pictureBox61.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox61_MouseUp);
+            // 
+            // pictureBox60
+            // 
+            this.pictureBox60.Image = global::在线工具箱.Properties.Resources.process;
+            this.pictureBox60.Location = new System.Drawing.Point(337, 297);
+            this.pictureBox60.Name = "pictureBox60";
+            this.pictureBox60.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox60.TabIndex = 67;
+            this.pictureBox60.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox60, "可以让你指定的进程卡死无响应，点击恢复即可恢复正常");
+            this.pictureBox60.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox60_MouseDown);
+            this.pictureBox60.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox60_MouseUp);
+            // 
+            // pictureBox59
+            // 
+            this.pictureBox59.Image = global::在线工具箱.Properties.Resources.chj;
+            this.pictureBox59.Location = new System.Drawing.Point(230, 297);
+            this.pictureBox59.Name = "pictureBox59";
+            this.pictureBox59.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox59.TabIndex = 65;
+            this.pictureBox59.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox59, "随机抽号器");
+            this.pictureBox59.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox59_MouseDown);
+            this.pictureBox59.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox59_MouseUp);
+            // 
+            // pictureBox54
+            // 
+            this.pictureBox54.Image = global::在线工具箱.Properties.Resources.Pointofix;
+            this.pictureBox54.Location = new System.Drawing.Point(128, 295);
+            this.pictureBox54.Name = "pictureBox54";
+            this.pictureBox54.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox54.TabIndex = 63;
+            this.pictureBox54.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox54, "能在屏幕上直接书写的工具");
+            this.pictureBox54.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox54_MouseDown);
+            this.pictureBox54.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox54_MouseUp);
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = global::在线工具箱.Properties.Resources.ip;
+            this.pictureBox32.Location = new System.Drawing.Point(26, 297);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox32.TabIndex = 55;
+            this.pictureBox32.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox32, "单击可查看本机IP地址及归属地");
+            this.pictureBox32.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox32_MouseDown);
+            this.pictureBox32.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox32_MouseUp);
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Image = global::在线工具箱.Properties.Resources.recuva;
+            this.pictureBox43.Location = new System.Drawing.Point(681, 188);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox43.TabIndex = 61;
+            this.pictureBox43.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox43, "一款更加好用的数据恢复软件\r\n单击即可打开");
+            this.pictureBox43.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox43_MouseDown);
+            this.pictureBox43.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox43_MouseUp);
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.Image = global::在线工具箱.Properties.Resources.finaldata;
+            this.pictureBox40.Location = new System.Drawing.Point(556, 188);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox40.TabIndex = 59;
+            this.pictureBox40.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox40, "一款较为专业的数据恢复软件\r\n单击即可打开");
+            this.pictureBox40.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox40_MouseDown);
+            this.pictureBox40.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox40_MouseUp);
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Image = global::在线工具箱.Properties.Resources.dism__;
+            this.pictureBox34.Location = new System.Drawing.Point(443, 188);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox34.TabIndex = 57;
+            this.pictureBox34.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox34, "十分硬核的系统调教工具，很难找的或找不到的系统设置它里面都有\r\n单击即可打开");
+            this.pictureBox34.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox34_MouseDown);
+            this.pictureBox34.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox34_MouseUp);
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Image = global::在线工具箱.Properties.Resources.dism__;
+            this.pictureBox33.Location = new System.Drawing.Point(337, 188);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox33.TabIndex = 55;
+            this.pictureBox33.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox33, "十分硬核的系统调教工具，很难找的或找不到的系统设置它里面都有\r\n单击即可打开");
+            this.pictureBox33.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox33_MouseDown);
+            this.pictureBox33.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox33_MouseUp);
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = global::在线工具箱.Properties.Resources.closeupdate;
+            this.pictureBox31.Location = new System.Drawing.Point(230, 188);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox31.TabIndex = 53;
+            this.pictureBox31.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox31, "能关掉系统自动更新\r\n单击即可打开");
+            this.pictureBox31.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox31_MouseDown);
+            this.pictureBox31.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox31_MouseUp);
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::在线工具箱.Properties.Resources.win10activator;
+            this.pictureBox30.Location = new System.Drawing.Point(128, 188);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox30.TabIndex = 51;
+            this.pictureBox30.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox30, "能激活win10的工具\r\n单击即可打开");
+            this.pictureBox30.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseDown);
+            this.pictureBox30.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseUp);
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::在线工具箱.Properties.Resources.dxrepair;
+            this.pictureBox29.Location = new System.Drawing.Point(26, 188);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox29.TabIndex = 49;
+            this.pictureBox29.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox29, "用于修复电脑DirectX文件问题\r\n单击即可打开");
+            this.pictureBox29.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseDown);
+            this.pictureBox29.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseUp);
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::在线工具箱.Properties.Resources.spacesniffer;
+            this.pictureBox28.Location = new System.Drawing.Point(681, 78);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox28.TabIndex = 47;
+            this.pictureBox28.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox28, "可帮你快速分析硬盘内各个文件的占用情况，并以最直观的\r\n方格大小显示出来\r\n单击即可打开");
+            this.pictureBox28.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseDown);
+            this.pictureBox28.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseUp);
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::在线工具箱.Properties.Resources.procexp;
+            this.pictureBox27.Location = new System.Drawing.Point(556, 78);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox27.TabIndex = 45;
+            this.pictureBox27.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox27, "十分专业的任务管理器，获取的信息量不亚于系统自带的任务管理器\r\n单击即可打开");
+            this.pictureBox27.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox27_MouseDown);
+            this.pictureBox27.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox27_MouseUp);
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::在线工具箱.Properties.Resources.everything;
+            this.pictureBox26.Location = new System.Drawing.Point(443, 78);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox26.TabIndex = 43;
+            this.pictureBox26.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox26, "可以快速帮你查找文件的工具，搜索速度比系统的搜索快\r\n单击即可打开");
+            this.pictureBox26.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseDown);
+            this.pictureBox26.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseUp);
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::在线工具箱.Properties.Resources.diskgenius;
+            this.pictureBox25.Location = new System.Drawing.Point(337, 78);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox25.TabIndex = 41;
+            this.pictureBox25.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox25, "十分专业的硬盘分区工具，也拥有很多系统没有的高级功能\r\n单击即可打开");
+            this.pictureBox25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox25_MouseDown);
+            this.pictureBox25.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox25_MouseUp);
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::在线工具箱.Properties.Resources.geek;
+            this.pictureBox24.Location = new System.Drawing.Point(230, 78);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox24.TabIndex = 37;
+            this.pictureBox24.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox24, "一款强力卸载工具，当系统自带的卸载功能不好用时可使用它\r\n单击即可打开");
+            this.pictureBox24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseDown);
+            this.pictureBox24.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseUp);
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::在线工具箱.Properties.Resources.screentogif;
+            this.pictureBox23.Location = new System.Drawing.Point(128, 78);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox23.TabIndex = 39;
+            this.pictureBox23.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox23, "GIF动图制作利器\r\n单击即可打开");
+            this.pictureBox23.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox23_MouseDown);
+            this.pictureBox23.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox23_MouseUp);
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::在线工具箱.Properties.Resources.bandicam;
+            this.pictureBox22.Location = new System.Drawing.Point(26, 78);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox22.TabIndex = 37;
+            this.pictureBox22.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox22, "一款功能较多的录屏软件\r\n单击即可打开");
+            this.pictureBox22.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox22_MouseDown);
+            this.pictureBox22.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox22_MouseUp);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::在线工具箱.Properties.Resources.shiyonggongju;
+            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(55, 56);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
             // pictureBox58
             // 
             this.pictureBox58.Image = global::在线工具箱.Properties.Resources.rufus;
@@ -1979,6 +2259,19 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox62
+            // 
+            this.pictureBox62.Image = global::在线工具箱.Properties.Resources.Victoria;
+            this.pictureBox62.Location = new System.Drawing.Point(26, 372);
+            this.pictureBox62.Name = "pictureBox62";
+            this.pictureBox62.Size = new System.Drawing.Size(56, 55);
+            this.pictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox62.TabIndex = 53;
+            this.pictureBox62.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox62, "十分专业的磁盘检测工具，可检查磁盘坏道，SMART信息等\r\n单击即可打开");
+            this.pictureBox62.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox62_MouseDown);
+            this.pictureBox62.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox62_MouseUp);
             // 
             // pictureBox51
             // 
@@ -2264,254 +2557,10 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBox60
-            // 
-            this.pictureBox60.Image = global::在线工具箱.Properties.Resources.process;
-            this.pictureBox60.Location = new System.Drawing.Point(337, 297);
-            this.pictureBox60.Name = "pictureBox60";
-            this.pictureBox60.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox60.TabIndex = 67;
-            this.pictureBox60.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox60, "可以让你指定的进程卡死无响应，点击恢复即可恢复正常");
-            this.pictureBox60.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox60_MouseDown);
-            this.pictureBox60.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox60_MouseUp);
-            // 
-            // pictureBox59
-            // 
-            this.pictureBox59.Image = global::在线工具箱.Properties.Resources.chj;
-            this.pictureBox59.Location = new System.Drawing.Point(230, 297);
-            this.pictureBox59.Name = "pictureBox59";
-            this.pictureBox59.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox59.TabIndex = 65;
-            this.pictureBox59.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox59, "随机抽号器");
-            this.pictureBox59.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox59_MouseDown);
-            this.pictureBox59.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox59_MouseUp);
-            // 
-            // pictureBox54
-            // 
-            this.pictureBox54.Image = global::在线工具箱.Properties.Resources.Pointofix;
-            this.pictureBox54.Location = new System.Drawing.Point(128, 295);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox54.TabIndex = 63;
-            this.pictureBox54.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox54, "能在屏幕上直接书写的工具");
-            this.pictureBox54.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox54_MouseDown);
-            this.pictureBox54.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox54_MouseUp);
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Image = global::在线工具箱.Properties.Resources.ip;
-            this.pictureBox32.Location = new System.Drawing.Point(26, 297);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox32.TabIndex = 55;
-            this.pictureBox32.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox32, "单击可查看本机IP地址及归属地");
-            this.pictureBox32.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox32_MouseDown);
-            this.pictureBox32.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox32_MouseUp);
-            // 
-            // pictureBox43
-            // 
-            this.pictureBox43.Image = global::在线工具箱.Properties.Resources.recuva;
-            this.pictureBox43.Location = new System.Drawing.Point(681, 188);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox43.TabIndex = 61;
-            this.pictureBox43.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox43, "一款更加好用的数据恢复软件\r\n单击即可打开");
-            this.pictureBox43.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox43_MouseDown);
-            this.pictureBox43.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox43_MouseUp);
-            // 
-            // pictureBox40
-            // 
-            this.pictureBox40.Image = global::在线工具箱.Properties.Resources.finaldata;
-            this.pictureBox40.Location = new System.Drawing.Point(556, 188);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox40.TabIndex = 59;
-            this.pictureBox40.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox40, "一款较为专业的数据恢复软件\r\n单击即可打开");
-            this.pictureBox40.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox40_MouseDown);
-            this.pictureBox40.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox40_MouseUp);
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Image = global::在线工具箱.Properties.Resources.dism__;
-            this.pictureBox34.Location = new System.Drawing.Point(443, 188);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox34.TabIndex = 57;
-            this.pictureBox34.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox34, "十分硬核的系统调教工具，很难找的或找不到的系统设置它里面都有\r\n单击即可打开");
-            this.pictureBox34.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox34_MouseDown);
-            this.pictureBox34.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox34_MouseUp);
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.Image = global::在线工具箱.Properties.Resources.dism__;
-            this.pictureBox33.Location = new System.Drawing.Point(337, 188);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox33.TabIndex = 55;
-            this.pictureBox33.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox33, "十分硬核的系统调教工具，很难找的或找不到的系统设置它里面都有\r\n单击即可打开");
-            this.pictureBox33.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox33_MouseDown);
-            this.pictureBox33.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox33_MouseUp);
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Image = global::在线工具箱.Properties.Resources.closeupdate;
-            this.pictureBox31.Location = new System.Drawing.Point(230, 188);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox31.TabIndex = 53;
-            this.pictureBox31.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox31, "能关掉系统自动更新\r\n单击即可打开");
-            this.pictureBox31.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox31_MouseDown);
-            this.pictureBox31.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox31_MouseUp);
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = global::在线工具箱.Properties.Resources.win10activator;
-            this.pictureBox30.Location = new System.Drawing.Point(128, 188);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox30.TabIndex = 51;
-            this.pictureBox30.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox30, "能激活win10的工具\r\n单击即可打开");
-            this.pictureBox30.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseDown);
-            this.pictureBox30.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseUp);
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::在线工具箱.Properties.Resources.dxrepair;
-            this.pictureBox29.Location = new System.Drawing.Point(26, 188);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox29.TabIndex = 49;
-            this.pictureBox29.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox29, "用于修复电脑DirectX文件问题\r\n单击即可打开");
-            this.pictureBox29.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseDown);
-            this.pictureBox29.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseUp);
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::在线工具箱.Properties.Resources.spacesniffer;
-            this.pictureBox28.Location = new System.Drawing.Point(681, 78);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox28.TabIndex = 47;
-            this.pictureBox28.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox28, "可帮你快速分析硬盘内各个文件的占用情况，并以最直观的\r\n方格大小显示出来\r\n单击即可打开");
-            this.pictureBox28.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseDown);
-            this.pictureBox28.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseUp);
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = global::在线工具箱.Properties.Resources.procexp;
-            this.pictureBox27.Location = new System.Drawing.Point(556, 78);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox27.TabIndex = 45;
-            this.pictureBox27.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox27, "十分专业的任务管理器，获取的信息量不亚于系统自带的任务管理器\r\n单击即可打开");
-            this.pictureBox27.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox27_MouseDown);
-            this.pictureBox27.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox27_MouseUp);
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Image = global::在线工具箱.Properties.Resources.everything;
-            this.pictureBox26.Location = new System.Drawing.Point(443, 78);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox26.TabIndex = 43;
-            this.pictureBox26.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox26, "可以快速帮你查找文件的工具，搜索速度比系统的搜索快\r\n单击即可打开");
-            this.pictureBox26.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseDown);
-            this.pictureBox26.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseUp);
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = global::在线工具箱.Properties.Resources.diskgenius;
-            this.pictureBox25.Location = new System.Drawing.Point(337, 78);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox25.TabIndex = 41;
-            this.pictureBox25.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox25, "十分专业的硬盘分区工具，也拥有很多系统没有的高级功能\r\n单击即可打开");
-            this.pictureBox25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox25_MouseDown);
-            this.pictureBox25.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox25_MouseUp);
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = global::在线工具箱.Properties.Resources.geek;
-            this.pictureBox24.Location = new System.Drawing.Point(230, 78);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox24.TabIndex = 37;
-            this.pictureBox24.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox24, "一款强力卸载工具，当系统自带的卸载功能不好用时可使用它\r\n单击即可打开");
-            this.pictureBox24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseDown);
-            this.pictureBox24.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseUp);
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = global::在线工具箱.Properties.Resources.screentogif;
-            this.pictureBox23.Location = new System.Drawing.Point(128, 78);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox23.TabIndex = 39;
-            this.pictureBox23.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox23, "GIF动图制作利器\r\n单击即可打开");
-            this.pictureBox23.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox23_MouseDown);
-            this.pictureBox23.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox23_MouseUp);
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::在线工具箱.Properties.Resources.bandicam;
-            this.pictureBox22.Location = new System.Drawing.Point(26, 78);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox22.TabIndex = 37;
-            this.pictureBox22.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox22, "一款功能较多的录屏软件\r\n单击即可打开");
-            this.pictureBox22.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox22_MouseDown);
-            this.pictureBox22.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox22_MouseUp);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::在线工具箱.Properties.Resources.shiyonggongju;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(55, 56);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::在线工具箱.Properties.Resources.bgp1;
-            this.pictureBox5.Location = new System.Drawing.Point(9, 534);
+            this.pictureBox5.Location = new System.Drawing.Point(9, 548);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(882, 10);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2523,7 +2572,7 @@
             this.pictureBox4.Image = global::在线工具箱.Properties.Resources.borderright;
             this.pictureBox4.Location = new System.Drawing.Point(888, 54);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(10, 535);
+            this.pictureBox4.Size = new System.Drawing.Size(10, 596);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -2533,7 +2582,7 @@
             this.pictureBox3.Image = global::在线工具箱.Properties.Resources.borderleft;
             this.pictureBox3.Location = new System.Drawing.Point(0, 81);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(10, 485);
+            this.pictureBox3.Size = new System.Drawing.Size(10, 524);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -2640,36 +2689,12 @@
             this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
-            // label70
-            // 
-            this.label70.BackColor = System.Drawing.Color.Transparent;
-            this.label70.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label70.Location = new System.Drawing.Point(431, 355);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(81, 26);
-            this.label70.TabIndex = 70;
-            this.label70.Text = "文本加密解密";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox61
-            // 
-            this.pictureBox61.Image = global::在线工具箱.Properties.Resources.process;
-            this.pictureBox61.Location = new System.Drawing.Point(443, 297);
-            this.pictureBox61.Name = "pictureBox61";
-            this.pictureBox61.Size = new System.Drawing.Size(56, 55);
-            this.pictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox61.TabIndex = 69;
-            this.pictureBox61.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox61, "此工具目前仅支持base64，二进制的加密解密");
-            this.pictureBox61.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox61_MouseDown);
-            this.pictureBox61.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox61_MouseUp);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(898, 544);
+            this.ClientSize = new System.Drawing.Size(898, 557);
             this.Controls.Add(this.label45);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -2695,9 +2720,9 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
@@ -2705,6 +2730,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
@@ -2712,6 +2757,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
@@ -2734,25 +2780,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -2760,7 +2787,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2967,6 +2993,8 @@
         private System.Windows.Forms.PictureBox pictureBox60;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.PictureBox pictureBox61;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.PictureBox pictureBox62;
     }
 }
 

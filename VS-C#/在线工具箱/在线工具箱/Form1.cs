@@ -1146,5 +1146,16 @@ namespace 在线工具箱
             pictureBox61.BorderStyle = BorderStyle.None;
             startdownload("wbjmjm.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/wbjmjm.exe", "wbjmjm");
         }
+
+        private void pictureBox62_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox62.BorderStyle=BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox62_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox62.BorderStyle = BorderStyle.None;
+            startdownload("Victoriahhb.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/Victoriahhb.exe", "Victoriahhb");
+        }
     }
 }

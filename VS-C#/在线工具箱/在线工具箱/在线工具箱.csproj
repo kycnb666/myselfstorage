@@ -259,6 +259,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="onlinetoolboxicon.ico" />
+    <None Include="Resources\Victoria.png" />
     <None Include="Resources\process.png" />
     <None Include="Resources\chj.png" />
     <None Include="Resources\rufus.png" />
