@@ -257,7 +257,7 @@ namespace 在线工具箱
 
                 if(label1.Text == "√" && label2.Text == "√" && label13.Text == "√" && label14.Text == "√" && label15.Text == "√")
                 {
-                    label16.Text = "\n未发现问题";
+                    label16.Text = "\n本轮测试未发现问题\n\n\n若还是无法下载，请切换节点";
                     linkLabel1.Visible = false;
                     linkLabel2.Visible = false;
 

@@ -358,7 +358,7 @@ namespace 在线工具箱
                 streamWriter.Write("https://raw.fastgit.org/kycnb666/onlinetoolbox/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
                 streamWriter.Flush();
                 streamWriter.Close();
-            }catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            }catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧","哎呀，出了点小问题"); }
             MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n日本东京","替换成功，程序将使用此节点",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
@@ -372,7 +372,7 @@ namespace 在线工具箱
                 streamWriter.Flush();
                 streamWriter.Close();
             }
-            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧", "哎呀，出了点小问题"); }
             MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n中国香港", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -386,7 +386,7 @@ namespace 在线工具箱
                 streamWriter.Flush();
                 streamWriter.Close();
             }
-            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧", "哎呀，出了点小问题"); }
             MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n美国洛杉矶", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -405,7 +405,7 @@ namespace 在线工具箱
                 }
                 else { }
             }
-            catch (Exception) { }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧", "哎呀，出了点小问题"); }
         }
 
         private void Form1_Resize(object sender, EventArgs e)

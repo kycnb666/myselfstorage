@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,7 +62,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(326, 44);
             this.label2.TabIndex = 2;
-            this.label2.Text = "正在尝试连接，请稍后。。。\r\n（如果等了好久都没反应就重新打开）";
+            this.label2.Text = "正在尝试连接，请稍后。。。\r\n（如果等了好久都没反应请尝试更换节点）";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
@@ -99,9 +100,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "下载页";
+            this.Text = "下载界面";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form5_MouseDown);
             this.ResumeLayout(false);
