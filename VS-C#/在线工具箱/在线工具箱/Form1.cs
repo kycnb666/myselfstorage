@@ -132,8 +132,6 @@ namespace 在线工具箱
                 streamReader.Close();
 
 
-                FileInfo f = new FileInfo($"{Path.GetTempPath()}onlinetoolboxversion.v");
-                f.Delete();
                 string thisversion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
                 if (thisversion != latestversion)

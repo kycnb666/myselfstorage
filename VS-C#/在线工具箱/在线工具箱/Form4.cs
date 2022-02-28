@@ -135,6 +135,18 @@ namespace 在线工具箱
             string title2=t.LastAccessTime.ToString("F");
             label1.Text = $"上次更新的时间：{title}";
             label2.Text = $"          打开时间：{title2}";
+            label6.Text = "当前版本："+ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            try
+            {
+                StreamReader streamReader = new StreamReader($"{Path.GetTempPath()}onlinetoolboxversion.v");
+                string latestversion = streamReader.ReadToEnd();
+                streamReader.Close();
+                label7.Text = $"最新版本：{latestversion}";
+                if (System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() == latestversion)
+                    label8.Text = "建议：无需更新";
+                else if (System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() != latestversion)
+                    label8.Text = "建议：需要更新";
+            }catch (Exception) { }
             Thread download = new Thread(new ThreadStart(downloadFromFastgit));
             download.Start();
         }
