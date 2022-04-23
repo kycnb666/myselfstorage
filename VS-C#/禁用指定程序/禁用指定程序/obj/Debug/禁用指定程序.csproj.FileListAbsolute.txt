@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\bin\Debug\禁用指定程序.exe.config
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\bin\Debug\禁用指定程序.exe
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\bin\Debug\禁用指定程序.pdb
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\obj\Debug\禁用指定程序.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\obj\Debug\禁用指定程序.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\obj\Debug\禁用指定程序.Form1.resources
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\obj\Debug\禁用指定程序.Properties.Resources.resources
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\obj\Debug\禁用指定程序.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\obj\Debug\禁用指定程序.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\obj\Debug\禁用指定程序.exe
+C:\Users\Administrator\source\repos\禁用指定程序\禁用指定程序\obj\Debug\禁用指定程序.pdb
