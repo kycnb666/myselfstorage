@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using System.Collections;
+using System.Diagnostics;
 
 namespace 禁用指定程序
 {
@@ -154,7 +155,8 @@ namespace 禁用指定程序
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show("本软件禁用程序是通过IFEO（映像劫持）来实现，因此使用时电脑杀毒软件会弹出警告窗口，请点击允许本程序操作即可");
+            DialogResult msg= MessageBox.Show("本软件禁用程序是通过IFEO（映像劫持）来实现，因此使用时电脑杀毒软件会弹出警告窗口，请点击允许本程序操作即可\n\n\n软件官网：https://kycnb666.github.io/jyzdcx.html \n\n点击“确定”进入官网，“取消”返回","",MessageBoxButtons.OKCancel);
+            if (msg == DialogResult.OK) { Process.Start("https://kycnb666.github.io/jyzdcx.html"); }
         }
 
         private void radioButton2_Click(object sender, EventArgs e)
