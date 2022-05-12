@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\bin\Debug\登录密码部署器.exe.config
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\bin\Debug\登录密码部署器.exe
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\bin\Debug\登录密码部署器.pdb
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\obj\Debug\登录密码部署器.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\obj\Debug\登录密码部署器.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\obj\Debug\登录密码部署器.Form1.resources
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\obj\Debug\登录密码部署器.Properties.Resources.resources
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\obj\Debug\登录密码部署器.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\obj\Debug\登录密码部署器.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\obj\Debug\登录密码部署器.exe
+C:\Users\Administrator\source\repos\登录密码部署器\登录密码部署器\obj\Debug\登录密码部署器.pdb
