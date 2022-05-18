@@ -44,6 +44,7 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(325, 29);
             this.progressBar1.TabIndex = 0;
+            this.progressBar1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progressBar1_MouseDown);
             // 
             // label1
             // 
@@ -54,6 +55,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "正在下载";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             // 
             // label2
             // 
@@ -64,6 +66,7 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "正在尝试连接，请稍后。。。\r\n（如果等了好久都没反应请尝试更换节点）";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
             // 
             // timer1
             // 
@@ -88,6 +91,7 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "节点：";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label3_MouseDown);
             // 
             // Form5
             // 
@@ -104,8 +108,10 @@
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "下载界面";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form5_FormClosing);
             this.Load += new System.EventHandler(this.Form5_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form5_MouseDown);
+            this.Resize += new System.EventHandler(this.Form5_Resize);
             this.ResumeLayout(false);
 
         }

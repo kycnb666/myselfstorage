@@ -162,7 +162,7 @@ namespace 在线工具箱
             if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe"))
             {
                 FileInfo linshi = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe");
-                if(linshi.Length/1024 < 1670) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
+                if(linshi.Length/1024 < 1740) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
                 else
                 {
                     diaoyong("cmd.exe", $"/c ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
@@ -356,7 +356,7 @@ namespace 在线工具箱
                 streamWriter.Write("https://raw.fastgit.org/kycnb666/onlinetoolbox/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
                 streamWriter.Flush();
                 streamWriter.Close();
-            }catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧","哎呀，出了点小问题"); }
+            }catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
             MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n日本东京","替换成功，程序将使用此节点",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
@@ -370,7 +370,7 @@ namespace 在线工具箱
                 streamWriter.Flush();
                 streamWriter.Close();
             }
-            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧", "哎呀，出了点小问题"); }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
             MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n中国香港", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -384,7 +384,7 @@ namespace 在线工具箱
                 streamWriter.Flush();
                 streamWriter.Close();
             }
-            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧", "哎呀，出了点小问题"); }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
             MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n美国洛杉矶", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -403,7 +403,7 @@ namespace 在线工具箱
                 }
                 else { }
             }
-            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧", "哎呀，出了点小问题"); }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -447,7 +447,7 @@ namespace 在线工具箱
                 if (!File.Exists($"{Path.GetTempPath()}{softname}"))
                 {
                     Form5 f = new Form5($"{shortname}", $"{downloadlink}");
-                    f.ShowDialog(this);
+                    f.Show(this);
                 }
                 else { Process.Start($"{Path.GetTempPath()}{softname}"); }
             }
@@ -1154,6 +1154,22 @@ namespace 在线工具箱
         {
             pictureBox62.BorderStyle = BorderStyle.None;
             startdownload("Victoriahhb.exe", "%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7/Victoriahhb.exe", "Victoriahhb");
+        }
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://kycnb666.github.io/zxgjx.html");
+        }
+
+        private void pictureBox63_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox63.BorderStyle=BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox63_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox63.BorderStyle = BorderStyle.None;
+            startdownload("禁用指定程序.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E7%A6%81%E7%94%A8%E6%8C%87%E5%AE%9A%E7%A8%8B%E5%BA%8F.exe", "禁用指定程序");
         }
     }
 }
