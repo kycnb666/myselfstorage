@@ -412,6 +412,16 @@ namespace 在线工具箱.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap jyzdcx {
+            get {
+                object obj = ResourceManager.GetObject("jyzdcx", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap KeyboardTestUtility {
             get {
                 object obj = ResourceManager.GetObject("KeyboardTestUtility", resourceCulture);

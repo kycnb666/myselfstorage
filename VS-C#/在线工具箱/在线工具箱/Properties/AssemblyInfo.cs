@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("在线工具箱")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("一款集合了许多有用工具的在线工具箱")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("KYC Production")]
 [assembly: AssemblyProduct("在线工具箱")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值
 //通过使用 "*"，如下所示:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.8.2.4")]
-[assembly: AssemblyFileVersion("2.8.2.4")]
+[assembly: AssemblyVersion("2.8.3.0")]
+[assembly: AssemblyFileVersion("2.8.3.0")]
