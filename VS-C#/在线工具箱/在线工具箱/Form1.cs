@@ -13,6 +13,7 @@ using System.IO;
 using System.Threading;
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
+using System.Net.NetworkInformation;
 
 namespace 在线工具箱
 {
@@ -106,6 +107,7 @@ namespace 在线工具箱
         public static extern IntPtr GetF(); //获得本在线工具箱的句柄
         [System.Runtime.InteropServices.DllImport("user32.dll", EntryPoint = "SetForegroundWindow")]
         public static extern bool SetF(IntPtr hWnd); //设置此在线工具箱为活动在线工具箱
+
         public static void diaoyong(string x, string y)
         {
             Process proc = new Process();
@@ -114,6 +116,14 @@ namespace 在线工具箱
             proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             proc.Start();
             proc.Close();
+        }
+        [DllImport("wininet.dll")]
+        private extern static bool InternetGetConnectedState(out int connectionDescription, int reservedValue);
+        private bool IsConnected()
+        {
+            int I = 0;
+            bool state = InternetGetConnectedState(out I, 0);
+            return state;
         }
         void checkversion()
         {
@@ -220,20 +230,29 @@ namespace 在线工具箱
         {
             AnimateWindow(this.Handle, 50, AW_VER_POSITIVE);
             label36.Text = "在线工具箱  版本V" + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            try
+            if (IsConnected() == true)
             {
-                if (!File.Exists($"{Path.GetTempPath()}zxgjxnodeselection"))
+                Thread checkinternet=new Thread(new ThreadStart(accessinternet));
+                checkinternet.Start();
+                try
                 {
-                    FileStream fs = new FileStream($"{Path.GetTempPath()}zxgjxnodeselection", FileMode.Create);
-                    StreamWriter streamWriter = new StreamWriter(fs);
-                    streamWriter.Write("https://raw.fastgit.org/kycnb666/onlinetoolbox/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
-                    streamWriter.Flush();
-                    streamWriter.Close();
+                    if (!File.Exists($"{Path.GetTempPath()}zxgjxnodeselection"))
+                    {
+                        FileStream fs = new FileStream($"{Path.GetTempPath()}zxgjxnodeselection", FileMode.Create);
+                        StreamWriter streamWriter = new StreamWriter(fs);
+                        streamWriter.Write("https://raw.fastgit.org/kycnb666/onlinetoolbox/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
+                        streamWriter.Flush();
+                        streamWriter.Close();
+                    }
                 }
+                catch (Exception) { }
+                Thread download = new Thread(new ThreadStart(checkversion));
+                download.Start();
             }
-            catch (Exception) { }
-            Thread download = new Thread(new ThreadStart(checkversion));
-            download.Start();
+            else if(IsConnected() == false)
+            {
+                MessageBox.Show("此计算机没有联网，请检查你的网线或Wifi是否连接好\n\n无网络将无法使用此软件","当前设备未连接到任何网络",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -356,8 +375,10 @@ namespace 在线工具箱
                 streamWriter.Write("https://raw.fastgit.org/kycnb666/onlinetoolbox/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
                 streamWriter.Flush();
                 streamWriter.Close();
-            }catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
-            MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n日本东京","替换成功，程序将使用此节点",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n日本东京", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
+            
         }
 
         private void HongKongToolStripMenuItem_Click(object sender, EventArgs e)
@@ -369,9 +390,10 @@ namespace 在线工具箱
                 streamWriter.Write("https://pd.zwc365.com/seturl/https://github.com/kycnb666/onlinetoolbox/blob/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
                 streamWriter.Flush();
                 streamWriter.Close();
+                MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n中国香港", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
-            MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n中国香港", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         private void LSToolStripMenuItem_Click(object sender, EventArgs e)
@@ -383,9 +405,10 @@ namespace 在线工具箱
                 streamWriter.Write("https://gh.xiu2.xyz/https://github.com/kycnb666/onlinetoolbox/blob/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
                 streamWriter.Flush();
                 streamWriter.Close();
+                MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n美国洛杉矶", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
-            MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n美国洛杉矶", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         private void resumeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1028,7 +1051,7 @@ namespace 在线工具箱
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://search.iwiki.uk/intl/zh-CN/chrome/");
+            Process.Start("https://search.ahnu.cf/intl/zh-CN/chrome/");
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -1170,6 +1193,152 @@ namespace 在线工具箱
         {
             pictureBox63.BorderStyle = BorderStyle.None;
             startdownload("禁用指定程序.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E7%A6%81%E7%94%A8%E6%8C%87%E5%AE%9A%E7%A8%8B%E5%BA%8F.exe", "禁用指定程序");
+        }
+
+        private void linkLabel18_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwt.lanzouy.com/irpcr05d3iqb");
+        }
+
+        private void 网址7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://ghproxy.com/https://raw.githubusercontent.com/kycnb666/onlinetoolbox/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1.exe");
+        }
+
+        private void 网址8ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://gh.api.99988866.xyz/https://raw.githubusercontent.com/kycnb666/onlinetoolbox/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1.exe");
+        }
+
+        private void 节点四国内1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FileStream fs = new FileStream($"{Path.GetTempPath()}zxgjxnodeselection", FileMode.Create);
+                StreamWriter streamWriter = new StreamWriter(fs);
+                streamWriter.Write("https://ghproxy.com/https://github.com/kycnb666/onlinetoolbox/blob/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
+                streamWriter.Flush();
+                streamWriter.Close();
+                MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n国内1", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
+            
+        }
+
+        private void 节点五国内2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FileStream fs = new FileStream($"{Path.GetTempPath()}zxgjxnodeselection", FileMode.Create);
+                StreamWriter streamWriter = new StreamWriter(fs);
+                streamWriter.Write("https://gh.api.99988866.xyz/https://raw.githubusercontent.com/kycnb666/onlinetoolbox/main/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E7%AE%B1/");
+                streamWriter.Flush();
+                streamWriter.Close();
+                MessageBox.Show("获取数据的网络节点已成功替换为：\n\n\n国内2", "替换成功，程序将使用此节点", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception) { MessageBox.Show("我刚刚走神了，请您再试一次吧\n\n（后台存在下载线程，请稍后再切换）", "哎呀，出了点小问题"); }
+            
+        }
+
+        private void linkLabel19_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwc.lanzouf.com/iNC8V05hgpnc");
+        }
+
+        private void pictureBox64_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox64.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox64_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox64.BorderStyle = BorderStyle.None;
+            startdownload("微软语音合成.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%BE%AE%E8%BD%AF%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E5%8A%A9%E6%89%8B.exe","微软语音合成");
+        }
+
+        private void pictureBox65_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox65.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox65_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox65.BorderStyle= BorderStyle.None;
+            startdownload("驱动精灵_单文件版.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E9%A9%B1%E5%8A%A8%E7%B2%BE%E7%81%B5_%E5%8D%95%E6%96%87%E4%BB%B6%E7%89%88.exe", "驱动精灵");
+        }
+
+        private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwe.lanzouf.com/ifEYP01f2szc");
+        }
+
+        private void linkLabel21_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwc.lanzouf.com/iVWI4052jg6j");
+        }
+
+        private void linkLabel22_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.magiceraser.io/");
+        }
+
+        private void pictureBox66_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox66.BorderStyle= BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox66_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox66.BorderStyle = BorderStyle.None;
+            startdownload("一键开启关闭WindowsDefender.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AF%E5%85%B3%E9%97%ADWindowsDefender.exe", "一键开启关闭WindowsDefender");
+        }
+
+        private void timer6_Tick(object sender, EventArgs e)
+        {
+
+
+            if (PingIpOrDomainName("www.baidu.com") == false)
+                MessageBox.Show("检测到无法访问互联网，请检查你的网络设置", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+                MessageBox.Show("");
+            
+            timer6.Enabled = false;
+        }
+        void accessinternet()
+        {
+            if (PingIpOrDomainName("www.baidu.com") == false)
+                MessageBox.Show("检测到无法访问互联网，请检查你的网络设置", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        public static bool PingIpOrDomainName(string strIpOrDName)
+        {
+            try
+            {
+                Ping objPingSender = new Ping();
+                PingOptions objPinOptions = new PingOptions();
+                objPinOptions.DontFragment = true;
+                string data = "";
+                byte[] buffer = Encoding.UTF8.GetBytes(data);
+                int intTimeout = 120;
+                PingReply objPinReply = objPingSender.Send(strIpOrDName, intTimeout, buffer, objPinOptions);
+                string strInfo = objPinReply.Status.ToString();
+                if (strInfo == "Success")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        private void linkLabel23_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwc.lanzouf.com/iJhd00604lfc");
         }
     }
 }

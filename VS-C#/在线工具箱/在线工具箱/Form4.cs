@@ -127,6 +127,10 @@ namespace 在线工具箱
                         label5.Text = "Node:HongKong";
                     else if (whichnode.Contains("gh.xiu2.xyz"))
                         label5.Text = "Node:Los Angeles";
+                    else if (whichnode.Contains("ghproxy.com"))
+                        label5.Text = "Node:Domestic1";
+                    else if (whichnode.Contains("gh.api.99988866.xyz"))
+                        label5.Text = "Node:Domestic2";
                 }
             }
             catch (Exception) { }

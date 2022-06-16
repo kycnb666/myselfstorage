@@ -118,12 +118,19 @@ namespace 在线工具箱
             }
             catch (Exception e) { MessageBox.Show(e.ToString()); }
         }
+        public long old;
+        public long  latest;
+        public long speed=0;
+        public int ck=0;
+        public int twotimes=0;
+        public long received;
         private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
             try
             {
+                received = e.BytesReceived;
                 progressBar1.Value = (int)e.ProgressPercentage;
-                label2.Text = $"进度：{e.ProgressPercentage}%\n已下载：{e.BytesReceived / 1024}KB   总大小：{e.TotalBytesToReceive / 1024}KB";
+                label2.Text = $"进度：{e.ProgressPercentage}%\n已下载：{e.BytesReceived / 1024}KB  总大小：{e.TotalBytesToReceive / 1024}KB  速度：{speed}KB/S";
             }
             catch (Exception) { }
         }
@@ -182,6 +189,10 @@ namespace 在线工具箱
                         label3.Text = "节点：中国香港";
                     else if (whichnode.Contains("gh.xiu2.xyz"))
                         label3.Text = "节点：美国洛杉矶";
+                    else if (whichnode.Contains("ghproxy.com"))
+                        label3.Text = "节点：国内1";
+                    else if (whichnode.Contains("gh.api.99988866.xyz"))
+                        label3.Text = "节点：国内2";
                 }
             }
             catch (Exception) { }
@@ -219,6 +230,26 @@ namespace 在线工具箱
         private void Form5_FormClosing(object sender, FormClosingEventArgs e)
         {
             AnimateWindow(this.Handle, 1000, AW_HIDE | AW_CENTER);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (ck == 0)
+            {
+                ck= 1;
+                old = received;
+            }
+            else if (ck == 1)
+            {
+                ck = 0;
+                latest = received;
+            }
+            twotimes++;
+            if (twotimes == 2)
+            {
+                twotimes=0;
+                speed = ((latest-old)/1204)*2;
+            }
         }
     }
 }

@@ -158,8 +158,8 @@ namespace 在线工具箱
         {
             try
             {
-                label6.Text = "正在检查各个节点状态（节点二：中国香港）";
-                string ip2 = "pd.zwc365.com";
+                label6.Text = "正在检查各个节点状态（节点四：国内1）";
+                string ip2 = "ghproxy.com";
                 string data2 = "data";
                 Ping ping2 = new Ping();
                 byte[] buf2 = Encoding.ASCII.GetBytes(data2);
@@ -189,8 +189,8 @@ namespace 在线工具箱
         {
             try
             {
-                label6.Text = "正在检查各个节点状态（节点三：美国洛杉矶）";
-                string ip3 = "gh.xiu2.xyz";
+                label6.Text = "正在检查各个节点状态（节点五：国内2）";
+                string ip3 = "gh.api.99988866.xyz";
                 string data3 = "data";
                 Ping ping3 = new Ping();
                 byte[] buf3 = Encoding.ASCII.GetBytes(data3);
@@ -241,7 +241,7 @@ namespace 在线工具箱
             {
                 button1.Enabled=true;
                 isdone=0;
-                label6.Text = "检查完毕";
+                label6.Text = "检查完毕（节点2,3需挂VPN才能使用，不作检查）";
 
                 if (step1done==1|| step2done==1)
                 {
@@ -258,15 +258,11 @@ namespace 在线工具箱
                 if(label1.Text == "√" && label2.Text == "√" && label13.Text == "√" && label14.Text == "√" && label15.Text == "√")
                 {
                     label16.Text = "\n本轮测试未发现问题\n\n\n若还是无法下载，请切换节点";
-                    linkLabel1.Visible = false;
-                    linkLabel2.Visible = false;
 
                 }
                 else if(label1.Text == "×" && label2.Text == "×" && label13.Text == "×" && label14.Text == "×" && label15.Text == "×")
                 {
                     label16.Text = "\n计算机未联网，请尝试点击启动系统网络诊断";
-                    linkLabel1.Visible=true;
-                    linkLabel2.Visible=true;
                 }
                 if((label1.Text == "√" && label2.Text == "√")&&( label13.Text == "×" || label14.Text == "×" || label15.Text == "×"))
                 {

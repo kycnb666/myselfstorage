@@ -150,7 +150,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(41, 12);
             this.label12.TabIndex = 7;
-            this.label12.Text = "节点三";
+            this.label12.Text = "节点五";
             // 
             // label11
             // 
@@ -159,7 +159,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 12);
             this.label11.TabIndex = 6;
-            this.label11.Text = "节点二";
+            this.label11.Text = "节点四";
             // 
             // label10
             // 
@@ -280,7 +280,6 @@
             this.linkLabel1.TabIndex = 10;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "启动系统网络适配器诊断";
-            this.linkLabel1.Visible = false;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // linkLabel2
@@ -294,7 +293,6 @@
             this.linkLabel2.TabIndex = 11;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "启动系统Internet连接诊断";
-            this.linkLabel2.Visible = false;
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label17
