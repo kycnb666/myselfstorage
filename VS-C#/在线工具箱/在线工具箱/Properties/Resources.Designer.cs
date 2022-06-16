@@ -372,6 +372,16 @@ namespace 在线工具箱.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap guanbiwd {
+            get {
+                object obj = ResourceManager.GetObject("guanbiwd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap hwinfo {
             get {
                 object obj = ResourceManager.GetObject("hwinfo", resourceCulture);
@@ -552,6 +562,16 @@ namespace 在线工具箱.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap qdjl {
+            get {
+                object obj = ResourceManager.GetObject("qdjl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap rammap {
             get {
                 object obj = ResourceManager.GetObject("rammap", resourceCulture);
@@ -685,6 +705,16 @@ namespace 在线工具箱.Properties {
         internal static System.Drawing.Bitmap win10activator {
             get {
                 object obj = ResourceManager.GetObject("win10activator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wryyhczs {
+            get {
+                object obj = ResourceManager.GetObject("wryyhczs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
