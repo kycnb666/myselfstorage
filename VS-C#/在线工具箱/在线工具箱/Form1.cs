@@ -1061,7 +1061,7 @@ namespace 在线工具箱
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://pan.baidu.com/s/10-nweuFfkGZGA4ahbrQzsA");
+            Process.Start("https://wwu.lanzouf.com/iatYP06jy37a");
         }
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -1293,17 +1293,6 @@ namespace 在线工具箱
             startdownload("一键开启关闭WindowsDefender.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AF%E5%85%B3%E9%97%ADWindowsDefender.exe", "一键开启关闭WindowsDefender");
         }
 
-        private void timer6_Tick(object sender, EventArgs e)
-        {
-
-
-            if (PingIpOrDomainName("www.baidu.com") == false)
-                MessageBox.Show("检测到无法访问互联网，请检查你的网络设置", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else
-                MessageBox.Show("");
-            
-            timer6.Enabled = false;
-        }
         void accessinternet()
         {
             if (PingIpOrDomainName("www.baidu.com") == false)
@@ -1339,6 +1328,11 @@ namespace 在线工具箱
         private void linkLabel23_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://wwc.lanzouf.com/iJhd00604lfc");
+        }
+
+        private void linkLabel24_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://wwu.lanzouf.com/iXLkd06jxq5a");
         }
     }
 }

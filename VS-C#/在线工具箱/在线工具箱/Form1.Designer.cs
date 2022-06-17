@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.topwindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,6 +80,7 @@
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.linkLabel23 = new System.Windows.Forms.LinkLabel();
             this.linkLabel22 = new System.Windows.Forms.LinkLabel();
             this.linkLabel21 = new System.Windows.Forms.LinkLabel();
             this.linkLabel20 = new System.Windows.Forms.LinkLabel();
@@ -251,8 +251,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.timer6 = new System.Windows.Forms.Timer(this.components);
-            this.linkLabel23 = new System.Windows.Forms.LinkLabel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.linkLabel24 = new System.Windows.Forms.LinkLabel();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -334,11 +334,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 1000;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // contextMenuStrip1
             // 
@@ -720,6 +715,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel7.Controls.Add(this.linkLabel24);
             this.panel7.Controls.Add(this.linkLabel23);
             this.panel7.Controls.Add(this.linkLabel22);
             this.panel7.Controls.Add(this.linkLabel21);
@@ -763,6 +759,20 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(862, 485);
             this.panel7.TabIndex = 4;
+            // 
+            // linkLabel23
+            // 
+            this.linkLabel23.AutoSize = true;
+            this.linkLabel23.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel23.LinkColor = System.Drawing.Color.Purple;
+            this.linkLabel23.Location = new System.Drawing.Point(261, 340);
+            this.linkLabel23.Name = "linkLabel23";
+            this.linkLabel23.Size = new System.Drawing.Size(125, 20);
+            this.linkLabel23.TabIndex = 94;
+            this.linkLabel23.TabStop = true;
+            this.linkLabel23.Text = "YT4KDownloader";
+            this.toolTip1.SetToolTip(this.linkLabel23, "B站视频下载器，其特点是可以下载B站最高清版本的视频以及4K视频");
+            this.linkLabel23.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel23_LinkClicked);
             // 
             // linkLabel22
             // 
@@ -1014,7 +1024,7 @@
             this.linkLabel5.TabIndex = 76;
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "IDM下载器";
-            this.toolTip1.SetToolTip(this.linkLabel5, "最强网络下载器\r\n官方版需收费使用，所以此链接导向破解永久版下载\r\n提取码：run4");
+            this.toolTip1.SetToolTip(this.linkLabel5, "最强网络下载器\r\n官方版需收费使用，所以此链接导向破解永久版下载\r\n下载完成后先安装好IDM，然后打开内附的破解工具，破解完成后即可免费使用");
             this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // linkLabel4
@@ -2941,24 +2951,24 @@
             this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
-            // timer6
+            // timer2
             // 
-            this.timer6.Interval = 3000;
-            this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // linkLabel23
+            // linkLabel24
             // 
-            this.linkLabel23.AutoSize = true;
-            this.linkLabel23.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel23.LinkColor = System.Drawing.Color.Purple;
-            this.linkLabel23.Location = new System.Drawing.Point(261, 340);
-            this.linkLabel23.Name = "linkLabel23";
-            this.linkLabel23.Size = new System.Drawing.Size(125, 20);
-            this.linkLabel23.TabIndex = 94;
-            this.linkLabel23.TabStop = true;
-            this.linkLabel23.Text = "YT4KDownloader";
-            this.toolTip1.SetToolTip(this.linkLabel23, "B站视频下载器，其特点是可以下载B站最高清版本的视频以及4K视频");
-            this.linkLabel23.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel23_LinkClicked);
+            this.linkLabel24.AutoSize = true;
+            this.linkLabel24.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel24.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel24.Location = new System.Drawing.Point(419, 340);
+            this.linkLabel24.Name = "linkLabel24";
+            this.linkLabel24.Size = new System.Drawing.Size(66, 20);
+            this.linkLabel24.TabIndex = 95;
+            this.linkLabel24.TabStop = true;
+            this.linkLabel24.Text = "免费VPN";
+            this.toolTip1.SetToolTip(this.linkLabel24, "蚂蚁VPN，需要收费，但是已被破解，下载后内置破解工具");
+            this.linkLabel24.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel24_LinkClicked);
             // 
             // Form1
             // 
@@ -3073,7 +3083,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
@@ -3288,8 +3297,9 @@
         private System.Windows.Forms.LinkLabel linkLabel22;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.PictureBox pictureBox66;
-        private System.Windows.Forms.Timer timer6;
         private System.Windows.Forms.LinkLabel linkLabel23;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.LinkLabel linkLabel24;
     }
 }
 
