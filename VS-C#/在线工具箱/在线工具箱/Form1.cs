@@ -172,7 +172,7 @@ namespace 在线工具箱
             if (File.Exists($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe"))
             {
                 FileInfo linshi = new FileInfo($"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe");
-                if(linshi.Length/1024 < 1740) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
+                if(linshi.Length/1024 < 1750) { diaoyong("cmd.exe", $"/c del \"{AppDomain.CurrentDomain.BaseDirectory}linshigxdwj.exe\""); }
                 else
                 {
                     diaoyong("cmd.exe", $"/c ren \"{AppDomain.CurrentDomain.BaseDirectory}{Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location)}\" \"旧版文件请手动删除.exe\"");
@@ -1264,7 +1264,7 @@ namespace 在线工具箱
         private void pictureBox65_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox65.BorderStyle= BorderStyle.None;
-            startdownload("驱动精灵_单文件版.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E9%A9%B1%E5%8A%A8%E7%B2%BE%E7%81%B5_%E5%8D%95%E6%96%87%E4%BB%B6%E7%89%88.exe", "驱动精灵");
+            startdownload("360驱动大师.exe", "%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/360%E9%A9%B1%E5%8A%A8%E5%A4%A7%E5%B8%88.exe", "360驱动大师");
         }
 
         private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
