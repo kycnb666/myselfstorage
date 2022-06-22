@@ -63,6 +63,16 @@ namespace 在线工具箱.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _360qdds {
+            get {
+                object obj = ResourceManager.GetObject("360qdds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap aida64 {
             get {
                 object obj = ResourceManager.GetObject("aida64", resourceCulture);

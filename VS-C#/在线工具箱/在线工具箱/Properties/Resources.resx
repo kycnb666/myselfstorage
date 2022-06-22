@@ -124,8 +124,8 @@
   <data name="Victoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Victoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bgp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bgp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="memtest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\memtest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Defraggler" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Defraggler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,14 +157,20 @@
   <data name="chipgenius" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chipgenius.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pointofix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pointofix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="win10activator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\win10activator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BatteryInfoView" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BatteryInfoView.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="completed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\completed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guanbiwd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guanbiwd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="msdn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\msdn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,8 +190,8 @@
   <data name="KeyboardTestUtility" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KeyboardTestUtility.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="memorycleaner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memorycleaner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="recuva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recuva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toolfk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolfk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,9 +223,6 @@
   <data name="wryyhczs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wryyhczs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="recuva" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\recuva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="aida64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aida64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -231,6 +234,9 @@
   </data>
   <data name="diskinfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diskinfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chaxun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chaxun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="complete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\complete.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,20 +256,14 @@
   <data name="colorchange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\colorchange.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="memtest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memtest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="completedbgm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\completedbgm.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="onlinetoolboxicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\onlinetoolboxicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chj" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="qdjl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qdjl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="memorycleaner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\memorycleaner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rufus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rufus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,14 +292,17 @@
   <data name="AudioToastIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AudioToastIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ip" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bgp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="youqitong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\youqitong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="zhuangjiqu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zhuangjiqu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,13 +328,13 @@
   <data name="hwinfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hwinfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chaxun" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chaxun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="qdjl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qdjl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="win10activator" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\win10activator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pointofix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pointofix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="guanbiwd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\guanbiwd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="360qdds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360qdds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
