@@ -1296,7 +1296,7 @@ namespace 在线工具箱
         void accessinternet()
         {
             if (PingIpOrDomainName("www.baidu.com") == false)
-                MessageBox.Show("检测到无法访问互联网，请检查你的网络设置", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("检测到无法访问互联网，请检查你的网络设置,或检查是否启用了网络代理（如是否开启了VPN）", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         public static bool PingIpOrDomainName(string strIpOrDName)
         {
@@ -1333,6 +1333,16 @@ namespace 在线工具箱
         private void linkLabel24_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://wwu.lanzouf.com/iXLkd06jxq5a");
+        }
+
+        private void linkLabel25_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://rebozj.com");
+        }
+
+        private void linkLabel26_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://www.timecn.cn");
         }
     }
 }
