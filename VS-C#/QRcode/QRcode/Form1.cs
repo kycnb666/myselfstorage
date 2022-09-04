@@ -13,12 +13,53 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
+using System.Threading;
+using System.Drawing.Drawing2D;
+using ZXing.Common;
+using ZXing.QrCode.Internal;
 
 namespace QRcode
 {
     public partial class Form1 : Form
     {
-        static void Generate1(string text)
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+        private GraphicsPath GetRoundedRectPath(Rectangle rect, int radius)
+        {
+            int diameter = radius;
+            Rectangle arcRect = new Rectangle(rect.Location, new Size(diameter, diameter));
+            GraphicsPath path = new GraphicsPath();
+
+            // 左上角
+            path.AddArc(arcRect, 180, 90);
+
+            // 右上角
+            arcRect.X = rect.Right - diameter;
+            path.AddArc(arcRect, 270, 90);
+
+            // 右下角
+            arcRect.Y = rect.Bottom - diameter;
+            path.AddArc(arcRect, 0, 90);
+
+            // 左下角
+            arcRect.X = rect.Left;
+            path.AddArc(arcRect, 90, 90);
+            path.CloseFigure();//闭合曲线
+            return path;
+        }
+
+        public void SetWindowRegion()
+        {
+            GraphicsPath FormPath;
+            Rectangle rect = new Rectangle(0, 0, this.Width, this.Height);
+            FormPath = GetRoundedRectPath(rect, 25);
+            this.Region = new Region(FormPath);
+
+        }
+        static void Generate1(string text,int width,int height)
         {
             try
             {
@@ -29,8 +70,8 @@ namespace QRcode
                 //设置内容编码
                 options.CharacterSet = "UTF-8";
                 //设置二维码的宽度和高度
-                options.Width = 500;
-                options.Height = 500;
+                options.Width = width;
+                options.Height = height;
                 //设置二维码的边距,单位不是固定像素
                 options.Margin = 1;
                 writer.Options = options;
@@ -58,6 +99,51 @@ namespace QRcode
             {
                 MessageBox.Show(ex.ToString());
             }
+
+        }
+        static void Generate3(string text,string logofile,int width,int height)
+        {
+            
+            //Logo 图片
+            Bitmap logo = new Bitmap(logofile);
+            //构造二维码写码器
+            MultiFormatWriter writer = new MultiFormatWriter();
+            Dictionary<EncodeHintType, object> hint = new Dictionary<EncodeHintType, object>();
+            hint.Add(EncodeHintType.CHARACTER_SET, "UTF-8");
+            hint.Add(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+
+            //生成二维码 
+            BitMatrix bm = writer.encode(text, BarcodeFormat.QR_CODE, width, height, hint);
+            BarcodeWriter barcodeWriter = new BarcodeWriter();
+            Bitmap map = barcodeWriter.Write(bm);
+
+
+            //获取二维码实际尺寸（去掉二维码两边空白后的实际尺寸）
+            int[] rectangle = bm.getEnclosingRectangle();
+
+            //计算插入图片的大小和位置
+            int middleW = Math.Min((int)(rectangle[2] / 3.5), logo.Width);
+            int middleH = Math.Min((int)(rectangle[3] / 3.5), logo.Height);
+            int middleL = (map.Width - middleW) / 2;
+            int middleT = (map.Height - middleH) / 2;
+
+            //将img转换成bmp格式，否则后面无法创建Graphics对象
+            Bitmap bmpimg = new Bitmap(map.Width, map.Height, PixelFormat.Format32bppArgb);
+            using (Graphics g = Graphics.FromImage(bmpimg))
+            {
+                g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                g.DrawImage(map, 0, 0);
+            }
+            //将二维码插入图片
+            Graphics myGraphic = Graphics.FromImage(bmpimg);
+            //白底
+            myGraphic.FillRectangle(Brushes.White, middleL, middleT, middleW, middleH);
+            myGraphic.DrawImage(logo, middleL, middleT, middleW, middleH);
+
+            //保存成图片
+            bmpimg.Save($"{Path.GetTempPath()}qrcode.png", ImageFormat.Png);
         }
         static string Read1(string filename)
         {
@@ -83,17 +169,35 @@ namespace QRcode
             {
                 if (textBox1.Text != "")
                 {
-                    Generate1(textBox1.Text);
+                    if (comboBox1.SelectedItem.ToString().Equals("普通"))
+                    {
+                        Generate1(textBox1.Text,int.Parse(textBox3.Text),int.Parse(textBox4.Text));
 
-                    FileStream fileStream = new FileStream($"{Path.GetTempPath()}qrcode.png", FileMode.Open, FileAccess.Read);
+                        FileStream fileStream = new FileStream($"{Path.GetTempPath()}qrcode.png", FileMode.Open, FileAccess.Read);
 
-                    pictureBox1.Image = Image.FromStream(fileStream);
+                        pictureBox1.Image = Image.FromStream(fileStream);
 
-                    fileStream.Close();
+                        fileStream.Close();
 
-                    fileStream.Dispose();
+                        fileStream.Dispose();
 
-                    label2.Text = Read1($"{Path.GetTempPath()}qrcode.png");
+                        //textBox3.Text = Read1($"{Path.GetTempPath()}qrcode.png");
+                    }
+                    else if (comboBox1.SelectedItem.ToString().Equals("带logo"))
+                    {
+                        if (openFileDialog2.ShowDialog() == DialogResult.OK)
+                        {
+                            Generate3(textBox1.Text,openFileDialog2.FileName,int.Parse(textBox3.Text),int.Parse(textBox4.Text));
+
+                            FileStream fileStream = new FileStream($"{Path.GetTempPath()}qrcode.png", FileMode.Open, FileAccess.Read);
+
+                            pictureBox1.Image = Image.FromStream(fileStream);
+
+                            fileStream.Close();
+
+                            fileStream.Dispose();
+                        }
+                    }
                 }
             }catch (Exception) { }
 
@@ -101,9 +205,14 @@ namespace QRcode
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Minimized;
+
+            Thread.Sleep(100);
+            
             timer1.Enabled = true;
-            textBox2.Visible = false;
-            linkLabel1.Visible = false;
+            panel2.Visible = false;
+            panel1.Visible = false;
+
             new Form2().Show();
         }
 
@@ -139,21 +248,22 @@ namespace QRcode
                 {
                     if (result.ToString().Contains("http"))
                     {
-                        linkLabel1.Visible= true;
+                        panel1.Visible= true;
                         linkLabel1.Text=result.ToString();
                     }
                     else
                     {
-                        textBox2.Visible= true;
+                        panel2.Visible= true;
                         textBox2.Text=result.ToString();
                     }
                 }
                 else if(result == null)
                 {
-                    textBox2.Visible= true;
+                    panel2.Visible= true;
                     textBox2.Text = "没有识别到二维码\r\n\r\n可能原因：\r\n1.二维码太模糊\r\n2.有异物遮挡了二维码的一部分\r\n3.二维码不完整\r\n4.暂不支持扫描新型二维码\r\n5.图片不包含二维码";
                 }
                 File.Delete($"{Path.GetTempPath()}jietu.png");
+                this.WindowState = FormWindowState.Normal;
             }
 
         }
@@ -165,8 +275,8 @@ namespace QRcode
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox2.Visible = false;
-            linkLabel1.Visible = false;
+            panel2.Visible = false;
+            panel1.Visible = false;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 FileStream fileStream = File.OpenRead($"{openFileDialog1.FileName}");
@@ -187,18 +297,18 @@ namespace QRcode
                 {
                     if (result.ToString().Contains("http"))
                     {
-                        linkLabel1.Visible = true;
+                        panel1.Visible = true;
                         linkLabel1.Text = result.ToString();
                     }
                     else
                     {
-                        textBox2.Visible = true;
+                        panel2.Visible = true;
                         textBox2.Text = result.ToString();
                     }
                 }
                 else if (result == null)
                 {
-                    textBox2.Visible = true;
+                    panel2.Visible = true;
                     textBox2.Text = "没有识别到二维码\r\n\r\n可能原因：\r\n1.二维码太模糊\r\n2.有异物遮挡了二维码的一部分\r\n3.二维码不完整\r\n4.暂不支持扫描新型二维码\r\n5.图片不包含二维码";
                 }
             }
@@ -213,6 +323,63 @@ namespace QRcode
                     File.Copy($"{Path.GetTempPath()}qrcode.png",$"{saveFileDialog1.FileName}");
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex=0;
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            SetWindowRegion();
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(linkLabel1.Text);
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.WindowState=FormWindowState.Minimized;
+        }
+
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void panel5_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
         }
     }
 }
