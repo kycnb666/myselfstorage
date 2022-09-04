@@ -107,5 +107,47 @@
   <ItemGroup>
     <None Include="Resources\icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanbtnselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createbtnselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutbtnselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenshotbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importfilebtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\container.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createoption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textboxborder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

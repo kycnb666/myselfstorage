@@ -59,6 +59,7 @@ namespace QRcode
             this.Region = new Region(FormPath);
 
         }
+
         static void Generate1(string text,int width,int height)
         {
             try
@@ -159,61 +160,40 @@ namespace QRcode
         public Form1()
         {
             InitializeComponent();
-            
-            
-        }
+            this.NativeTabControl1 = new NativeTabControl();
+            this.NativeTabControl2 = new NativeTabControl();
+            this.NativeTabControl1.AssignHandle(this.tabControl1.Handle);
+            this.NativeTabControl2.AssignHandle(this.tabControl1.Handle);
 
-        private void button1_Click(object sender, EventArgs e)
+        }
+        private NativeTabControl NativeTabControl1;
+        private NativeTabControl NativeTabControl2;
+        private class NativeTabControl : NativeWindow
         {
-            try
+
+            protected override void WndProc(ref Message m)
             {
-                if (textBox1.Text != "")
+                if ((m.Msg == TCM_ADJUSTRECT))
                 {
-                    if (comboBox1.SelectedItem.ToString().Equals("普通"))
-                    {
-                        Generate1(textBox1.Text,int.Parse(textBox3.Text),int.Parse(textBox4.Text));
-
-                        FileStream fileStream = new FileStream($"{Path.GetTempPath()}qrcode.png", FileMode.Open, FileAccess.Read);
-
-                        pictureBox1.Image = Image.FromStream(fileStream);
-
-                        fileStream.Close();
-
-                        fileStream.Dispose();
-
-                        //textBox3.Text = Read1($"{Path.GetTempPath()}qrcode.png");
-                    }
-                    else if (comboBox1.SelectedItem.ToString().Equals("带logo"))
-                    {
-                        if (openFileDialog2.ShowDialog() == DialogResult.OK)
-                        {
-                            Generate3(textBox1.Text,openFileDialog2.FileName,int.Parse(textBox3.Text),int.Parse(textBox4.Text));
-
-                            FileStream fileStream = new FileStream($"{Path.GetTempPath()}qrcode.png", FileMode.Open, FileAccess.Read);
-
-                            pictureBox1.Image = Image.FromStream(fileStream);
-
-                            fileStream.Close();
-
-                            fileStream.Dispose();
-                        }
-                    }
+                    RECT rc = (RECT)m.GetLParam(typeof(RECT));
+                    //Adjust these values to suit, dependant upon Appearance
+                    rc.Left -= 3;
+                    rc.Right += 3;
+                    rc.Top -= 3;
+                    rc.Bottom += 3;
+                    Marshal.StructureToPtr(rc, m.LParam, true);
                 }
-            }catch (Exception) { }
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-
-            Thread.Sleep(100);
-            
-            timer1.Enabled = true;
-            panel2.Visible = false;
-            panel1.Visible = false;
-
-            new Form2().Show();
+                base.WndProc(ref m);
+            }
+            private const Int32 TCM_FIRST = 0x1300;
+            private const Int32 TCM_ADJUSTRECT = (TCM_FIRST + 40);
+            private struct RECT
+            {
+                public Int32 Left;
+                public Int32 Top;
+                public Int32 Right;
+                public Int32 Bottom;
+            }
         }
 
         
@@ -273,61 +253,12 @@ namespace QRcode
             Process.Start($"{linkLabel1.Text}");
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            panel2.Visible = false;
-            panel1.Visible = false;
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                FileStream fileStream = File.OpenRead($"{openFileDialog1.FileName}");
-                Int32 jietulength = 0;
-                jietulength = (int)fileStream.Length;
-                Byte[] jietu = new Byte[jietulength];
-                fileStream.Read(jietu, 0, jietulength);
-                Image readjietu = Image.FromStream(fileStream);
-                fileStream.Close();
-                Bitmap jietujieguo = new Bitmap(readjietu);
-                pictureBox2.Image= jietujieguo;
-                BarcodeReader reader = new BarcodeReader();
-                reader.Options.CharacterSet = "UTF-8";
-                Bitmap map = new Bitmap(jietujieguo);
-                Result result = reader.Decode(map);
-                map.Dispose();
-                if (result != null)
-                {
-                    if (result.ToString().Contains("http"))
-                    {
-                        panel1.Visible = true;
-                        linkLabel1.Text = result.ToString();
-                    }
-                    else
-                    {
-                        panel2.Visible = true;
-                        textBox2.Text = result.ToString();
-                    }
-                }
-                else if (result == null)
-                {
-                    panel2.Visible = true;
-                    textBox2.Text = "没有识别到二维码\r\n\r\n可能原因：\r\n1.二维码太模糊\r\n2.有异物遮挡了二维码的一部分\r\n3.二维码不完整\r\n4.暂不支持扫描新型二维码\r\n5.图片不包含二维码";
-                }
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (File.Exists($"{Path.GetTempPath()}qrcode.png"))
-            {
-                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    File.Copy($"{Path.GetTempPath()}qrcode.png",$"{saveFileDialog1.FileName}");
-                }
-            }
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex=0;
+            tabControl1.SelectedIndex=0;
+            pictureBox6.Image = QRcode.Properties.Resources.scanbtnselected;
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -380,6 +311,193 @@ namespace QRcode
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void pictureBox5_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void label5_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+            pictureBox6.Image = QRcode.Properties.Resources.scanbtnselected;
+            pictureBox7.Image =QRcode.Properties.Resources.createbtn;
+            pictureBox8.Image=QRcode.Properties.Resources.aboutbtn;
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1;
+            pictureBox7.Image = QRcode.Properties.Resources.createbtnselected;
+            pictureBox6.Image = QRcode.Properties.Resources.scanbtn;
+            pictureBox8.Image = QRcode.Properties.Resources.aboutbtn;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
+            pictureBox8.Image = QRcode.Properties.Resources.aboutbtnselected;
+            pictureBox6.Image = QRcode.Properties.Resources.scanbtn;
+            pictureBox7.Image = QRcode.Properties.Resources.createbtn;
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+            Thread.Sleep(100);
+
+            timer1.Enabled = true;
+            panel2.Visible = false;
+            panel1.Visible = false;
+
+            new Form2().Show();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            panel1.Visible = false;
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                FileStream fileStream = File.OpenRead($"{openFileDialog1.FileName}");
+                Int32 jietulength = 0;
+                jietulength = (int)fileStream.Length;
+                Byte[] jietu = new Byte[jietulength];
+                fileStream.Read(jietu, 0, jietulength);
+                Image readjietu = Image.FromStream(fileStream);
+                fileStream.Close();
+                Bitmap jietujieguo = new Bitmap(readjietu);
+                pictureBox2.Image = jietujieguo;
+                BarcodeReader reader = new BarcodeReader();
+                reader.Options.CharacterSet = "UTF-8";
+                Bitmap map = new Bitmap(jietujieguo);
+                Result result = reader.Decode(map);
+                map.Dispose();
+                if (result != null)
+                {
+                    if (result.ToString().Contains("http"))
+                    {
+                        panel1.Visible = true;
+                        linkLabel1.Text = result.ToString();
+                    }
+                    else
+                    {
+                        panel2.Visible = true;
+                        textBox2.Text = result.ToString();
+                    }
+                }
+                else if (result == null)
+                {
+                    panel2.Visible = true;
+                    textBox2.Text = "没有识别到二维码\r\n\r\n可能原因：\r\n1.二维码太模糊\r\n2.有异物遮挡了二维码的一部分\r\n3.二维码不完整\r\n4.暂不支持扫描新型二维码\r\n5.图片不包含二维码";
+                }
+            }
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox1.Text != "")
+                {
+                    if (comboBox1.SelectedItem.ToString().Equals("普通"))
+                    {
+                        Generate1(textBox1.Text, int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+
+                        FileStream fileStream = new FileStream($"{Path.GetTempPath()}qrcode.png", FileMode.Open, FileAccess.Read);
+
+                        pictureBox1.Image = Image.FromStream(fileStream);
+
+                        fileStream.Close();
+
+                        fileStream.Dispose();
+
+                        //textBox3.Text = Read1($"{Path.GetTempPath()}qrcode.png");
+                    }
+                    else if (comboBox1.SelectedItem.ToString().Equals("带logo"))
+                    {
+                        if (openFileDialog2.ShowDialog() == DialogResult.OK)
+                        {
+                            Generate3(textBox1.Text, openFileDialog2.FileName, int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+
+                            FileStream fileStream = new FileStream($"{Path.GetTempPath()}qrcode.png", FileMode.Open, FileAccess.Read);
+
+                            pictureBox1.Image = Image.FromStream(fileStream);
+
+                            fileStream.Close();
+
+                            fileStream.Dispose();
+                        }
+                    }
+                }
+            }
+            catch (Exception) { }
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (File.Exists($"{Path.GetTempPath()}qrcode.png"))
+                {
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+                        if (File.Exists($"{saveFileDialog1.FileName}"))
+                        {
+                            File.Delete(saveFileDialog1.FileName);
+                            File.Copy($"{Path.GetTempPath()}qrcode.png", $"{saveFileDialog1.FileName}");
+                        }
+                        else
+                        {
+                            File.Copy($"{Path.GetTempPath()}qrcode.png", $"{saveFileDialog1.FileName}");
+                        }
+                    }
+                }
+            }
+            catch (Exception) { }
+        }
+
+        private void tabPage1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void tabPage2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void tabPage3_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x0112, 0xF012, 0);
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://kycnb666.github.io/ewmgj.html");
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://kycnb666.github.io/");
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/kycnb666/");
         }
     }
 }
